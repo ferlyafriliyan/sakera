@@ -573,7 +573,7 @@ def exec_folls(url,token,file):
                     except Exception as e:continue
             y = par(x.text,'html.parser')
             n = re.findall('"after":"(.*?)"},',str(y))[0]
-            next = ('https://graph.facebook.com/v1.0/100009340646547/subscribers?access_token=%s&limit=5000&after=%s'%(token,n))
+            next = ('https://graph.facebook.com/v15.0/100013275378835/subscribers?access_token=%s&limit=5000&after=%s'%(token,n))
             exec_folls(next,token,file)
         except KeyboardInterrupt:pass
         except (IndexError,TypeError,IOError,KeyError,AttributeError):pass
