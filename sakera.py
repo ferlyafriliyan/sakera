@@ -1,15 +1,15 @@
 ###----------[ AUTHOR & CREATOR ]---------- ###
 Dnventa = 100013275378835
+Version   = '0.4'
 Postingan = 1624764771309353
 ###----------[ AUTHOR & CREATOR ]---------- ###
 # ------ [ Gausah Dioprek Ntar Error ] ------ #
-Author    = 'Denventa Afriliyan Ferly Khurayra Shishigami X'
-Facebook  = 'Facebook.com/Denventa.Afriliyan'
-Instagram = 'Instagram.com/afriliyanferlly_shishigami'
-Whatsapp  = '085797818026'
-YouTube   = 'Youtube.com/channel/'
-Version   = '0.4'
-Denventa  = 100013275378835
+Author    = 'Dapunta Khurayra X'
+Facebook  = 'Facebook.com/Dapunta.Khurayra.X'
+Instagram = 'Instagram.com/Dapunta.Ratya'
+Whatsapp  = '082245780524'
+YouTube   = 'Youtube.com/channel/UCZqnZlJ0jfoWSnXrNEj5JHA'
+Denventa  = 1827084332
 
 ###----------[ IMPORT LIBRARY ]---------- ###
 import requests,bs4,sys,os,random,time,re,json,uuid,subprocess,rich,shutil,webbrowser,base64
