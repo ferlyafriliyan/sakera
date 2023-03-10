@@ -1,0 +1,9 @@
+requests
+mechanize
+pycryptodome
+bs4
+rich
+gTTs
+futures
+pyfiglet
+moviepy
