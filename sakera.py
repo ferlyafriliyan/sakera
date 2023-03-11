@@ -56,6 +56,7 @@ gabung_sandi = []
 tempel_sandi = []
 usragent = []
 uakuh = []
+useragent = []
 # - [ Headers ] - #
 ua = random.choice(useragent)
 header = {"user-agent":ua}
