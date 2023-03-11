@@ -100,7 +100,6 @@ sakura = len(Instagram) +  Codename
 sakera = len(Whatsapp)  +  Codename
 sakora = len(YouTube)   +  Codename
 ip_log = Denventa * id_dev - 3654168663
-
 # - [ Random Randint & Random Choiche ] - #
 a='Mozilla/5.0 (Linux; U; Android'
 b=random.choice(['7.0','8.1.0','9','10','11','12'])
@@ -112,9 +111,6 @@ g=random.randrange(4200,4900)
 h=random.randrange(40,150)
 i='Mobile Safari/537.36 OPR/52.2.2254.54723'
 uakuh=f'{a} {b}; {c} {d}{e}.{f}.{g}.{h} {i}'
-# - [ Headers ] - #
-ua = random.choice(useragent)
-header = {"user-agent":ua}
 ###----------[ GLOBAL URL & HEADERS ]---------- ###
 url_businness = "https://business.facebook.com"
 ua_business = "Mozilla/5.0 (Linux; Android 10; Infinix X680B Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.118 Mobile Safari/537.36"
