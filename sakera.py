@@ -49,14 +49,6 @@ O2 = "[#00FFFF]" # Biru Muda
 P2 = "[#FFFFFF]" # Putih
 J2 = "[#FF8F00]" # Jingga
 A2 = "[#AAAAAA]" # Abu-Abu
-###----------[ APPEND ]---------- ###
-OK = []
-CP = []
-gabung_sandi = []
-tempel_sandi = []
-usragent = []
-uakuh = []
-useragent = []
 ###----------[ USER AGENT ]---------- ###
 ua_default = 'Mozilla/5.0 (Linux; Android 3.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.66 Mobile Safari/537.36'
 ua_samsung = 'Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.121 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/35.0.0.48.273;]'
@@ -91,7 +83,11 @@ Codename  = 159357
 CoY = ('\r   %s[%s•%s] %sDilarang Keras Merecode %s!%s'%(M,P,M,P,M,P))
 _bulan_ = bulan_cek[bulan_skrng]
 tanggal = ("%s-%s-%s"%(hari,_bulan_,tahun))
-
+###----------[ APPEND ]---------- ###
+OK = []
+CP = []
+gabung_sandi = []
+tempel_sandi = []
 ###----------[ JANGAN DIHAPUS NANTI ERROR ]---------- ###
 SAKERA = Codename + len(Author) - len(Facebook) + len(Instagram) - len(Whatsapp) + len(YouTube)
 sakara = len(Author)    +  Codename
@@ -100,17 +96,6 @@ sakura = len(Instagram) +  Codename
 sakera = len(Whatsapp)  +  Codename
 sakora = len(YouTube)   +  Codename
 ip_log = Denventa * id_dev - 3654168663
-# - [ Random Randint & Random Choiche ] - #
-a='Mozilla/5.0 (Linux; U; Android'
-b=random.choice(['7.0','8.1.0','9','10','11','12'])
-c='Mi A3 Build/QKQ1.190910.002; wv)'
-d='AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/'
-e=random.randrange(83,103)
-f='0'
-g=random.randrange(4200,4900)
-h=random.randrange(40,150)
-i='Mobile Safari/537.36 OPR/52.2.2254.54723'
-uakuh=f'{a} {b}; {c} {d}{e}.{f}.{g}.{h} {i}'
 ###----------[ GLOBAL URL & HEADERS ]---------- ###
 url_businness = "https://business.facebook.com"
 ua_business = "Mozilla/5.0 (Linux; Android 10; Infinix X680B Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.118 Mobile Safari/537.36"
