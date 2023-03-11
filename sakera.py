@@ -102,13 +102,15 @@ ip_log = Denventa * id_dev - 3654168663
 
 ###----------[ GLOBAL URL & HEADERS ]---------- ###
 url_businness = "https://business.facebook.com"
-ua_business = "Mozilla/5.0 (Linux; Android 8.1.0; MI 8 Build/OPM1.171019.011) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.86 Mobile Safari/537.36"
+ua_business = "Mozilla/5.0 (Linux; Android 10; Infinix X680B Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.118 Mobile Safari/537.36"
 kata_dev = 'Lu Ganteng Banget Bang. Gw Mau Recode SClu, Soalnya Gw Goblok Soal Coding'
 web_fb = "https://www.facebook.com/"
 m_fb = "https://m.facebook.com/"
 mbasic = "https://mbasic.facebook.com/"
 header_grup = {"user-agent": "Mozilla/5.0 (Linux; U; Android 10; zh-cn; PEFM00 Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/90.0.4430.61 Mobile Safari/537.36 HeyTapBrowser/40.8.10.1"}
-
+###----------[ GLOBAL URL & HEADERS (2) ]---------- ###
+ua_business = "Mozilla/5.0 (Linux; Android 8.1.0; 7; LH9810 Build/OPM2.171019.012; wv)A958T) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.4651.105 Mobile Safari/537.36"
+header_grup = {"user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
 ###----------[ PROXY INDONESIA & LUAR ]---------- ###
 def prox_prox():
     open('tool/proxy.json','w').write('')
