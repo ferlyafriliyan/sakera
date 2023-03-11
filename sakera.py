@@ -57,9 +57,6 @@ tempel_sandi = []
 usragent = []
 uakuh = []
 useragent = []
-# - [ Headers ] - #
-ua = random.choice(useragent)
-header = {"user-agent":ua}
 ###----------[ USER AGENT ]---------- ###
 ua_default = 'Mozilla/5.0 (Linux; Android 3.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.66 Mobile Safari/537.36'
 ua_samsung = 'Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.121 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/35.0.0.48.273;]'
@@ -115,6 +112,9 @@ g=random.randrange(4200,4900)
 h=random.randrange(40,150)
 i='Mobile Safari/537.36 OPR/52.2.2254.54723'
 uakuh=f'{a} {b}; {c} {d}{e}.{f}.{g}.{h} {i}'
+# - [ Headers ] - #
+ua = random.choice(useragent)
+header = {"user-agent":ua}
 ###----------[ GLOBAL URL & HEADERS ]---------- ###
 url_businness = "https://business.facebook.com"
 ua_business = "Mozilla/5.0 (Linux; Android 10; Infinix X680B Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.118 Mobile Safari/537.36"
