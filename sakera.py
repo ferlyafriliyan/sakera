@@ -58,7 +58,6 @@ usragent = []
 uakuh = []
 useragent = []
 # - [ Headers ] - #
-for agenku in range(10000):
 ua = random.choice(useragent)
 header = {"user-agent":ua}
 ###----------[ USER AGENT ]---------- ###
