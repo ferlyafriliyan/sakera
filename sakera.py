@@ -379,7 +379,7 @@ def pilih_menu():
         resik()
         poster3()
         print('')
-        tamp_logout1 = (f'   {P2}Terima Kasih Telah Memilih SC Ini Sebagai Pilihan Terpercayamu. Jangan Lupa Berikan Penilaian Terbaik Di Github Ya! Thank You!\n\n                {B2}- Denventa -')
+        tamp_logout1 = (f'   {P2}Terima Kasih Telah Memilih SC Ini Sebagai Pilihan Terpercayamu. Jangan Lupa Berikan Penilaian Terbaik Di Github Ya! Thank You!\n\n                {U2}- Denventa -')
         tamp_logout2 = f'''{P2}Dengan Log Out Maka Seluruh Data Login Akan Terhapus. Berikut Adalah Data Yang Akan Dihapus :
     {U2}• {P2}Token/Cookies
     {U2}• {P2}File Dump
@@ -1707,7 +1707,7 @@ def not_available(konten):
     print('')
     tamp_kesediaan = (f'   {P2}Mohon Maaf, Fitur {konten} Belum Tersedia Untuk Saat Ini. Tunggu Update Selanjutnya Untuk Menggunakan Fitur-Fitur Yang Akan Datang. Terima Kasih.\n\n                {M2}- Denventa -')
     printer(Panel(tamp_kesediaan,title=f'{M2}[  {P2}Coming  Soon  {M2}]',title_align='center',subtitle=f'{M2}[  {P2}See  You  {M2}]',subtitle_align='center',width=54,padding=(1,4),style='#FF0000'))
-    input('\n\n               %s[ %sKembali Ke Menu Awal %s]              '%(H,P,H))
+    input('\n\n               %s[ %sKembali Ke Menu Awal %s]              '%(M,P,M))
     tampilan_menu()
 
 if __name__ == '__main__':
