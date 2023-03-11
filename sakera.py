@@ -334,9 +334,9 @@ def tampilan_menu():
   {H2}[{A2}04{H2}] {P2}Likers     {H2}[{A2}09{H2}] {A2}Beranda  {H2}[{A2}14{H2}] {P2}Saran Teman
   {H2}[{A2}05{H2}] {A2}Pesan      {H2}[{A2}10{H2}] {A2}File     {H2}[{A2}15{H2}] {P2}FL Dari FL
 
-       {K2}[{A2}16{K2}] {A2}Cek Hasil       {K2}[{A2}19{K2}] {P2}User Agent
-       {K2}[{A2}17{K2}] {A2}Cek Opsi        {K2}[{A2}20{K2}] {A2}Upgrade Pro
-       {K2}[{A2}18{K2}] {A2}Cek Teman       {K2}[{A2}00{K2}] {P2}Log Out"""
+       {H2}[{A2}16{H2}] {A2}Cek Hasil       {H2}[{A2}19{H2}] {P2}User Agent
+       {H2}[{A2}17{H2}] {A2}Cek Opsi        {H2}[{A2}20{H2}] {A2}Upgrade Pro
+       {H2}[{A2}18{H2}] {A2}Cek Teman       {H2}[{A2}00{H2}] {P2}Log Out"""
         printer(Panel(tampilan_menu,title=f'{H2}[ {P2}Menu {H2}]',subtitle=f'{A2}┌─ {H2}[ {P2}Pilih {H2}]',subtitle_align='left',width=54,padding=1,style='#00FF00'))
         pilih_menu()
     except requests.exceptions.ConnectionError:print('\n   %s[%s•%s] %sTidak Ada Koneksi Internet %s!%s\n'%(M,P,M,P,M,P));exit()
