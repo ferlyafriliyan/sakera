@@ -256,11 +256,11 @@ def poster2():
     print('%s\n%s\n%s\n%s\n%s\n%s'%(l1,l2,l3,l4,l5,l6))
 def poster3():
     l1 = ('     %s  _________       __                          '%(P))
-    l2 = ('     %s /   %s_____%s/%s____  %s|  | %s__ ________________     '%(B,P,B,P,B,P))
-    l3 = ('     %s \_____  \\\__  \ %s|  |/ // %s__ \_  __ \__  \   '%(P,B,P))
-    l4 = ('     %s /        %s\\%s/%s __ \\%s|    <%s\  ___%s/| | %s\\%s// %s___ \   '%(B,P,B,P,B,P,B,P,B,P))
-    l5 = ('     %s/%s_________%s(%s______%s/%s__%s|%s__\\_____%s>%s__%s|  (%s_______\\'%(B,P,B,P,B,P,B,P,B,P,B,P))
-    l6 = ('     %s Multi Brute Force Facebook %s%s %sBy %sDenventa     '%(P,B,Version,P,B))
+    l2 = ('     %s /   %s_____%s/%s____  %s|  | %s__ ________________     '%(U,P,U,P,U,P))
+    l3 = ('     %s \_____  \\\__  \ %s|  |/ // %s__ \_  __ \__  \   '%(P,U,P))
+    l4 = ('     %s /        %s\\%s/%s __ \\%s|    <%s\  ___%s/| | %s\\%s// %s___ \   '%(U,P,U,P,U,P,U,P,U,P))
+    l5 = ('     %s/%s_________%s(%s______%s/%s__%s|%s__\\_____%s>%s__%s|  (%s_______\\'%(U,P,U,P,U,P,U,P,U,P,U,P))
+    l6 = ('     %s Multi Brute Force Facebook %s%s %sBy %sDenventa     '%(P,U,Version,P,U))
     print('%s\n%s\n%s\n%s\n%s\n%s'%(l1,l2,l3,l4,l5,l6))
 
 ###----------[ CREATE FOLDER ]---------- ###
@@ -339,22 +339,22 @@ def tampilan_menu():
         nama = jsx["name"]
         user(nama)
         print(''%())
-        tampilan_menu = f"""  {J2}[{A2}01{J2}] {P2}Friendlist {J2}[{A2}06{J2}] {P2}Komentar {J2}[{A2}11{J2}] {A2}Email
-  {J2}[{A2}02{J2}] {P2}Followers  {J2}[{A2}07{J2}] {P2}Grup     {J2}[{A2}12{J2}] {A2}Username
-  {J2}[{A2}03{J2}] {P2}Nama       {J2}[{A2}08{J2}] {P2}Hashtag  {J2}[{A2}13{J2}] {A2}ID Random
-  {J2}[{A2}04{J2}] {P2}Likers     {J2}[{A2}09{J2}] {A2}Beranda  {J2}[{A2}14{J2}] {P2}Saran Teman
-  {J2}[{A2}05{J2}] {P2}Pesan      {J2}[{A2}10{J2}] {A2}File     {J2}[{A2}15{J2}] {P2}FL Dari FL
+        tampilan_menu = f"""  {H2}[{A2}01{H2}] {P2}Friendlist {H2}[{A2}06{H2}] {P2}Komentar {H2}[{A2}11{H2}] {A2}Email
+  {H2}[{A2}02{H2}] {P2}Followers  {H2}[{A2}07{H2}] {P2}Grup     {H2}[{A2}12{H2}] {A2}Username
+  {H2}[{A2}03{H2}] {P2}Nama       {H2}[{A2}08{H2}] {P2}Hashtag  {H2}[{A2}13{H2}] {A2}ID Random
+  {H2}[{A2}04{H2}] {P2}Likers     {H2}[{A2}09{H2}] {A2}Beranda  {H2}[{A2}14{H2}] {P2}Saran Teman
+  {H2}[{A2}05{H2}] {P2}Pesan      {H2}[{A2}10{H2}] {A2}File     {H2}[{A2}15{H2}] {P2}FL Dari FL
 
-       {J2}[{A2}16{J2}] {A2}Cek Hasil       {J2}[{A2}19{J2}] {P2}User Agent
-       {J2}[{A2}17{J2}] {A2}Cek Opsi        {J2}[{A2}20{J2}] {A2}Upgrade Pro
-       {J2}[{A2}18{J2}] {A2}Cek Teman       {J2}[{A2}00{J2}] {P2}Log Out"""
-        printer(Panel(tampilan_menu,title=f'{J2}[ {P2}Menu {J2}]',subtitle=f'{A2}┌─ {J2}[ {P2}Pilih {J2}]',subtitle_align='left',width=54,padding=1,style='#FF8F00'))
+       {H2}[{A2}16{H2}] {A2}Cek Hasil       {H2}[{A2}19{H2}] {P2}User Agent
+       {H2}[{A2}17{H2}] {A2}Cek Opsi        {H2}[{A2}20{H2}] {A2}Upgrade Pro
+       {H2}[{A2}18{H2}] {A2}Cek Teman       {H2}[{A2}00{H2}] {P2}Log Out"""
+        printer(Panel(tampilan_menu,title=f'{H2}[ {P2}Menu {H2}]',subtitle=f'{A2}┌─ {H2}[ {P2}Pilih {H2}]',subtitle_align='left',width=54,padding=1,style='#00FF00'))
         pilih_menu()
     except requests.exceptions.ConnectionError:print('\n   %s[%s•%s] %sTidak Ada Koneksi Internet %s!%s\n'%(M,P,M,P,M,P));exit()
     except (KeyError,IOError,AttributeError):print('\n   %s[%s•%s] %sCookies Invalid %s!%s\n'%(M,P,M,P,M,P));time.sleep(3);login()
 def pilih_menu():
     global gabung_sandi, tempel_sandi
-    dc = input('   %s└──> %s'%(A,J))
+    dc = input('   %s└──> %s'%(A,H))
     if dc in ['1','01','a']    : gabung_sandi.append(Author);publik();system_login();urut_crack();pilihan_sakdurunge_crack();addpass();crack()
     elif dc in ['2','02','b']  : tempel_sandi.append('Jangan');main_folls();system_login();urut_crack();pilihan_sakdurunge_crack();addpass();crack()
     elif dc in ['3','03','c']  : gabung_sandi.append('Direcode');namee()
@@ -381,12 +381,12 @@ def pilih_menu():
         print('')
         tamp_logout1 = (f'   {P2}Terima Kasih Telah Memilih SC Ini Sebagai Pilihan Terpercayamu. Jangan Lupa Berikan Penilaian Terbaik Di Github Ya! Thank You!\n\n                {B2}- Denventa -')
         tamp_logout2 = f'''{P2}Dengan Log Out Maka Seluruh Data Login Akan Terhapus. Berikut Adalah Data Yang Akan Dihapus :
-    {B2}• {P2}Token/Cookies
-    {B2}• {P2}File Dump
-    {B2}• {P2}File Tools'''
-        printer(Panel(tamp_logout1,title=f'{B2}[ {P2}Goodbye {B2}]',width=54,padding=(1,4),style='#00C8FF'))
+    {U2}• {P2}Token/Cookies
+    {U2}• {P2}File Dump
+    {U2}• {P2}File Tools'''
+        printer(Panel(tamp_logout1,title=f'{U2}[ {P2}Goodbye {U2}]',width=54,padding=(1,4),style='#AF00FF'))
         print('')
-        printer(Panel(tamp_logout2,title=f'{B2}[ {P2}Log Out {B2}]',width=54,padding=(1,4),style='#00C8FF'))
+        printer(Panel(tamp_logout2,title=f'{U2}[ {P2}Log Out {U2}]',width=54,padding=(1,4),style='#AF00FF'))
         input('\n               %s[ %sEnter Untuk Log Out %s]'%(B,P,B))
         try:shutil.rmtree('login')
         except:pass
@@ -411,21 +411,21 @@ def useragent(isi):
     elif dc in ['0','00','z']:tampilan_menu()
     else:print('\n   %s[%s•%s] %sIsi Yang Benar %s!%s\n'%(M,P,M,P,M,P));exit()
 def pilih_menu_user_agent():
-    tampilan_menu_user_agent = f'''  {J2}[{A2}01{J2}] {P2}Scrap UA Browser    {J2}[{A2}04{J2}] {P2}Cari UA HP Ini
-  {J2}[{A2}02{J2}] {P2}Ganti UA Otomatis   {J2}[{A2}05{J2}] {P2}Cek UA Digunakan
-  {J2}[{A2}03{J2}] {P2}Ganti UA Manual     {J2}[{A2}00{J2}] {P2}Kembali'''
-    printer(Panel(tampilan_menu_user_agent,title=f'{J2}[ {P2}User Agent {J2}]',subtitle=f'{A2}┌─ {J2}[ {P2}Pilih {J2}]',subtitle_align='left',width=54,padding=1,style='#FF8F00'))
+    tampilan_menu_user_agent = f'''  {H2}[{A2}01{H2}] {P2}Scrap UA Browser    {H2}[{A2}04{H2}] {P2}Cari UA HP Ini
+  {H2}[{A2}02{H2}] {P2}Ganti UA Otomatis   {H2}[{A2}05{H2}] {P2}Cek UA Digunakan
+  {H2}[{A2}03{H2}] {P2}Ganti UA Manual     {H2}[{A2}00{H2}] {P2}Kembali'''
+    printer(Panel(tampilan_menu_user_agent,title=f'{H2}[ {P2}User Agent {H2}]',subtitle=f'{A2}┌─ {H2}[ {P2}Pilih {H2}]',subtitle_align='left',width=54,padding=1,style='#00FF00'))
 def pilih_device():
-    tampilan_device = f'''   {J2}[{A2}01{J2}] {P2}Samsung    {J2}[{A2}05{J2}] {P2}Vivo      {J2}[{A2}09{J2}] {P2}Huawei
-   {J2}[{A2}02{J2}] {P2}Nokia      {J2}[{A2}06{J2}] {P2}Iphone    {J2}[{A2}10{J2}] {P2}Windows
-   {J2}[{A2}03{J2}] {P2}Xiaomi     {J2}[{A2}07{J2}] {P2}Asus      {J2}[{A2}11{J2}] {P2}Chrome
-   {J2}[{A2}04{J2}] {P2}Oppo       {J2}[{A2}08{J2}] {P2}Infinix    {J2}[{A2}12{J2}] {P2}FB'''
-    printer(Panel(tampilan_device,title=f'{J2}[ {P2}Device {J2}]',subtitle=f'{A2}┌─ {J2}[ {P2}Pilih {J2}]',subtitle_align='left',width=54,padding=1,style='#FF8F00'))
+    tampilan_device = f'''   {H2}[{A2}01{H2}] {P2}Samsung    {H2}[{A2}05{H2}] {P2}Vivo      {H2}[{A2}09{H2}] {P2}Huawei
+   {H2}[{A2}02{H2}] {P2}Nokia      {H2}[{A2}06{H2}] {P2}Iphone    {H2}[{A2}10{H2}] {P2}Windows
+   {H2}[{A2}03{H2}] {P2}Xiaomi     {H2}[{A2}07{H2}] {P2}Asus      {H2}[{A2}11{H2}] {P2}Chrome
+   {H2}[{A2}04{H2}] {P2}Oppo       {H2}[{A2}08{H2}] {P2}Infinix    {H2}[{A2}12{H2}] {P2}FB'''
+    printer(Panel(tampilan_device,title=f'{H2}[ {P2}Device {H2}]',subtitle=f'{A2}┌─ {H2}[ {P2}Pilih {H2}]',subtitle_align='left',width=54,padding=1,style='#00FF00'))
 def scrap_useragent():
     data_ua = {}
     pt = 0
     pilih_device()
-    dc = input('   %s└──> %s'%(A,J))
+    dc = input('   %s└──> %s'%(A,H))
     if dc in ['1','01','a']:     type = 'software_name/samsung-browser'
     elif dc in ['2','02','b']:   type = 'software_name/nokia-browser'
     elif dc in ['3','03','c']:   type = 'operating_platform_string/xiaomi-mi-a1'
@@ -450,16 +450,16 @@ def scrap_useragent():
                 pt += 1
                 pu = str(pt)
                 data_ua.update({pu:x.replace('[#AAAAAA]','')})
-                printer(Panel(x,title=f'{J2}[{P2}{pu}{J2}]',width=54,title_align='left',style='#FF8F00'))
+                printer(Panel(x,title=f'{H2}[{P2}{pu}{H2}]',width=54,title_align='left',style='#00FF00'))
                 time.sleep(2)
             except KeyboardInterrupt:break
     ch = int(input('   %s└──> %s'%(A,J)))
     try:
         open('tool/useragent.json','w').write(data_ua[str(ch)])
         pilihan = open('tool/useragent.json','r').read()
-        printer(Panel(f'''{A2}{pilihan}''',title=f'{J2}[ {P2}User Agent {J2}]',subtitle=f'{J2}[ {P2}Sukses Diganti {J2}]',padding=(1,4),width=54,title_align='center',style='#FF8F00'))
-        if pengguna_source_code == 'old':input('\n   %s[ %sKembali %s]'%(J,P,J));tampilan_menu()
-        else:print('\n               %s[ %sJalankan Ulang SCnya %s]'%(J,P,J));exit('\n')
+        printer(Panel(f'''{A2}{pilihan}''',title=f'{H2}[ {P2}User Agent {H2}]',subtitle=f'{H2}[ {P2}Sukses Diganti {H2}]',padding=(1,4),width=54,title_align='center',style='#00FF00'))
+        if pengguna_source_code == 'old':input('\n   %s[ %sKembali %s]'%(H,P,H));tampilan_menu()
+        else:print('\n               %s[ %sJalankan Ulang SCnya %s]'%(H,P,H));exit('\n')
     except Exception as e:print('\n   %s[%s•%s] %sIsi Yang Benar %s!%s\n'%(M,P,M,P,M,P));exit()
 def pilih_otomatis():
     pilih_device()
@@ -480,12 +480,12 @@ def pilih_otomatis():
     else:print('\n   %s[%s•%s] %sIsi Yang Benar %s!%s\n'%(M,P,M,P,M,P));exit()
     try:
         pilihan = open('tool/useragent.json','r').read()
-        printer(Panel(f'''{A2}{pilihan}''',title=f'{J2}[ {P2}User Agent {J2}]',subtitle=f'{J2}[ {P2}Sukses Diganti {J2}]',padding=(1,4),width=54,title_align='center',style='#FF8F00'))
-        if pengguna_source_code == 'old':input('\n   %s[ %sKembali %s]'%(J,P,J));tampilan_menu()
-        else:print('\n               %s[ %sJalankan Ulang SCnya %s]'%(J,P,J));exit('\n')
+        printer(Panel(f'''{A2}{pilihan}''',title=f'{H2}[ {P2}User Agent {H2}]',subtitle=f'{H2}[ {P2}Sukses Diganti {H2}]',padding=(1,4),width=54,title_align='center',style='#00FF00'))
+        if pengguna_source_code == 'old':input('\n   %s[ %sKembali %s]'%(H,P,H));tampilan_menu()
+        else:print('\n               %s[ %sJalankan Ulang SCnya %s]'%(H,P,H));exit('\n')
     except Exception as e:print('\n   %s[%s•%s] %sIsi Yang Benar %s!%s\n'%(M,P,M,P,M,P));exit()
 def manual_user_agent():
-    usera = input('       %s[%s•%s] %sMasukkan User Agent :\n%s'%(J,P,J,P,J))
+    usera = input('       %s[%s•%s] %sMasukkan User Agent :\n%s'%(H,P,H,P,H))
     if usera in ['',' ','  ','   ']:print('\n       %s[%s•%s] %sIsi Yang Benar %s!%s\n'%(M,P,M,P,M,P));manual_user_agent()
     else:open('tool/useragent.json','w').write(usera);cek_user_agent()
 def ua_device_ini():
@@ -499,8 +499,8 @@ def ua_device_ini():
 def cek_user_agent():
     try:
         usera = open('tool/useragent.json','r').read()
-        printer(Panel(f'''{A2}{usera}''',title=f'{J2}[ {P2}User Agent {J2}]',subtitle=f'{J2}[ {P2}Saat Ini {J2}]',padding=(1,4),width=54,title_align='center',style='#FF8F00'))
-        input('\n   %s[ %sKembali %s]'%(J,P,J))
+        printer(Panel(f'''{A2}{usera}''',title=f'{H2}[ {P2}User Agent {H2}]',subtitle=f'{H2}[ {P2}Saat Ini {H2}]',padding=(1,4),width=54,title_align='center',style='#00FF00'))
+        input('\n   %s[ %sKembali %s]'%(H,P,H))
         tampilan_menu()
     except Exception as e:kecuali(e)
 
