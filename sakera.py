@@ -115,7 +115,7 @@ uakuh=f'{a} {b}; {c} {d}{e}.{f}.{g}.{h} {i}'
 usragent.append(uakuh)
 
 ua = random.choice(useragent)
-header = ("user-agent":ua}
+header = {"user-agent":ua}
 ###----------[ GLOBAL URL & HEADERS ]---------- ###
 url_businness = "https://business.facebook.com"
 ua_business = "Mozilla/5.0 (Linux; Android 10; Infinix X680B Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.118 Mobile Safari/537.36"
