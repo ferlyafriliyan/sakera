@@ -92,7 +92,6 @@ gabung_sandi = []
 tempel_sandi = []
 usragent = []
 uakuh = []
-for = []
 ###----------[ JANGAN DIHAPUS NANTI ERROR ]---------- ###
 SAKERA = Codename + len(Author) - len(Facebook) + len(Instagram) - len(Whatsapp) + len(YouTube)
 sakara = len(Author)    +  Codename
@@ -103,7 +102,6 @@ sakora = len(YouTube)   +  Codename
 ip_log = Denventa * id_dev - 3654168663
 
 # - [ Random Randint & Random Choiche ] - #
-for agenku in range(10000):
 a='Mozilla/5.0 (Linux; U; Android'
 b=random.choice(['7.0','8.1.0','9','10','11','12'])
 c='Mi A3 Build/QKQ1.190910.002; wv)'
