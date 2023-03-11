@@ -360,7 +360,7 @@ def pilih_menu():
     elif dc in ['14','014','n']: tempel_sandi.append('Btw');suggestion();system_login();pilihan_sakdurunge_crack();addpass();crack()
     elif dc in ['15','015','o']: gabung_sandi.append('Elo');teman_teman()
     elif dc in ['16','016','p']: tempel_sandi.append('Dasar Bocah Goblok');not_available('Cek Hasil Crack')
-    elif dc in ['17','017','q']: gabung_sandi.append('Gaakan Bisa');not_available('Cek Opsi Akun Hasil Crack')
+    elif dc in ['17','017','q']: gabung_sandi.append('Gaakan Bisa');not_available('Cek Opsi Akun Hasil Crack Checkpoint')
     elif dc in ['18','018','r']: tempel_sandi.append('Ngerecode');not_available('Cek Jumlah Teman Akun Target')
     elif dc in ['19','019','s']: gabung_sandi.append('SC Ini');useragent('old')
     elif dc in ['20','020','t']: tempel_sandi.append('Hahaha');not_available('Upgrade Ke Versi Pro')
