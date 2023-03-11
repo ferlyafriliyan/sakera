@@ -240,11 +240,11 @@ def convert_id(username):
 ###----------[ LOGO ]---------- ###
 def poster():
     l1 = ('     %s  _________       __                          '%(P))
-    l2 = ('     %s /   %s_____%s/%s____  %s|  | %s__ ________________     '%(N2,P,N2,P,N2,P))
-    l3 = ('     %s \_____  \\\__  \ %s|  |/ // %s__ \_  __ \__  \   '%(P,N2,P))
-    l4 = ('     %s /        %s\\%s/%s __ \\%s|    <%s\  ___%s/| | %s\\%s// %s___ \   '%(N2,P,N2,P,N2,P,N2,P,N2,P))
-    l5 = ('     %s/%s_________%s(%s______%s/%s__%s|%s__\\_____%s>%s__%s|  (%s_______\\'%(N2,P,N2,P,N2,P,N2,P,N2,P,N2,P))
-    l6 = ('     %s Multi Brute Force Facebook %s%s %sBy %sDenventa     '%(P,N2,Version,P,N2))
+    l2 = ('     %s /   %s_____%s/%s____  %s|  | %s__ ________________     '%(K,P,K,P,K,P))
+    l3 = ('     %s \_____  \\\__  \ %s|  |/ // %s__ \_  __ \__  \   '%(P,K,P))
+    l4 = ('     %s /        %s\\%s/%s __ \\%s|    <%s\  ___%s/| | %s\\%s// %s___ \   '%(K,P,K,P,K,P,K,P,K,P))
+    l5 = ('     %s/%s_________%s(%s______%s/%s__%s|%s__\\_____%s>%s__%s|  (%s_______\\'%(K,P,K,P,K,P,K,P,K,P,K,P))
+    l6 = ('     %s Multi Brute Force Facebook %s%s %sBy %sDenventa     '%(P,K,Version,P,K))
     print('%s\n%s\n%s\n%s\n%s\n%s'%(l1,l2,l3,l4,l5,l6))
 def poster2():
     l1 = ('     %s  _________       __                          '%(P))
