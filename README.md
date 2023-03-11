@@ -35,7 +35,6 @@ pip install pycryptodome
 git clone https://github.com/Denventa/sakera
 cd sakera
 git pull
-pip3 install -r requirements.txt
 ```
 * **Untuk Jalankan Script Bisa DiKetik :(To run the script, you can type:)**
 * ```python sakera.py```
