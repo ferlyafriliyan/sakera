@@ -408,7 +408,7 @@ def pilih_device():
     tampilan_device = f'''   {H2}[{A2}01{H2}] {P2}Samsung    {H2}[{A2}05{H2}] {P2}Vivo      {H2}[{A2}09{H2}] {P2}Huawei
    {H2}[{A2}02{H2}] {P2}Nokia      {H2}[{A2}06{H2}] {P2}Iphone    {H2}[{A2}10{H2}] {P2}Windows
    {H2}[{A2}03{H2}] {P2}Xiaomi     {H2}[{A2}07{H2}] {P2}Asus      {H2}[{A2}11{H2}] {P2}Chrome
-   {H2}[{A2}04{H2}] {P2}Oppo       {H2}[{A2}08{H2}] {P2}Infinix    {H2}[{A2}12{H2}] {P2}FB'''
+   {H2}[{A2}04{H2}] {P2}Oppo       {H2}[{A2}08{H2}] {P2}Infinix   {H2}[{A2}12{H2}] {P2}FB'''
     printer(Panel(tampilan_device,title=f'{H2}[ {P2}Device {H2}]',subtitle=f'{A2}┌─ {H2}[ {P2}Pilih {H2}]',subtitle_align='left',width=54,padding=1,style='#00FF00'))
 def scrap_useragent():
     data_ua = {}
