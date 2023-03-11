@@ -22,16 +22,11 @@ Author:
 ### ⇨  Install Script Di Termux
 ```
 termux-change-repo
-rm -rf $HOME/sakera
 pkg update && pkg upgrade -y
 pkg install python git -y
 pkg install python-pip
 pip install rich
-pip install bs4
 pip install requests
-pip install mechanize
-pip install pyfiglet
-pip install pycryptodome
 git clone https://github.com/Denventa/sakera
 cd sakera
 git pull
