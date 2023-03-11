@@ -92,6 +92,7 @@ gabung_sandi = []
 tempel_sandi = []
 usragent = []
 uakuh = []
+for = []
 ###----------[ JANGAN DIHAPUS NANTI ERROR ]---------- ###
 SAKERA = Codename + len(Author) - len(Facebook) + len(Instagram) - len(Whatsapp) + len(YouTube)
 sakara = len(Author)    +  Codename
