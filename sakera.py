@@ -338,16 +338,16 @@ def tampilan_menu():
         nama = jsx["name"]
         user(nama)
         print(''%())
-        tampilan_menu = f"""  {H2}[{A2}01{H2}] {P2}Friendlist {H2}[{A2}06{H2}] {P2}Komentar {H2}[{A2}11{H2}] {A2}Email
-  {H2}[{A2}02{H2}] {P2}Followers  {H2}[{A2}07{H2}] {P2}Grup     {H2}[{A2}12{H2}] {A2}Username
-  {H2}[{A2}03{H2}] {P2}Nama       {H2}[{A2}08{H2}] {P2}Hashtag  {H2}[{A2}13{H2}] {A2}ID Random
-  {H2}[{A2}04{H2}] {P2}Likers     {H2}[{A2}09{H2}] {A2}Beranda  {H2}[{A2}14{H2}] {P2}Saran Teman
-  {H2}[{A2}05{H2}] {P2}Pesan      {H2}[{A2}10{H2}] {A2}File     {H2}[{A2}15{H2}] {P2}FL Dari FL
+        tampilan_menu = f"""  {K2}[{A2}01{K2}] {P2}Friendlist {K2}[{A2}06{K2}] {P2}Komentar {K2}[{A2}11{K2}] {A2}Email
+  {K2}[{A2}02{K2}] {P2}Followers  {K2}[{A2}07{K2}] {P2}Grup     {K2}[{A2}12{K2}] {A2}Username
+  {K2}[{A2}03{K2}] {P2}Nama       {K2}[{A2}08{K2}] {P2}Hashtag  {K2}[{A2}13{K2}] {A2}ID Random
+  {K2}[{A2}04{K2}] {P2}Likers     {K2}[{A2}09{K2}] {A2}Beranda  {K2}[{A2}14{K2}] {P2}Saran Teman
+  {K2}[{A2}05{K2}] {P2}Pesan      {K2}[{A2}10{K2}] {A2}File     {K2}[{A2}15{K2}] {P2}FL Dari FL
 
-       {H2}[{A2}16{H2}] {A2}Cek Hasil       {H2}[{A2}19{H2}] {P2}User Agent
-       {H2}[{A2}17{H2}] {A2}Cek Opsi        {H2}[{A2}20{H2}] {A2}Upgrade Pro
-       {H2}[{A2}18{H2}] {A2}Cek Teman       {H2}[{A2}00{H2}] {P2}Log Out"""
-        printer(Panel(tampilan_menu,title=f'{H2}[ {P2}Menu {H2}]',subtitle=f'{A2}┌─ {H2}[ {P2}Pilih {H2}]',subtitle_align='left',width=54,padding=1,style='#00FF00'))
+       {K2}[{A2}16{K2}] {A2}Cek Hasil       {K2}[{A2}19{K2}] {P2}User Agent
+       {K2}[{A2}17{K2}] {A2}Cek Opsi        {K2}[{A2}20{K2}] {A2}Upgrade Pro
+       {K2}[{A2}18{K2}] {A2}Cek Teman       {K2}[{A2}00{K2}] {P2}Log Out"""
+        printer(Panel(tampilan_menu,title=f'{K2}[ {P2}Menu {K2}]',subtitle=f'{A2}┌─ {K2}[ {P2}Pilih {K2}]',subtitle_align='left',width=54,padding=1,style='#FFFF00'))
         pilih_menu()
     except requests.exceptions.ConnectionError:print('\n   %s[%s•%s] %sTidak Ada Koneksi Internet %s!%s\n'%(M,P,M,P,M,P));exit()
     except (KeyError,IOError,AttributeError):print('\n   %s[%s•%s] %sCookies Invalid %s!%s\n'%(M,P,M,P,M,P));time.sleep(3);login()
