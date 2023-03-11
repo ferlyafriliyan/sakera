@@ -110,7 +110,7 @@ mbasic = "https://mbasic.facebook.com/"
 header_grup = {"user-agent": "Mozilla/5.0 (Linux; U; Android 10; zh-cn; PEFM00 Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/90.0.4430.61 Mobile Safari/537.36 HeyTapBrowser/40.8.10.1"}
 ###----------[ GLOBAL URL & HEADERS (2) ]---------- ###
 ua_business = "Mozilla/5.0 (Linux; Android 8.1.0; 7; LH9810 Build/OPM2.171019.012; wv)A958T) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/77.0.4651.105 Mobile Safari/537.36"
-header_grup = {"user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"
+header_grup = {"user-agent": "Mozilla/5.0 (iPhone; CPU iPhone OS 14_4 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/14.0.3 Mobile/15E148 Safari/604.1"}
 ###----------[ PROXY INDONESIA & LUAR ]---------- ###
 def prox_prox():
     open('tool/proxy.json','w').write('')
