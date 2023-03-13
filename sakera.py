@@ -1,6 +1,6 @@
 ###----------[ AUTHOR & CREATOR ]---------- ###
+Version = '0.4'
 Denventa_F = 100013275378835
-Version    = '0.4'
 Postingan  = 1630150370770793
 
 ###----------[ AUTHOR & CREATOR ]---------- ###
