@@ -1,5 +1,4 @@
-# Jangan Hapus Text :
-# - [ print('%s[%s•%s] %s'%(J,P,J,P)) ] - #
+# Gak Usah Di Recode Buat Apa Juga Lol #
 ###----------[ AUTHOR & CREATOR ]---------- ###
 Denventa_F = 100013275378835
 Postingan = 1624764771309353
