@@ -1,6 +1,7 @@
 ###----------[ AUTHOR & CREATOR ]---------- ###
-Version = '0.4'
+Facebook_Denvente = 'Facebook.com/Denventa.Afriliyan'
 Denventa_F = 100013275378835
+Version = '0.4'
 Postingan  = 1630150370770793
 
 ###----------[ AUTHOR & CREATOR ]---------- ###
