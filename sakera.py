@@ -409,7 +409,7 @@ def scrap_useragent():
     data_ua = {}
     pt = 0
     pilih_device()
-    dc = input('   %s└──> %s'%(A,O))
+    dc = input('   %s└──> %s'%(A,H))
     if dc in ['1','01','a']:     type = 'software_name/samsung-browser'
     elif dc in ['2','02','b']:   type = 'software_name/nokia-browser'
     elif dc in ['3','03','c']:   type = 'operating_platform_string/xiaomi-mi-a1'
@@ -437,7 +437,7 @@ def scrap_useragent():
                 printer(Panel(x,title=f'{H2}[{P2}{pu}{H2}]',width=54,title_align='left',style='#00FF00'))
                 time.sleep(2)
             except KeyboardInterrupt:break
-    ch = int(input('   %s└──> %s'%(A,J)))
+    ch = int(input('   %s└──> %s'%(A,H)))
     try:
         open('tool/useragent.json','w').write(data_ua[str(ch)])
         pilihan = open('tool/useragent.json','r').read()
