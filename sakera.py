@@ -395,16 +395,16 @@ def useragent(isi):
     elif dc in ['0','00','z']:tampilan_menu()
     else:print('\n   %s[%s•%s] %sIsi Yang Benar %s!%s\n'%(M,P,M,P,M,P));exit()
 def pilih_menu_user_agent():
-    tampilan_menu_user_agent = f'''  {J2}[{A2}01{J2}] {P2}Scrap UA Browser    {J2}[{A2}04{J2}] {P2}Cari UA HP Ini
-  {J2}[{A2}02{J2}] {P2}Ganti UA Otomatis   {J2}[{A2}05{J2}] {P2}Cek UA Digunakan
-  {J2}[{A2}03{J2}] {P2}Ganti UA Manual     {J2}[{A2}00{J2}] {P2}Kembali'''
-    printer(Panel(tampilan_menu_user_agent,title=f'{J2}[ {P2}User Agent {J2}]',subtitle=f'{A2}┌─ {J2}[ {P2}Pilih {J2}]',subtitle_align='left',width=54,padding=1,style='#FF8F00'))
+    tampilan_menu_user_agent = f'''  {H2}[{A2}01{H2}] {P2}Scrap UA Browser    {H2}[{A2}04{H2}] {P2}Cari UA HP Ini
+  {H2}[{A2}02{H2}] {P2}Ganti UA Otomatis   {H2}[{A2}05{H2}] {P2}Cek UA Digunakan
+  {H2}[{A2}03{H2}] {P2}Ganti UA Manual     {H2}[{A2}00{H2}] {P2}Kembali'''
+    printer(Panel(tampilan_menu_user_agent,title=f'{J2}[ {P2}User Agent {J2}]',subtitle=f'{A2}┌─ {J2}[ {P2}Pilih {J2}]',subtitle_align='left',width=54,padding=1,style='#00FF00'))
 def pilih_device():
-    tampilan_device = f'''   {J2}[{A2}01{J2}] {P2}Samsung    {J2}[{A2}05{J2}] {P2}Vivo      {J2}[{A2}09{J2}] {P2}Huawei
-   {J2}[{A2}02{J2}] {P2}Nokia      {J2}[{A2}06{J2}] {P2}Iphone    {J2}[{A2}10{J2}] {P2}Windows
-   {J2}[{A2}03{J2}] {P2}Xiaomi     {J2}[{A2}07{J2}] {P2}Asus      {J2}[{A2}11{J2}] {P2}Chrome
-   {J2}[{A2}04{J2}] {P2}Oppo       {J2}[{A2}08{J2}] {P2}Lenovo    {J2}[{A2}12{J2}] {P2}FB'''
-    printer(Panel(tampilan_device,title=f'{J2}[ {P2}Device {J2}]',subtitle=f'{A2}┌─ {J2}[ {P2}Pilih {J2}]',subtitle_align='left',width=54,padding=1,style='#FF8F00'))
+    tampilan_device = f'''   {H2}[{A2}01{H2}] {P2}Samsung    {H2}[{A2}05{J2}] {P2}Vivo      {H2}[{A2}09{H2}] {P2}Huawei
+   {H2}[{A2}02{H2}] {P2}Nokia      {H2}[{A2}06{H2}] {P2}Iphone    {H2}[{A2}10{H2}] {P2}Windows
+   {H2}[{A2}03{H2}] {P2}Xiaomi     {H2}[{A2}07{H2}] {P2}Asus      {H2}[{A2}11{H2}] {P2}Chrome
+   {H2}[{A2}04{H2}] {P2}Oppo       {H2}[{A2}08{H2}] {P2}Lenovo    {H2}[{A2}12{H2}] {P2}FB'''
+    printer(Panel(tampilan_device,title=f'{H2}[ {P2}Device {H2}]',subtitle=f'{A2}┌─ {H2}[ {P2}Pilih {H2}]',subtitle_align='left',width=54,padding=1,style='#00FF00'))
 def scrap_useragent():
     data_ua = {}
     pt = 0
