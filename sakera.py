@@ -1,4 +1,3 @@
-# Gak Usah Di Recode Buat Apa Juga Lol #
 ###----------[ AUTHOR & CREATOR ]---------- ###
 Denventa_Afrliyan_Ferly_Khurayra_Shishigami_X = 100013275378835
 Version   = '0.4'
