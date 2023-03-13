@@ -514,17 +514,17 @@ def main_folls():
         print('\n%s[%s•%s] %sCookies Invalid %s!%s\n'%(M,P,M,P,M,P))
         time.sleep(3)
         login()
-    id = input('       %s[%s•%s] %sID Target : %s'%(J,P,J,P,J))
+    id = input('       %s[%s•%s] %sID Target : %s'%(H,P,H,P,H))
     url = ('https://graph.facebook.com/%s/subscribers?limit=10000&access_token=%s'%(id,token))
     file_dump = 'dump/%s.json'%(id)
     try:os.remove(file_dump)
     except:pass
     open(file_dump,'w').write('')
     exec_folls(url,token,file_dump)
-    print("\n       %s[%s•%s] %sBerhasil Mengambil %s%s %sID"%(J,P,J,P,J,len(open(file_dump,'r').read().splitlines()),P))
-    print('       %s[%s•%s] %sFile : %s%s %s'%(J,P,J,P,J,file_dump,P))
+    print("\n       %s[%s•%s] %sBerhasil Mengambil %s%s %sID"%(H,P,H,P,H,len(open(file_dump,'r').read().splitlines()),P))
+    print('       %s[%s•%s] %sFile : %s%s %s'%(H,P,H,P,H,file_dump,P))
 def exec_folls(url,token,file):
-    print("\r       %s[%s•%s] %sSedang Mengambil %s%s %sID"%(J,P,J,P,J,len(open(file,'r').read().splitlines()),P), end='');sys.stdout.flush()
+    print("\r       %s[%s•%s] %sSedang Mengambil %s%s %sID"%(H,P,H,P,H,len(open(file,'r').read().splitlines()),P), end='');sys.stdout.flush()
     with requests.Session() as xyz:
         try:
             x = xyz.get(url,cookies=cookie)
@@ -552,14 +552,14 @@ def main_likers():
     urutan_crack = '0'
     try:
         cookie = {'cookie':open('login/cookie.json','r').read()}
-        print('       %s[%s•%s] %sContoh : 2089611468021009'%(J,P,J,P))
-        _query_ = input('       %s[%s•%s] %sID Postingan : %s'%(J,P,J,P,J))
+        print('       %s[%s•%s] %sContoh : 2089611468021009'%(H,P,H,P))
+        _query_ = input('       %s[%s•%s] %sID Postingan : %s'%(H,P,H,P,H))
         print('')
     except Exception as e:kecuali(e)
     tampilan_likers = f'''    {H2}[{A2}1{H2}] {P2}Like   {H2}[{A2}3{H2}] {P2}Wow    {H2}[{A2}5{H2}] {P2}Sad     {H2}[{A2}7{H2}] {P2}Care
     {H2}[{A2}2{H2}] {P2}Love   {H2}[{A2}4{H2}] {P2}Haha   {H2}[{A2}6{H2}] {P2}Angry   {H2}[{A2}8{H2}] {P2}All'''
     printer(Panel(tampilan_likers,title=f'{H2}[ {P2}Tipe React {H2}]',subtitle=f'{A2}┌─ {H2}[ {P2}Pilih {H2}]',subtitle_align='left',width=54,padding=1,style='#00FF00'))
-    rt = input('   %s└──> %s'%(A,J))
+    rt = input('   %s└──> %s'%(A,H))
     if rt in ['1','01','a']:_react_type_='1'
     elif rt in ['2','02','b']:_react_type_='2'
     elif rt in ['3','03','c']:_react_type_='3'
@@ -582,7 +582,7 @@ def scrape_likers(_dapunta_,_url_,_file_):
     _ses_ = requests.Session()
     _url_load_ = _ses_.get(_url_,cookies=_dapunta_,headers=header_grup).text.encode("utf-8")
     _ses_par_ = par(_url_load_,'html.parser')
-    print("\r       %s[%s•%s] %sSedang Mengambil %s%s %sID"%(J,P,J,P,J,len(open(_file_,'r').read().splitlines()),P), end='');sys.stdout.flush()
+    print("\r       %s[%s•%s] %sSedang Mengambil %s%s %sID"%(H,P,H,P,H,len(open(_file_,'r').read().splitlines()),P), end='');sys.stdout.flush()
     try: 
         for _isi_ in _ses_par_.find_all('h3'):
             if len(tempel_sandi) != 1:
@@ -614,18 +614,18 @@ class komen:
         urutan_crack = '0'
         try:
             cookie = {'cookie':open('login/cookie.json','r').read()}
-            print('       %s[%s•%s] %sContoh : 2089611468021009'%(J,P,J,P))
-            put = input('       %s[%s•%s] %sID Postingan : %s'%(J,P,J,P,J))
+            print('       %s[%s•%s] %sContoh : 2089611468021009'%(H,P,H,P))
+            put = input('       %s[%s•%s] %sID Postingan : %s'%(H,P,H,P,H))
             url = 'https://mbasic.facebook.com/'+put
             self.file_dump = ('dump/%s.json'%(put))
             file_dump = self.file_dump
             open(self.file_dump,'w').write('')
         except Exception as e:kecuali(e)
         self.exec(url,cookie)
-        print("\n       %s[%s•%s] %sBerhasil Mengambil %s%s %sID"%(J,P,J,P,J,len(open(self.file_dump,'r').read().splitlines()),P))
-        print('       %s[%s•%s] %sFile : %s%s %s'%(J,P,J,P,J,file_dump,P))
+        print("\n       %s[%s•%s] %sBerhasil Mengambil %s%s %sID"%(H,P,H,P,H,len(open(self.file_dump,'r').read().splitlines()),P))
+        print('       %s[%s•%s] %sFile : %s%s %s'%(H,P,H,P,H,file_dump,P))
     def exec(self,url,cookie):
-        print("\r       %s[%s•%s] %sSedang Mengambil %s%s %sID"%(J,P,J,P,J,len(open(self.file_dump,'r').read().splitlines()),P), end='');sys.stdout.flush()
+        print("\r       %s[%s•%s] %sSedang Mengambil %s%s %sID"%(H,P,H,P,H,len(open(self.file_dump,'r').read().splitlines()),P), end='');sys.stdout.flush()
         try:
             with requests.Session() as xyz:
                 req = xyz.get(url,cookies=cookie)
@@ -660,8 +660,8 @@ class grup:
         self.main_grup(cookie)
     def main_grup(self,cookie):
         print('')
-        tamp_grup1 = f"""            {J2}[{A2}1{J2}] {P2}Bergabung   {J2}[{A2}2{J2}] {P2}Nama   {J2}[{A2}3{J2}] {P2}ID"""
-        printer(Panel(tamp_grup1,title=f'{J2}[ {P2}Grup {J2}]',width=54,title_align='left',style='#FF8F00'))
+        tamp_grup1 = f"""            {H2}[{A2}1{H2}] {P2}Bergabung   {H2}[{A2}2{H2}] {P2}Nama   {H2}[{A2}3{H2}] {P2}ID"""
+        printer(Panel(tamp_grup1,title=f'{H2}[ {P2}Grup {H2}]',width=54,title_align='left',style='#00FF00'))
         ty = input('   %s└──> %s'%(A,H))
         if ty in ['1','01','a']:
             print('')
@@ -670,14 +670,14 @@ class grup:
             url= 'https://mbasic.facebook.com/groups/?seemore&refid=1000'
             self.cari_gabung(url,cookie)
         elif ty in ['2','02','b']:
-            put = input('       %s[%s•%s] %sMasukkan Nama Grup : %s'%(J,P,J,P,J))
+            put = input('       %s[%s•%s] %sMasukkan Nama Grup : %s'%(H,P,H,P,H))
             print('')
             self.file = ('dump/%s.json'%(put.replace(' ','_')))
             open(self.file,'w').write('')
             url = 'https://mbasic.facebook.com/search/groups/?q=' + put
             self.cari_nama(url,cookie)
         elif ty in ['3','03','c']:
-            self._id_ = input('       %s[%s•%s] %sMasukkan ID Grup : %s'%(J,P,J,P,J))
+            self._id_ = input('       %s[%s•%s] %sMasukkan ID Grup : %s'%(H,P,H,P,H))
             self._pil_ = True
             print('')
             self.second_grup(cookie)
