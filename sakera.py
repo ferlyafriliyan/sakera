@@ -1,17 +1,13 @@
 ###----------[ AUTHOR & CREATOR ]---------- ###
-Facebook_Denvente = 'Facebook.com/Denventa.Afriliyan'
-Denventa_F = 100013275378835
-Version = '0.4'
-Postingan  = 1630150370770793
-
-###----------[ AUTHOR & CREATOR ]---------- ###
 # ------ [ Gausah Dioprek Ntar Error ] ------ #
-Author    = 'Dapunta Khurayra X'
-Facebook  = 'Facebook.com/Dapunta.Khurayra.X'
-Instagram = 'Instagram.com/Dapunta.Ratya'
-Whatsapp  = '082245780524'
-YouTube   = 'Youtube.com/channel/UCZqnZlJ0jfoWSnXrNEj5JHA'
-Denventa  = 1827084332
+Author    = 'Denventa Afriliyan Ferly Khurayra Shishigami X'
+Facebook  = 'Facebook.com/Denventa.Afriliyan'
+Instagram = 'Instagram.com/afriliyanferlly_shishigami'
+Whatsapp  = '085797818026'
+YouTube   = 'Youtube.com/channel/UCZqnZlJ0jfohayysgFUGYUks'
+Version   = '0.4'
+Denventa  = 100013275378835
+Postingan = 1630150370770793
 
 ###----------[ IMPORT LIBRARY ]---------- ###
 import requests,bs4,sys,os,random,time,re,json,uuid,subprocess,rich,shutil,webbrowser,base64
@@ -23,7 +19,6 @@ from datetime import datetime
 from rich import print as printer
 from rich.panel import Panel
 from urllib.parse import quote
-
 ###----------[ ANSII COLOR STYLE ]---------- ###
 Z = "\x1b[0;90m"     # Hitam
 M = "\x1b[38;5;196m" # Merah
@@ -35,7 +30,6 @@ O = "\x1b[0;96m"     # Biru Muda
 P = "\x1b[38;5;231m" # Putih
 J = "\x1b[38;5;208m" # Jingga
 A = "\x1b[38;5;248m" # Abu-Abu
-
 ###----------[ RICH COLOR STYLE ]---------- ###
 Z2 = "[#000000]" # Hitam
 M2 = "[#FF0000]" # Merah
@@ -48,7 +42,6 @@ O2 = "[#00FFFF]" # Biru Muda
 P2 = "[#FFFFFF]" # Putih
 J2 = "[#FF8F00]" # Jingga
 A2 = "[#AAAAAA]" # Abu-Abu
-
 ###----------[ USER AGENT ]---------- ###
 ua_default = 'Mozilla/5.0 (Linux; Android 3.0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/99.0.4844.66 Mobile Safari/537.36'
 ua_samsung = 'Mozilla/5.0 (Linux; Android 5.0; SM-G900P Build/LRX21T; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/43.0.2357.121 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/35.0.0.48.273;]'
@@ -64,7 +57,6 @@ ua_windows = 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, li
 ua_chrome  = 'Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.58 Mobile Safari/537.36'
 ua_fb      = 'Mozilla/5.0 (Linux; Android 8.0.0; RNE-L21 Build/HUAWEIRNE-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/360.0.0.30.113;]'
 komentar   = '\n\nhttps://www.facebook.com/' + str(Postingan)
-
 ###----------[ TIME ]---------- ###
 id_dev = 345 - 340 + 720 - 723
 skrng = datetime.now()
@@ -83,14 +75,12 @@ Codename  = 159357
 CoY = ('\r   %s[%s•%s] %sDilarang Keras Merecode %s!%s'%(M,P,M,P,M,P))
 _bulan_ = bulan_cek[bulan_skrng]
 tanggal = ("%s-%s-%s"%(hari,_bulan_,tahun))
-
 ###----------[ APPEND ]---------- ###
 OK = []
 CP = []
 gabung_sandi = []
 tempel_sandi = []
-
-###----------[ JANGAN DIHAPUS NANTI ERROR ]---------- ###
+###----------- JANGAN DIHAPUS NANTI ERROR ]---------- ###
 SAKERA = Codename + len(Author) - len(Facebook) + len(Instagram) - len(Whatsapp) + len(YouTube)
 sakara = len(Author)    +  Codename
 sakira = len(Facebook)  +  Codename
@@ -98,7 +88,6 @@ sakura = len(Instagram) +  Codename
 sakera = len(Whatsapp)  +  Codename
 sakora = len(YouTube)   +  Codename
 ip_log = Denventa * id_dev - 3654168663
-
 ###----------[ GLOBAL URL & HEADERS ]---------- ###
 url_businness = "https://business.facebook.com"
 ua_business = "Mozilla/5.0 (Linux; Android 10; Infinix X680B Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.118 Mobile Safari/537.36"
@@ -107,7 +96,6 @@ web_fb = "https://www.facebook.com/"
 m_fb = "https://m.facebook.com/"
 mbasic = "https://mbasic.facebook.com/"
 header_grup = {"user-agent": "Mozilla/5.0 (Linux; U; Android 10; zh-cn; PEFM00 Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/90.0.4430.61 Mobile Safari/537.36 HeyTapBrowser/40.8.10.1"}
-
 ###----------[ PROXY INDONESIA & LUAR ]---------- ###
 def prox_prox():
     open('tool/proxy.json','w').write('')
