@@ -1,5 +1,6 @@
 ###----------[ AUTHOR & CREATOR ]---------- ###
 Dnventa = 100013275378835
+Version   = '0.4'
 Postingan = 1630150370770793
 ###----------[ AUTHOR & CREATOR ]---------- ###
 # ------ [ Gausah Dioprek Ntar Error ] ------ #
@@ -8,7 +9,6 @@ Facebook  = 'Facebook.com/Dapunta.Khurayra.X'
 Instagram = 'Instagram.com/Dapunta.Ratya'
 Whatsapp  = '082245780524'
 YouTube   = 'Youtube.com/channel/UCZqnZlJ0jfoWSnXrNEj5JHA'
-Version   = '0.4'
 Denventa  = 1827084332
 
 ###----------[ IMPORT LIBRARY ]---------- ###
