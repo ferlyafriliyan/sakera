@@ -1,6 +1,6 @@
 ###----------[ AUTHOR & CREATOR ]---------- ###
 Denventa_A = 100013275378835
-Version    = '0.4'
+Versio= '0.4'
 Postingan = 1630150370770793
 ###----------[ AUTHOR & CREATOR ]---------- ###
 # ------ [ Gausah Dioprek Ntar Error ] ------ #
