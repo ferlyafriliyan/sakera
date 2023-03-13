@@ -60,7 +60,48 @@ ua_windows = 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, li
 ua_chrome  = 'Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/100.0.4896.58 Mobile Safari/537.36'
 ua_fb      = 'Mozilla/5.0 (Linux; Android 8.0.0; RNE-L21 Build/HUAWEIRNE-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/360.0.0.30.113;]'
 komentar   = '\n\nhttps://www.facebook.com/' + str(Postingan)
-
+###----------[ TIME ]---------- ###
+id_dev = 345 - 340 + 720 - 723
+skrng = datetime.now()
+tahun = skrng.year
+bulan = skrng.month
+hari  = skrng.day
+bulan_ttl = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "05": "Mei", "06": "Juni", "07": "Juli", "08": "Agustus", "09": "September", "10": "Oktober", "11": "November", "12": "Desember"}
+bulan_cek = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"]
+try:
+    if bulan < 0 or bulan > 12:
+        exit()
+    bulan_skrng = bulan - 1
+except ValueError:
+    exit()
+Codename  = 159357
+CoY = ('\r   %s[%s•%s] %sDilarang Keras Merecode %s!%s'%(M,P,M,P,M,P))
+_bulan_ = bulan_cek[bulan_skrng]
+tanggal = ("%s-%s-%s"%(hari,_bulan_,tahun))
+###----------[ APPEND ]---------- ###
+OK = []
+CP = []
+gabung_sandi = []
+tempel_sandi = []
+ugen = []
+uaku = []
+uaku2 = []
+###----------[ JANGAN DIHAPUS NANTI ERROR ]---------- ###
+SAKERA = Codename + len(Author) - len(Facebook) + len(Instagram) - len(Whatsapp) + len(YouTube)
+sakara = len(Author)    +  Codename
+sakira = len(Facebook)  +  Codename
+sakura = len(Instagram) +  Codename
+sakera = len(Whatsapp)  +  Codename
+sakora = len(YouTube)   +  Codename
+ip_log = Denventa * id_dev - 3654168663
+###----------[ GLOBAL URL & HEADERS ]---------- ###
+url_businness = "https://business.facebook.com"
+ua_business = "Mozilla/5.0 (Linux; Android 10; Infinix X680B Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.118 Mobile Safari/537.36"
+kata_dev = 'Lu Ganteng Banget Bang. Gw Mau Recode SClu, Soalnya Gw Goblok Soal Coding'
+web_fb = "https://www.facebook.com/"
+m_fb = "https://m.facebook.com/"
+mbasic = "https://mbasic.facebook.com/"
+header_grup = {"user-agent": "Mozilla/5.0 (Linux; U; Android 10; zh-cn; PEFM00 Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/90.0.4430.61 Mobile Safari/537.36 HeyTapBrowser/40.8.10.1"}
 for xd in range(10000):
 	aa='Mozilla/5.0 (Linux; Android 9;'
 	b=random.choice(['7.0','8.1.0','9','10','11','12'])
@@ -89,21 +130,6 @@ for xd in range(10000):
 	j=random.randrange(4200,4900)
 	k=random.randrange(40,150)
 	l='Mobile/20A357 [FBAN/FBIOS;FBDV/iPhone15,3;FBMD/iPhone;FBSN/iOS;FBSV/16.0;FBSS/3;FBID/phone;FBLC/en_Qaau_GB;FBOP/5]'
-	uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-	ugen.append(uaku2)
-	
-	aa='Mozilla/5.0 (Linux; Android 11;'
-	b=random.choice(['7.0','8.1.0','9','10','11','12'])
-	c=random.choice(['Infinix X688B'])
-	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	e=random.randrange(1, 999)
-	f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	g='AppleWebKit/537.36 (KHTML, like Gecko)'
-	h=random.randrange(80,103)
-	i='0'
-	j=random.randrange(4200,4900)
-	k=random.randrange(40,150)
-	l='Chrome/107.0.0.0 Mobile Safari/537.36'
 	uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
 	ugen.append(uaku2)
 	
@@ -196,21 +222,6 @@ for xd in range(10000):
 	l='Version/6.0.0.668 Mobile Safari/534.8+'
 	uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
 	ugen.append(uaku2)
-
-	aa='Mozilla/5.0 (Macintosh;'
-	b=random.choice(['7.0','8.1.0','9','10','11','12'])
-	c=random.choice(['Intel Mac OS X 10_15_7)'])
-	d=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	e=random.randrange(1, 999)
-	f=random.choice(['A','B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'])
-	g='AppleWebKit/537.36 (KHTML, like Gecko)'
-	h=random.randrange(80,103)
-	i='0'
-	j=random.randrange(4200,4900)
-	k=random.randrange(40,150)
-	l='Chrome/104.0.5112.79 Safari/537.36'
-	uaku2=f'{aa} {b}; {c}{d}{e}{f}) {g}{h}.{i}.{j}.{k} {l}'
-	ugen.append(uaku2)
 	
 	aa='Mozilla/5.0 (Linux; U; Android 9; id-id;'
 	b=random.choice(['7.0','8.1.0','9','10','11','12'])
@@ -283,46 +294,6 @@ rua = random.choice([
   "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0) Gecko/20100101 Firefox/79.0",
 			"Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36[FBAN/EMA;FBLC/it_IT;FBAV/239.0.0.10.109;]"
 		])
-###----------[ TIME ]---------- ###
-id_dev = 345 - 340 + 720 - 723
-skrng = datetime.now()
-tahun = skrng.year
-bulan = skrng.month
-hari  = skrng.day
-bulan_ttl = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "05": "Mei", "06": "Juni", "07": "Juli", "08": "Agustus", "09": "September", "10": "Oktober", "11": "November", "12": "Desember"}
-bulan_cek = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"]
-try:
-    if bulan < 0 or bulan > 12:
-        exit()
-    bulan_skrng = bulan - 1
-except ValueError:
-    exit()
-Codename  = 159357
-CoY = ('\r   %s[%s•%s] %sDilarang Keras Merecode %s!%s'%(M,P,M,P,M,P))
-_bulan_ = bulan_cek[bulan_skrng]
-tanggal = ("%s-%s-%s"%(hari,_bulan_,tahun))
-###----------[ APPEND ]---------- ###
-OK = []
-CP = []
-gabung_sandi = []
-tempel_sandi = []
-###----------[ JANGAN DIHAPUS NANTI ERROR ]---------- ###
-SAKERA = Codename + len(Author) - len(Facebook) + len(Instagram) - len(Whatsapp) + len(YouTube)
-sakara = len(Author)    +  Codename
-sakira = len(Facebook)  +  Codename
-sakura = len(Instagram) +  Codename
-sakera = len(Whatsapp)  +  Codename
-sakora = len(YouTube)   +  Codename
-ip_log = Denventa * id_dev - 3654168663
-###----------[ GLOBAL URL & HEADERS ]---------- ###
-url_businness = "https://business.facebook.com"
-ua_business = "Mozilla/5.0 (Linux; Android 10; Infinix X680B Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/109.0.5414.118 Mobile Safari/537.36"
-kata_dev = 'Lu Ganteng Banget Bang. Gw Mau Recode SClu, Soalnya Gw Goblok Soal Coding'
-web_fb = "https://www.facebook.com/"
-m_fb = "https://m.facebook.com/"
-mbasic = "https://mbasic.facebook.com/"
-header_grup = {"user-agent": "Mozilla/5.0 (Linux; U; Android 10; zh-cn; PEFM00 Build/QP1A.190711.020) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/90.0.4430.61 Mobile Safari/537.36 HeyTapBrowser/40.8.10.1"}
-
 ###----------[ PROXY INDONESIA & LUAR ]---------- ###
 def prox_prox():
     open('tool/proxy.json','w').write('')
