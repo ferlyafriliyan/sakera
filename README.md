@@ -22,6 +22,7 @@ Author:
 ### ⇨  Install Script Di Termux
 ```
 termux-change-repo
+rm -rf $HOME/sakera
 pkg update && pkg upgrade -y
 pkg install python git -y
 pkg install python-pip
