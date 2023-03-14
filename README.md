@@ -25,9 +25,6 @@ termux-change-repo
 pkg update && pkg upgrade -y
 pkg install python git -y
 pkg install python-pip
-pip install rich
-pip install requests
-pip install bs4
 git clone https://github.com/Denventa/sakera
 cd sakera
 git pull
