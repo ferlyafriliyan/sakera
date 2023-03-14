@@ -1035,7 +1035,7 @@ def metode_scrap_api():
     global sistem_login
     tamp_sistem = f"""            {H2}[{A2}1{H2}] {P2}Api 1     {H2}[{A2}2{H2}] {P2}Api 2    {H2}[{A2}3{H2}] {P2}Graph"""
     printer(Panel(tamp_sistem,title=f'{H2}[ {P2}Login {H2}]',width=54,title_align='left',style='#00FF00'))
-    ch = input('   %s└──> %s'%(A,J))
+    ch = input('   %s└──> %s'%(A,H))
     if ch in ['1','01','a']:sistem_login = "tiga";open('tool/url_login.json','w').write("mbasic.facebook.com")
     elif ch in ['2','02','b']:sistem_login = "empat";open('tool/url_login.json','w').write("mbasic.facebook.com")
     elif ch in ['3','03','c']:sistem_login = "lima";open('tool/url_login.json','w').write("mbasic.facebook.com")
