@@ -26,6 +26,7 @@ pkg update && pkg upgrade -y
 pkg install python git -y
 pkg install python-pip
 git clone https://github.com/Denventa/sakera
+pip3 install -r requirements.txt
 cd sakera
 git pull
 ```
