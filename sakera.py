@@ -1,4 +1,4 @@
-###----------[ AUTHOR & CREATOR ]---------- ###
+###----------[ Denventa Itu Bukan Dapunta Doang ]---------- ###
 Dnventa = 100013275378835
 Version   = '0.4'
 Postingan = 1630150370770793
