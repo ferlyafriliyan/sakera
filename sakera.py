@@ -576,8 +576,8 @@ def main_likers():
     open(_file_,'w')
     _url_ = ('https://mbasic.facebook.com/ufi/reaction/profile/browser/?ft_ent_identifier='+_query_)
     scrape_likers(cookie,_url_,_file_)
-    print("\n       %s[%s•%s] %sBerhasil Mengambil %s%s %sID"%(J,P,J,P,J,len(open(_file_,'r').read().splitlines()),P))
-    print('       %s[%s•%s] %sFile : %s%s %s'%(J,P,J,P,J,file_dump,P))
+    print("\n       %s[%s•%s] %sBerhasil Mengambil %s%s %sID"%(H,P,H,P,H,len(open(_file_,'r').read().splitlines()),P))
+    print('       %s[%s•%s] %sFile : %s%s %s'%(H,P,H,P,H,file_dump,P))
 def scrape_likers(_dapunta_,_url_,_file_):
     _ses_ = requests.Session()
     _url_load_ = _ses_.get(_url_,cookies=_dapunta_,headers=header_grup).text.encode("utf-8")
