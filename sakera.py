@@ -489,7 +489,7 @@ def pilih_otomatis():
         else:print('\n               %s[ %sJalankan Ulang SCnya %s]'%(H,P,H));exit('\n')
     except Exception as e:print('\n   %s[%s•%s] %sIsi Yang Benar %s!%s\n'%(M,P,M,P,M,P));exit()
 def manual_user_agent():
-    usera = input('       %s[%s•%s] %sMasukkan User Agent :\n%s'%(J,P,J,P,J))
+    usera = input('       %s[%s•%s] %sMasukkan User Agent :\n%s'%(H,P,H,P,H))
     if usera in ['',' ','  ','   ']:print('\n       %s[%s•%s] %sIsi Yang Benar %s!%s\n'%(M,P,M,P,M,P));manual_user_agent()
     else:open('tool/useragent.json','w').write(usera);cek_user_agent()
 def ua_device_ini():
