@@ -1409,9 +1409,9 @@ class crack:
                                 fmt = ('   %s──> %s • %s%s'%(J,id,pw,ttl))
                         except:
                             ttl = ('')
-                            fmt = ('   %s──> %s • %s%s'%(H,id,pw,ttl))
+                            fmt = ('   %s──> %s • %s%s'%(J,id,pw,ttl))
                         if pilih_cek_opsi == True:check_option(id,pw,fmt)
-                        else:print('\r   %s──> %s • %s%s               '%(H,id,pw,ttl))
+                        else:print('\r   %s──> %s • %s%s               '%(J,id,pw,ttl))
                         self.cp.append("%s=%s"%(id,pw))
                         open(files_cp,"a+").write("%s=%s=%s\n"%(id,pw,ttl.replace(' • ','')))
                         break
@@ -1445,7 +1445,7 @@ class crack:
             jum_ok = str(len(self.ok))
             jum_cp = str(len(self.cp))
             Total_Waktu = str(datetime.now()-self.Mulai_Jalan).split('.')[0]
-            print(f'\r   {H}[{A}{Total_Waktu}{H}] [{A}{loop}{P}/{A}{alls}{H}] [{P}OK{H}:{A}{jum_ok}{H}] [{P}CP{H}:{A}{jum_cp}{H}]{P} ', end='');sys.stdout.flush()
+            print(f'\r   {J}[{A}{Total_Waktu}{J}] [{A}{loop}{P}/{A}{alls}{J}] [{P}OK{J}:{A}{jum_ok}{J}] [{P}CP{J}:{A}{jum_cp}{J}]{P} ', end='');sys.stdout.flush()
         except Exception as e:
             self.start_crack(id,list_pw)
 
