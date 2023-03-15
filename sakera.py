@@ -1,4 +1,6 @@
 ###----------[ Denventa Afriliyan Ferly Khurayra Shishigami X ]---------- ###
+Author_ll =  '-[ Denventa Afriliyan Ferly Khurayra Shishigami X ] -'
+Facebook_Dev = 'Afriliyan Ferly Shishigami X (Denventa)'
 Dnventa = 100013275378835
 Version   = '0.4'
 Postingan = 1630150370770793
@@ -356,7 +358,7 @@ def tampilan_menu():
 def pilih_menu():
     global gabung_sandi, tempel_sandi
     dc = input('   %s└──> %s'%(A,H))
-    if dc in ['1','01','a']    : gabung_sandi.append(Author);not_available('Dump ID Dari Friendlist')
+    if dc in ['1','01','a']    : gabung_sandi.append(Author_ll);not_available('Dump ID Dari Friendlist')
     elif dc in ['2','02','b']  : tempel_sandi.append('Jangan');main_folls();system_login();urut_crack();pilihan_sakdurunge_crack();addpass();crack()
     elif dc in ['3','03','c']  : gabung_sandi.append('Direcode');not_available('Dump ID Dari Nama')
     elif dc in ['4','04','d']  : tempel_sandi.append('Dasar');main_likers();system_login();pilihan_sakdurunge_crack();addpass();crack()
@@ -369,9 +371,9 @@ def pilih_menu():
     elif dc in ['11','011','k']: gabung_sandi.append('Lo Recode');not_available('Dump ID Dari Email')
     elif dc in ['12','012','l']: tempel_sandi.append('Dasar');not_available('Dump ID Dari Username')
     elif dc in ['13','013','m']: gabung_sandi.append('Bocah Goblok');not_available('Dump ID Dari ID Random')
-    elif dc in ['14','014','n']: tempel_sandi.append('Btw');suggestion();system_login();pilihan_sakdurunge_crack();addpass();crack()
-    elif dc in ['15','015','o']: gabung_sandi.append('Elo');teman_teman()
-    elif dc in ['16','016','p']: tempel_sandi.append('Dasar Bocah Goblok');not_available('Cek Hasil Crack')
+    elif dc in ['14','014','n']: tempel_sandi.append('___');suggestion();system_login();pilihan_sakdurunge_crack();addpass();crack()
+    elif dc in ['15','015','o']: gabung_sandi.append('___');teman_teman()
+    elif dc in ['16','016','p']: tempel_sandi.append('____________________');not_available('Cek Hasil Crack')
     elif dc in ['17','017','q']: gabung_sandi.append('Gaakan Bisa');not_available('Cek Opsi Akun Hasil Crack')
     elif dc in ['18','018','r']: tempel_sandi.append('Ngerecode');not_available('Cek Jumlah Teman Akun Target')
     elif dc in ['19','019','s']: gabung_sandi.append('SC Ini');useragent('old')
