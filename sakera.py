@@ -1,4 +1,4 @@
-###----------[ Denventa Itu Bukan Dapunta Doang ]---------- ###
+###----------[ Denventa Afriliyan Ferly Khurayra Shishigami X ]---------- ###
 Dnventa = 100013275378835
 Version   = '0.4'
 Postingan = 1630150370770793
