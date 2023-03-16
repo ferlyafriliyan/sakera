@@ -90,7 +90,7 @@ OK = []
 CP = []
 gabung_sandi = []
 tempel_sandi = []
-
+kecuali = []
 ###----------[ JANGAN DIHAPUS NANTI ERROR ]---------- ###
 SAKERA = Codename + len(Author) - len(Facebook) + len(Instagram) - len(Whatsapp) + len(YouTube)
 sakara = len(Author)    +  Codename
