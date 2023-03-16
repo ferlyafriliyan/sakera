@@ -1378,6 +1378,48 @@ class cek_aplikasi:
         if len(self.daftar_dihapus) == 1:self.dft3 = ''
         else:self.dft3 = ''.join(self.daftar_dihapus)
 
+            
+# - - - - - [ Proxy List ] - - - - - #
+		link_prox=[
+			"https://raw.githubusercontent.com/saschazesiger/Free-Proxies/master/proxies/socks4.txt",
+			"https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks4.txt",
+			"https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks4&timeout=10000&country=all",
+			"https://raw.githubusercontent.com/UptimerBot/proxy-list/main/proxies/socks4.txt",
+			"https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS4_RAW.txt",
+			"https://raw.githubusercontent.com/rdavydov/proxy-list/main/proxies/socks4.txt",
+			"https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks4.txt",
+			"https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks4.txt",
+			"https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/socks4.txt",
+			"https://raw.githubusercontent.com/HyperBeats/proxy-list/main/socks4.txt",
+			"https://raw.githubusercontent.com/mmpx12/proxy-list/master/socks4.txt",
+			"https://www.proxy-list.download/api/v1/get?type=socks4",
+			"https://www.proxyscan.io/download?type=socks4",
+			"https://api.openproxylist.xyz/socks4.txt",
+			'https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks5&timeout=100000&country=all&ssl=all&anonymity=all',
+			'https://raw.githubusercontent.com/HyperBeats/proxy-list/main/socks4.txt'
+			]
+		link_proxz=[
+			"https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks5&timeout=10000&country=all",
+			"https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS5_RAW.txt",
+			"https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks5.txt",
+			"https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks5.txt",
+			"https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt",
+			"https://www.proxy-list.download/api/v1/get?type=socks5",
+			"https://www.proxyscan.io/download?type=socks5",
+			"https://api.openproxylist.xyz/socks5.txt",
+			"https://raw.githubusercontent.com/mmpx12/proxy-list/master/socks5.txt",
+			"https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/socks5.txt",
+			"https://raw.githubusercontent.com/manuGMG/proxy-365/main/SOCKS5.txt",
+			"https://raw.githubusercontent.com/saschazesiger/Free-Proxies/master/proxies/socks5.txt",
+			"https://raw.githubusercontent.com/HyperBeats/proxy-list/main/socks5.txt",
+			"https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks5.txt"
+			'https://api.proxyscrape.com/?request=displayproxies&protocol=socks5&timeout=10000&country=all&ssl=all&anonymity=all'
+			]
+# - - - - - [ User Agent List ] - - - - - #
+ling_useragent=[
+     "https://github.com/Denventa/sakera/blob/main/ua.txt"
+     "https://github.com/Denventa/sakera/blob/main/proxy.txt"
+      ]
 ###----------[ CRACK ]---------- ###
 class crack:
     def __init__(self):
