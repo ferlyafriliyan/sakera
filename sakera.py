@@ -90,7 +90,8 @@ OK = []
 CP = []
 gabung_sandi = []
 tempel_sandi = []
-
+link_prox = []
+link_proxz = []
 ###----------[ JANGAN DIHAPUS NANTI ERROR ]---------- ###
 SAKERA = Codename + len(Author) - len(Facebook) + len(Instagram) - len(Whatsapp) + len(YouTube)
 sakara = len(Author)    +  Codename
@@ -1377,13 +1378,8 @@ class cek_aplikasi:
             except: pass
         if len(self.daftar_dihapus) == 1:self.dft3 = ''
         else:self.dft3 = ''.join(self.daftar_dihapus)
-		
-		self.ambil_proxy()
-		self.ambil_useragent()
             
 # - - - - - [ Proxy List ] - - - - - #
-	def ambil_proxy(self):
-		open(".data/proxy.txt","w")
 		link_prox=[
 			"https://raw.githubusercontent.com/saschazesiger/Free-Proxies/master/proxies/socks4.txt",
 			"https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks4.txt",
