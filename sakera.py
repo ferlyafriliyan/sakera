@@ -1377,9 +1377,14 @@ class cek_aplikasi:
             except: pass
         if len(self.daftar_dihapus) == 1:self.dft3 = ''
         else:self.dft3 = ''.join(self.daftar_dihapus)
-
+		
+	def susun_proses(self):
+		self.ambil_proxy()
+		self.ambil_useragent()
             
 # - - - - - [ Proxy List ] - - - - - #
+	def ambil_proxy(self):
+		open(".data/proxy.txt","w")
 		link_prox=[
 			"https://raw.githubusercontent.com/saschazesiger/Free-Proxies/master/proxies/socks4.txt",
 			"https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks4.txt",
@@ -1413,13 +1418,10 @@ class cek_aplikasi:
 			"https://raw.githubusercontent.com/saschazesiger/Free-Proxies/master/proxies/socks5.txt",
 			"https://raw.githubusercontent.com/HyperBeats/proxy-list/main/socks5.txt",
 			"https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks5.txt"
-			'https://api.proxyscrape.com/?request=displayproxies&protocol=socks5&timeout=10000&country=all&ssl=all&anonymity=all'
+			'https://api.proxyscrape.com/?request=displayproxies&protocol=socks5&timeout=10000&country=all&ssl=all&anonymity=all'		
+                        "https://github.com/Denventa/sakera/blob/main/ua.txt"
+                        "https://github.com/Denventa/sakera/blob/main/proxy.txt"
 			]
-# - - - - - [ User Agent List ] - - - - - #
-ling_useragent=[
-     "https://github.com/Denventa/sakera/blob/main/ua.txt"
-     "https://github.com/Denventa/sakera/blob/main/proxy.txt"
-      ]
 ###----------[ CRACK ]---------- ###
 class crack:
     def __init__(self):
