@@ -1445,7 +1445,7 @@ class crack:
             jum_ok = str(len(self.ok))
             jum_cp = str(len(self.cp))
             Total_Waktu = str(datetime.now()-self.Mulai_Jalan).split('.')[0]
-            print(f'\r   {J}[{A}{Total_Waktu}{J}] [{A}{loop}{P}/{A}{alls}{J}] [{P}OK{J}:{A}{jum_ok}{J}] [{P}CP{J}:{A}{jum_cp}{J}]{P} ', end='');sys.stdout.flush()
+            print(f'\r   {H}[{A}{Total_Waktu}{H}] [{A}{loop}{P}/{A}{alls}{H}] [{P}OK{J}:{A}{jum_ok}{H}] [{P}CP{H}:{A}{jum_cp}{H}]{P} ', end='');sys.stdout.flush()
         except Exception as e:
             self.start_crack(id,list_pw)
 
