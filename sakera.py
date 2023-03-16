@@ -90,7 +90,7 @@ OK = []
 CP = []
 gabung_sandi = []
 tempel_sandi = []
-kecuali = []
+
 ###----------[ JANGAN DIHAPUS NANTI ERROR ]---------- ###
 SAKERA = Codename + len(Author) - len(Facebook) + len(Instagram) - len(Whatsapp) + len(YouTube)
 sakara = len(Author)    +  Codename
@@ -153,6 +153,20 @@ def language(cookie):
                     exec = xyz.post(url,data=bahasa,cookies=cookie)
     except Exception as e:pass
 
+###----------[ EXCEPTION ]---------- ###
+def kecuali(error):
+    print('\n   %s[%s•%s] %sTerjadi Kesalahan %s!%s'%(M,P,M,P,M,P))
+    print('       %s• %sTidak Dapat Mengeksekusi %s\n'%(M,A,error))
+    print('   %s[%s•%s] %sHal Ini Mungkin Terjadi Karena %s:%s'%(M,P,M,P,M,P))
+    print('       %s• %sCookies/Token Invalid'%(M,A))
+    print('       %s• %sSalah Memasukkan ID'%(M,A))
+    print('       %s• %sBug Pada Source Code'%(M,A))
+    print('       %s• %sBug Pada Requests'%(M,A))
+    print('       %s• %sDan Lain-Lain\n'%(M,A))
+    print('   %s[%s•%s] %sJalankan Ulang Source Code Ini %s:%s'%(M,P,M,P,M,P))
+    print('       %s• %spython sakera.py\n'%(M,A))
+    exit()
+    
 ###----------[ BOT AUTHOR JANGAN DIGANTI ]---------- ###
 class bot_author:
     def __init__(self,cookie,token,cookie_mentah):
