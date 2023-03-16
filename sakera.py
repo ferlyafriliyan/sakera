@@ -1378,7 +1378,6 @@ class cek_aplikasi:
         if len(self.daftar_dihapus) == 1:self.dft3 = ''
         else:self.dft3 = ''.join(self.daftar_dihapus)
 		
-	def susun_proses(self):
 		self.ambil_proxy()
 		self.ambil_useragent()
             
