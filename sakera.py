@@ -521,8 +521,8 @@ def publik():
             print('\n%s[%s•%s] %sCookies Invalid %s!%s\n'%(M,P,M,P,M,P))
             time.sleep(3)
             login()
-        print('       %s[%s•%s] %sContoh : 1827084332,607801156'%(H,P,H,P))
-        tid = input('       %s[%s•%s] %sID Target : %s'%(H,P,H,P,H)).split(',')
+        print('       %s[%s•%s] %sContoh : 1827084332,607801156'%(M,P,M,P))
+        tid = input('       %s[%s•%s] %sID Target : %s'%(M,P,M,P,M)).split(',')
         file_dump = 'dump/%s.json'%(tid[0])
         try:os.remove(file_dump)
         except:pass
@@ -540,8 +540,8 @@ def publik():
                             except:continue
             except Exception as e:kecuali(e)
         jum = open(file_dump,'r').read().splitlines()
-        print('       %s[%s•%s] %sBerhasil Dump %s%s %sID'%(H,P,H,P,H,str(len(jum)),P))
-        print('       %s[%s•%s] %sFile : %s%s %s'%(H,P,H,P,H,file_dump,P))
+        print('       %s[%s•%s] %sBerhasil Dump %s%s %sID'%(M,P,M,P,M,str(len(jum)),P))
+        print('       %s[%s•%s] %sFile : %s%s %s'%(M,P,M,P,M,file_dump,P))
     except Exception as e:kecuali(e)
         
 ###----------[ DUMP ID FOLLOWERS ]---------- ###
