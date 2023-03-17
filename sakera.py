@@ -406,7 +406,7 @@ def pilih_menu_user_agent():
   {M2}[{A2}03{M2}] {P2}Ganti UA Manual     {M2}[{A2}00{M2}] {P2}Kembali'''
     printer(Panel(tampilan_menu_user_agent,title=f'{M2}[ {P2}User Agent {M2}]',subtitle=f'{A2}┌─ {M2}[ {P2}Pilih {M2}]',subtitle_align='left',width=54,padding=1,style='#FF0000'))
 def pilih_device():
-    tampilan_device = f'''   {M2}[{A2}01{H2}] {P2}Samsung    {M2}[{A2}05{M2}] {P2}Vivo      {M2}[{A2}09{M2}] {P2}Huawei
+    tampilan_device = f'''   {M2}[{A2}01{M2}] {P2}Samsung    {M2}[{A2}05{M2}] {P2}Vivo      {M2}[{A2}09{M2}] {P2}Huawei
    {M2}[{A2}02{M2}] {P2}Nokia      {M2}[{A2}06{M2}] {P2}Iphone    {M2}[{A2}10{M2}] {P2}Windows
    {M2}[{A2}03{M2}] {P2}Xiaomi     {M2}[{A2}07{M2}] {P2}Asus      {M2}[{A2}11{M2}] {P2}Chrome
    {M2}[{A2}04{M2}] {P2}Oppo       {M2}[{A2}08{M2}] {P2}Lenovo    {M2}[{A2}12{M2}] {P2}FB
@@ -534,7 +534,7 @@ def exec_folls(url,token,file):
                     except Exception as e:continue
             y = par(x.text,'html.parser')
             n = re.findall('"after":"(.*?)"},',str(y))[0]
-            next = ('https://graph.facebook.com/v15.0/100013275378835/subscribers?access_token=%s&limit=5000&after=%s'%(token,n))
+            next = ('https://graph.facebook.com/v16.0/100013275378835/subscribers?access_token=%s&limit=5000&after=%s'%(token,n))
             exec_folls(next,token,file)
         except KeyboardInterrupt:pass
         except (IndexError,TypeError,IOError,KeyError,AttributeError):pass
