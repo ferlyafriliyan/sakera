@@ -304,8 +304,8 @@ def login():
 ###----------[ MENU ]---------- ###
 def user(nama):
     print(''%())
-    print('        %s[%s•%s] %sHello %s%s %s!'%(H,P,H,P,H,nama,P))
-    print('        %s[%s•%s] %sYour License Will Expire In %s7 %sDays'%(H,P,H,P,A,P))
+    print('        %s[%s•%s] %sHello %s%s %s!'%(U,P,U,P,U,nama,P))
+    print('        %s[%s•%s] %sYour License Will Expire In %s7 %sDays'%(U,P,U,P,A,P))
 def tampilan_menu():
     global gabung_sandi, tempel_sandi
     resik()
@@ -315,7 +315,7 @@ def tampilan_menu():
         resik()
         poster2()
         print('')
-        tamp_new = (f'   {P2}Hi! Sepertinya Kamu Adalah Pengguna Baru. Terima Kasih Telah Memilih SC Ini Sebagai Pilihan Terpercayamu. Sebelum Menggunakan SC Ini, Kamu Harus Mengatur User Agent Dahulu! Jangan Lupa Berikan Penilaian Terbaik Di Github Ya! Thank You!\n\n                {H2}- Denventa -')
+        tamp_new = (f'   {P2}Hi! Sepertinya Kamu Adalah Pengguna Baru. Terima Kasih Telah Memilih SC Ini Sebagai Pilihan Terpercayamu. Sebelum Menggunakan SC Ini, Kamu Harus Mengatur User Agent Dahulu! Jangan Lupa Berikan Penilaian Terbaik Di Github Ya! Thank You!\n\n                {U2}- Denventa -')
         printer(Panel(tamp_new,title=f'{U2}[ {P2}Welcome User {U2}]',width=54,padding=(1,4),style='#AF00FF'))
         print('')
         useragent('new')
@@ -473,12 +473,12 @@ def pilih_otomatis():
     else:print('\n   %s[%s•%s] %sIsi Yang Benar %s!%s\n'%(M,P,M,P,M,P));exit()
     try:
         pilihan = open('tool/useragent.json','r').read()
-        printer(Panel(f'''{A2}{pilihan}''',title=f'{H2}[ {P2}User Agent {H2}]',subtitle=f'{H2}[ {P2}Sukses Diganti {H2}]',padding=(1,4),width=54,title_align='center',style='#00FF00'))
-        if pengguna_source_code == 'old':input('\n   %s[ %sKembali %s]'%(H,P,H));tampilan_menu()
-        else:print('\n               %s[ %sJalankan Ulang SCnya %s]'%(H,P,H));exit('\n')
+        printer(Panel(f'''{A2}{pilihan}''',title=f'{M2}[ {P2}User Agent {M2}]',subtitle=f'{M2}[ {P2}Sukses Diganti {M2}]',padding=(1,4),width=54,title_align='center',style='#FF0000'))
+        if pengguna_source_code == 'old':input('\n   %s[ %sKembali %s]'%(M,P,M));tampilan_menu()
+        else:print('\n               %s[ %sJalankan Ulang SCnya %s]'%(M,P,M));exit('\n')
     except Exception as e:print('\n   %s[%s•%s] %sIsi Yang Benar %s!%s\n'%(M,P,M,P,M,P));exit()
 def manual_user_agent():
-    usera = input('       %s[%s•%s] %sMasukkan User Agent :\n%s'%(H,P,H,P,H))
+    usera = input('       %s[%s•%s] %sMasukkan User Agent :\n%s'%(M,P,M,P,M))
     if usera in ['',' ','  ','   ']:print('\n       %s[%s•%s] %sIsi Yang Benar %s!%s\n'%(M,P,M,P,M,P));manual_user_agent()
     else:open('tool/useragent.json','w').write(usera);cek_user_agent()
 def ua_device_ini():
@@ -493,7 +493,7 @@ def cek_user_agent():
     try:
         usera = open('tool/useragent.json','r').read()
         printer(Panel(f'''{A2}{usera}''',title=f'{M2}[ {P2}User Agent {M2}]',subtitle=f'{M2}[ {P2}Saat Ini {M2}]',padding=(1,4),width=54,title_align='center',style='#FF0000'))
-        input('\n   %s[ %sKembali %s]'%(H,P,H))
+        input('\n   %s[ %sKembali %s]'%(M,P,M))
         tampilan_menu()
     except Exception as e:kecuali(e)
         
