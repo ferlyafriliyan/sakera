@@ -20,7 +20,7 @@ Author:
 [✯] Login Cookies   
 ```
 ### ⇨  Install Script Di Termux
-```
+```python
 termux-change-repo
 rm -rf $HOME/sakera
 pkg update && pkg upgrade -y
