@@ -316,7 +316,7 @@ def tampilan_menu():
         poster2()
         print('')
         tamp_new = (f'   {P2}Hi! Sepertinya Kamu Adalah Pengguna Baru. Terima Kasih Telah Memilih SC Ini Sebagai Pilihan Terpercayamu. Sebelum Menggunakan SC Ini, Kamu Harus Mengatur User Agent Dahulu! Jangan Lupa Berikan Penilaian Terbaik Di Github Ya! Thank You!\n\n                {H2}- Denventa -')
-        printer(Panel(tamp_new,title=f'{H2}[ {P2}Welcome User {H2}]',width=54,padding=(1,4),style='#00FF00'))
+        printer(Panel(tamp_new,title=f'{U2}[ {P2}Welcome User {U2}]',width=54,padding=(1,4),style='#AF00FF'))
         print('')
         useragent('new')
     poster()
@@ -329,22 +329,22 @@ def tampilan_menu():
         nama = jsx["name"]
         user(nama)
         print(''%())
-        tampilan_menu = f"""  {H2}[{A2}01{H2}] {A2}Friendlist {H2}[{A2}06{H2}] {P2}Komentar {H2}[{A2}11{H2}] {A2}Email
-  {H2}[{A2}02{H2}] {P2}Followers  {H2}[{A2}07{H2}] {P2}Grup     {H2}[{A2}12{H2}] {A2}Username
-  {H2}[{A2}03{H2}] {A2}Nama       {H2}[{A2}08{H2}] {A2}Hashtag  {H2}[{A2}13{H2}] {A2}ID Random
-  {H2}[{A2}04{H2}] {P2}Likers     {H2}[{A2}09{H2}] {A2}Beranda  {H2}[{A2}14{H2}] {P2}Saran Teman
-  {H2}[{A2}05{H2}] {A2}Pesan      {H2}[{A2}10{H2}] {A2}File     {H2}[{A2}15{H2}] {A2}FL Dari FL
+        tampilan_menu = f"""  {U2}[{A2}01{U2}] {A2}Friendlist {U2}[{A2}06{U2}] {P2}Komentar {U2}[{A2}11{U2}] {A2}Email
+  {U2}[{A2}02{U2}] {P2}Followers  {U2}[{A2}07{U2}] {P2}Grup     {U2}[{A2}12{U2}] {A2}Username
+  {U2}[{A2}03{U2}] {A2}Nama       {U2}[{A2}08{U2}] {A2}Hashtag  {U2}[{A2}13{U2}] {A2}ID Random
+  {U2}[{A2}04{U2}] {P2}Likers     {U2}[{A2}09{U2}] {A2}Beranda  {U2}[{A2}14{U2}] {P2}Saran Teman
+  {U2}[{A2}05{U2}] {A2}Pesan      {U2}[{A2}10{U2}] {A2}File     {U2}[{A2}15{U2}] {A2}FL Dari FL
 
-       {H2}[{A2}16{H2}] {A2}Cek Hasil       {H2}[{A2}19{H2}] {P2}User Agent
-       {H2}[{A2}17{H2}] {A2}Cek Opsi        {H2}[{A2}20{H2}] {A2}Upgrade Pro
-       {H2}[{A2}18{H2}] {A2}Cek Teman       {H2}[{A2}00{H2}] {P2}Log Out"""
-        printer(Panel(tampilan_menu,title=f'{H2}[ {P2}Menu {H2}]',subtitle=f'{A2}┌─ {H2}[ {P2}Pilih {H2}]',subtitle_align='left',width=54,padding=1,style='#00FF00'))
+       {U2}[{A2}16{U2}] {A2}Cek Hasil       {U2}[{A2}19{U2}] {P2}User Agent
+       {U2}[{A2}17{U2}] {A2}Cek Opsi        {U2}[{A2}20{U2}] {A2}Upgrade Pro
+       {U2}[{A2}18{U2}] {A2}Cek Teman       {U2}[{A2}00{U2}] {P2}Log Out"""
+        printer(Panel(tampilan_menu,title=f'{U2}[ {P2}Menu {U2}]',subtitle=f'{A2}┌─ {U2}[ {P2}Pilih {U2}]',subtitle_align='left',width=54,padding=1,style='#AF00FF'))
         pilih_menu()
     except requests.exceptions.ConnectionError:print('\n   %s[%s•%s] %sTidak Ada Koneksi Internet %s!%s\n'%(M,P,M,P,M,P));exit()
     except (KeyError,IOError,AttributeError):print('\n   %s[%s•%s] %sCookies Invalid %s!%s\n'%(M,P,M,P,M,P));time.sleep(3);login()
 def pilih_menu():
     global gabung_sandi, tempel_sandi
-    dc = input('   %s└──> %s'%(A,H))
+    dc = input('   %s└──> %s'%(A,u))
     if dc in ['1','01','a']    : gabung_sandi.append(Author_ll);not_available_ll('Dump ID Dari Friendlist')
     elif dc in ['2','02','b']  : tempel_sandi.append('Jangan');main_folls();system_login();urut_crack();pilihan_sakdurunge_crack();addpass();crack()
     elif dc in ['3','03','c']  : gabung_sandi.append('Direcode');not_available_ll('Dump ID Dari Nama')
@@ -402,8 +402,8 @@ def useragent(isi):
     else:print('\n   %s[%s•%s] %sIsi Yang Benar %s!%s\n'%(M,P,M,P,M,P));exit()
 def pilih_menu_user_agent():
     tampilan_menu_user_agent = f'''  {M2}[{A2}01{M2}] {P2}Scrap UA Browser    {M2}[{A2}04{M2}] {P2}Cari UA HP Ini
-  {M2}[{A2}02{H2}] {P2}Ganti UA Otomatis   {M2}[{A2}05{M2}] {P2}Cek UA Digunakan
-  {M2}[{A2}03{H2}] {P2}Ganti UA Manual     {M2}[{A2}00{M2}] {P2}Kembali'''
+  {M2}[{A2}02{M2}] {P2}Ganti UA Otomatis   {M2}[{A2}05{M2}] {P2}Cek UA Digunakan
+  {M2}[{A2}03{M2}] {P2}Ganti UA Manual     {M2}[{A2}00{M2}] {P2}Kembali'''
     printer(Panel(tampilan_menu_user_agent,title=f'{M2}[ {P2}User Agent {M2}]',subtitle=f'{A2}┌─ {M2}[ {P2}Pilih {M2}]',subtitle_align='left',width=54,padding=1,style='#FF0000'))
 def pilih_device():
     tampilan_device = f'''   {M2}[{A2}01{H2}] {P2}Samsung    {M2}[{A2}05{M2}] {P2}Vivo      {M2}[{A2}09{M2}] {P2}Huawei
@@ -507,17 +507,17 @@ def main_folls():
         print('\n%s[%s•%s] %sCookies Invalid %s!%s\n'%(M,P,M,P,M,P))
         time.sleep(3)
         login()
-    id = input('       %s[%s•%s] %sID Target : %s'%(H,P,H,P,H))
+    id = input('       %s[%s•%s] %sID Target : %s'%(M,P,M,P,M))
     url = ('https://graph.facebook.com/%s/subscribers?limit=10000&access_token=%s'%(id,token))
     file_dump = 'dump/%s.json'%(id)
     try:os.remove(file_dump)
     except:pass
     open(file_dump,'w').write('')
     exec_folls(url,token,file_dump)
-    print("\n       %s[%s•%s] %sBerhasil Mengambil %s%s %sID"%(H,P,H,P,H,len(open(file_dump,'r').read().splitlines()),P))
-    print('       %s[%s•%s] %sFile : %s%s %s'%(H,P,H,P,H,file_dump,P))
+    print("\n       %s[%s•%s] %sBerhasil Mengambil %s%s %sID"%(M,P,M,P,M,len(open(file_dump,'r').read().splitlines()),P))
+    print('       %s[%s•%s] %sFile : %s%s %s'%(M,P,M,P,M,file_dump,P))
 def exec_folls(url,token,file):
-    print("\r       %s[%s•%s] %sSedang Mengambil %s%s %sID"%(H,P,H,P,H,len(open(file,'r').read().splitlines()),P), end='');sys.stdout.flush()
+    print("\r       %s[%s•%s] %sSedang Mengambil %s%s %sID"%(M,P,M,P,M,len(open(file,'r').read().splitlines()),P), end='');sys.stdout.flush()
     with requests.Session() as xyz:
         try:
             x = xyz.get(url,cookies=cookie)
@@ -549,10 +549,10 @@ def main_likers():
         _query_ = input('       %s[%s•%s] %sID Postingan : %s'%(H,P,H,P,H))
         print('')
     except Exception as e:kecuali(e)
-    tampilan_likers = f'''    {H2}[{A2}1{H2}] {P2}Like   {H2}[{A2}3{H2}] {P2}Wow    {H2}[{A2}5{H2}] {P2}Sad     {H2}[{A2}7{H2}] {P2}Care
-    {H2}[{A2}2{H2}] {P2}Love   {H2}[{A2}4{H2}] {P2}Haha   {H2}[{A2}6{H2}] {P2}Angry   {H2}[{A2}8{H2}] {P2}All'''
-    printer(Panel(tampilan_likers,title=f'{H2}[ {P2}Tipe React {H2}]',subtitle=f'{A2}┌─ {H2}[ {P2}Pilih {H2}]',subtitle_align='left',width=54,padding=1,style='#00FF00'))
-    rt = input('   %s└──> %s'%(A,H))
+    tampilan_likers = f'''    {M2}[{A2}1{M2}] {P2}Like   {M2}[{A2}3{M2}] {P2}Wow    {M2}[{A2}5{M2}] {P2}Sad     {M2}[{A2}7{M2}] {P2}Care
+    {M2}[{A2}2{M2}] {P2}Love   {M2}[{A2}4{M2}] {P2}Haha   {M2}[{A2}6{M2}] {P2}Angry   {M2}[{A2}8{M2}] {P2}All'''
+    printer(Panel(tampilan_likers,title=f'{M2}[ {P2}Tipe React {M2}]',subtitle=f'{A2}┌─ {M2}[ {P2}Pilih {M2}]',subtitle_align='left',width=54,padding=1,style='#FF0000'))
+    rt = input('   %s└──> %s'%(A,M))
     if rt in ['1','01','a']:_react_type_='1'
     elif rt in ['2','02','b']:_react_type_='2'
     elif rt in ['3','03','c']:_react_type_='3'
