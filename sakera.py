@@ -369,14 +369,14 @@ def pilih_menu():
         resik()
         poster3()
         print('')
-        tamp_logout1 = (f'   {P2}Terima Kasih Telah Memilih SC Ini Sebagai Pilihan Terpercayamu. Jangan Lupa Berikan Penilaian Terbaik Di Github Ya! Thank You!\n\n                {U2}- Denventa -')
+        tamp_logout1 = (f'   {P2}Terima Kasih Telah Memilih SC Ini Sebagai Pilihan Terpercayamu. Jangan Lupa Berikan Penilaian Terbaik Di Github Ya! Thank You!\n\n                {M2}- Denventa -')
         tamp_logout2 = f'''{P2}Dengan Log Out Maka Seluruh Data Login Akan Terhapus. Berikut Adalah Data Yang Akan Dihapus :
-    {U2}• {P2}Token/Cookies
-    {U2}• {P2}File Dump
-    {U2}• {P2}File Tools'''
-        printer(Panel(tamp_logout1,title=f'{U2}[ {P2}Goodbye {U2}]',width=54,padding=(1,4),style='#AF00FF'))
+    {M2}• {P2}Token/Cookies
+    {M2}• {P2}File Dump
+    {M2}• {P2}File Tools'''
+        printer(Panel(tamp_logout1,title=f'{M2}[ {P2}Goodbye {M2}]',width=54,padding=(1,4),style='#FF0000'))
         print('')
-        printer(Panel(tamp_logout2,title=f'{U2}[ {P2}Log Out {U2}]',width=54,padding=(1,4),style='#AF00FF'))
+        printer(Panel(tamp_logout2,title=f'{M2}[ {P2}Log Out {M2}]',width=54,padding=(1,4),style='#FF0000'))
         input('\n               %s[ %sEnter Untuk Log Out %s]'%(U,P,U))
         try:shutil.rmtree('login')
         except:pass
