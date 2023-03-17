@@ -238,11 +238,11 @@ def poster():
     print('%s\n%s\n%s\n%s\n%s\n%s'%(l1,l2,l3,l4,l5,l6))
 def poster2():
     l1 = ('     %s  _________       __                          '%(P))
-    l2 = ('     %s /   %s_____%s/%s____  %s|  | %s__ ________________     '%(H,P,H,P,H,P))
-    l3 = ('     %s \_____  \\\__  \ %s|  |/ // %s__ \_  __ \__  \   '%(P,H,P))
-    l4 = ('     %s /        %s\\%s/%s __ \\%s|    <%s\  ___%s/| | %s\\%s// %s___ \   '%(H,P,H,P,H,P,H,P,H,P))
-    l5 = ('     %s/%s_________%s(%s______%s/%s__%s|%s__\\_____%s>%s__%s|  (%s_______\\'%(H,P,H,P,H,P,H,P,H,P,H,P))
-    l6 = ('     %s Multi Brute Force Facebook %s%s %sBy %sDenventa     '%(P,H,Version,P,H))
+    l2 = ('     %s /   %s_____%s/%s____  %s|  | %s__ ________________     '%(U,P,U,P,U,P))
+    l3 = ('     %s \_____  \\\__  \ %s|  |/ // %s__ \_  __ \__  \   '%(P,U,P))
+    l4 = ('     %s /        %s\\%s/%s __ \\%s|    <%s\  ___%s/| | %s\\%s// %s___ \   '%(U,P,U,P,U,P,U,P,U,P))
+    l5 = ('     %s/%s_________%s(%s______%s/%s__%s|%s__\\_____%s>%s__%s|  (%s_______\\'%(U,P,U,P,U,P,U,P,U,P,U,P))
+    l6 = ('     %s Multi Brute Force Facebook %s%s %sBy %sDenventa     '%(P,U,Version,P,U))
     print('%s\n%s\n%s\n%s\n%s\n%s'%(l1,l2,l3,l4,l5,l6))
 def poster3():
     l1 = ('     %s  _________       __                          '%(P))
@@ -392,7 +392,7 @@ def useragent(isi):
     try:os.mkdir("tool")
     except:pass
     pilih_menu_user_agent()
-    dc = input('   %s└──> %s'%(A,H))
+    dc = input('   %s└──> %s'%(A,M))
     if dc in ['1','01','a']:scrap_useragent()
     elif dc in ['2','02','b']:pilih_otomatis()
     elif dc in ['3','03','c']:manual_user_agent()
@@ -401,22 +401,22 @@ def useragent(isi):
     elif dc in ['0','00','z']:tampilan_menu()
     else:print('\n   %s[%s•%s] %sIsi Yang Benar %s!%s\n'%(M,P,M,P,M,P));exit()
 def pilih_menu_user_agent():
-    tampilan_menu_user_agent = f'''  {H2}[{A2}01{H2}] {P2}Scrap UA Browser    {H2}[{A2}04{H2}] {P2}Cari UA HP Ini
-  {H2}[{A2}02{H2}] {P2}Ganti UA Otomatis   {H2}[{A2}05{H2}] {P2}Cek UA Digunakan
-  {H2}[{A2}03{H2}] {P2}Ganti UA Manual     {H2}[{A2}00{H2}] {P2}Kembali'''
-    printer(Panel(tampilan_menu_user_agent,title=f'{H2}[ {P2}User Agent {H2}]',subtitle=f'{A2}┌─ {H2}[ {P2}Pilih {H2}]',subtitle_align='left',width=54,padding=1,style='#00FF00'))
+    tampilan_menu_user_agent = f'''  {M2}[{A2}01{M2}] {P2}Scrap UA Browser    {M2}[{A2}04{M2}] {P2}Cari UA HP Ini
+  {M2}[{A2}02{H2}] {P2}Ganti UA Otomatis   {M2}[{A2}05{M2}] {P2}Cek UA Digunakan
+  {M2}[{A2}03{H2}] {P2}Ganti UA Manual     {M2}[{A2}00{M2}] {P2}Kembali'''
+    printer(Panel(tampilan_menu_user_agent,title=f'{M2}[ {P2}User Agent {M2}]',subtitle=f'{A2}┌─ {M2}[ {P2}Pilih {M2}]',subtitle_align='left',width=54,padding=1,style='#FF0000'))
 def pilih_device():
-    tampilan_device = f'''   {H2}[{A2}01{H2}] {P2}Samsung    {H2}[{A2}05{H2}] {P2}Vivo      {H2}[{A2}09{H2}] {P2}Huawei
-   {H2}[{A2}02{H2}] {P2}Nokia      {H2}[{A2}06{H2}] {P2}Iphone    {H2}[{A2}10{H2}] {P2}Windows
-   {H2}[{A2}03{H2}] {P2}Xiaomi     {H2}[{A2}07{H2}] {P2}Asus      {H2}[{A2}11{H2}] {P2}Chrome
-   {H2}[{A2}04{H2}] {P2}Oppo       {H2}[{A2}08{H2}] {P2}Lenovo    {H2}[{A2}12{H2}] {P2}FB
-   {H2}[{A2}13{H2}] {P2}Infinix'''
-    printer(Panel(tampilan_device,title=f'{H2}[ {P2}Device {H2}]',subtitle=f'{A2}┌─ {H2}[ {P2}Pilih {H2}]',subtitle_align='left',width=54,padding=1,style='#00FF00'))
+    tampilan_device = f'''   {M2}[{A2}01{H2}] {P2}Samsung    {M2}[{A2}05{M2}] {P2}Vivo      {M2}[{A2}09{M2}] {P2}Huawei
+   {M2}[{A2}02{M2}] {P2}Nokia      {M2}[{A2}06{M2}] {P2}Iphone    {M2}[{A2}10{M2}] {P2}Windows
+   {M2}[{A2}03{M2}] {P2}Xiaomi     {M2}[{A2}07{M2}] {P2}Asus      {M2}[{A2}11{M2}] {P2}Chrome
+   {M2}[{A2}04{M2}] {P2}Oppo       {M2}[{A2}08{M2}] {P2}Lenovo    {M2}[{A2}12{M2}] {P2}FB
+   {M2}[{A2}13{M2}] {P2}Infinix'''
+    printer(Panel(tampilan_device,title=f'{M2}[ {P2}Device {M2}]',subtitle=f'{A2}┌─ {M2}[ {P2}Pilih {M2}]',subtitle_align='left',width=54,padding=1,style='#FF0000'))
 def scrap_useragent():
     data_ua = {}
     pt = 0
     pilih_device()
-    dc = input('   %s└──> %s'%(A,H))
+    dc = input('   %s└──> %s'%(A,M))
     if dc in ['1','01','a']:     type = 'software_name/samsung-browser'
     elif dc in ['2','02','b']:   type = 'software_name/nokia-browser'
     elif dc in ['3','03','c']:   type = 'operating_platform_string/xiaomi-mi-a1'
@@ -442,20 +442,20 @@ def scrap_useragent():
                 pt += 1
                 pu = str(pt)
                 data_ua.update({pu:x.replace('[#AAAAAA]','')})
-                printer(Panel(x,title=f'{H2}[{P2}{pu}{H2}]',width=54,title_align='left',style='#00FF00'))
+                printer(Panel(x,title=f'{M2}[{P2}{pu}{M2}]',width=54,title_align='left',style='#FF0000'))
                 time.sleep(2)
             except KeyboardInterrupt:break
-    ch = int(input('   %s└──> %s'%(A,H)))
+    ch = int(input('   %s└──> %s'%(A,M)))
     try:
         open('tool/useragent.json','w').write(data_ua[str(ch)])
         pilihan = open('tool/useragent.json','r').read()
-        printer(Panel(f'''{A2}{pilihan}''',title=f'{H2}[ {P2}User Agent {H2}]',subtitle=f'{H2}[ {P2}Sukses Diganti {H2}]',padding=(1,4),width=54,title_align='center',style='#00FF00'))
-        if pengguna_source_code == 'old':input('\n   %s[ %sKembali %s]'%(H,P,H));tampilan_menu()
-        else:print('\n               %s[ %sJalankan Ulang SCnya %s]'%(H,P,H));exit('\n')
+        printer(Panel(f'''{A2}{pilihan}''',title=f'{M2}[ {P2}User Agent {M2}]',subtitle=f'{M2}[ {P2}Sukses Diganti {M2}]',padding=(1,4),width=54,title_align='center',style='#FF0000'))
+        if pengguna_source_code == 'old':input('\n   %s[ %sKembali %s]'%(M,P,M));tampilan_menu()
+        else:print('\n               %s[ %sJalankan Ulang SCnya %s]'%(M,P,M));exit('\n')
     except Exception as e:print('\n   %s[%s•%s] %sIsi Yang Benar %s!%s\n'%(M,P,M,P,M,P));exit()
 def pilih_otomatis():
     pilih_device()
-    dc = input('   %s└──> %s'%(A,H))
+    dc = input('   %s└──> %s'%(A,M))
     if dc in ['0','00','z']:     open('tool/useragent.json','w').write(ua_default)
     elif dc in ['1','01','a']:   open('tool/useragent.json','w').write(ua_samsung)
     elif dc in ['2','02','b']:   open('tool/useragent.json','w').write(ua_nokia)
@@ -492,7 +492,7 @@ def ua_device_ini():
 def cek_user_agent():
     try:
         usera = open('tool/useragent.json','r').read()
-        printer(Panel(f'''{A2}{usera}''',title=f'{H2}[ {P2}User Agent {H2}]',subtitle=f'{H2}[ {P2}Saat Ini {H2}]',padding=(1,4),width=54,title_align='center',style='#00FF00'))
+        printer(Panel(f'''{A2}{usera}''',title=f'{M2}[ {P2}User Agent {M2}]',subtitle=f'{M2}[ {P2}Saat Ini {M2}]',padding=(1,4),width=54,title_align='center',style='#FF0000'))
         input('\n   %s[ %sKembali %s]'%(H,P,H))
         tampilan_menu()
     except Exception as e:kecuali(e)
