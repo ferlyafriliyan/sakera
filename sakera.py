@@ -344,7 +344,7 @@ def tampilan_menu():
     except (KeyError,IOError,AttributeError):print('\n   %s[%s•%s] %sCookies Invalid %s!%s\n'%(M,P,M,P,M,P));time.sleep(3);login()
 def pilih_menu():
     global gabung_sandi, tempel_sandi
-    dc = input('   %s└──> %s'%(A,u))
+    dc = input('   %s└──> %s'%(A,U))
     if dc in ['1','01','a']    : gabung_sandi.append(Author_ll);not_available_ll('Dump ID Dari Friendlist')
     elif dc in ['2','02','b']  : tempel_sandi.append('Jangan');main_folls();system_login();urut_crack();pilihan_sakdurunge_crack();addpass();crack()
     elif dc in ['3','03','c']  : gabung_sandi.append('Direcode');not_available_ll('Dump ID Dari Nama')
