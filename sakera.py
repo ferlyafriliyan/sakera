@@ -92,7 +92,10 @@ gabung_sandi = []
 tempel_sandi = []
 link_prox = []
 link_proxz = []
-ugen,uaku2,uaku = [],[],[]
+ugen = []
+ugen2 = []
+uaku = []
+uaku2 = []
 ###----------[ JANGAN DIHAPUS NANTI ERROR ]---------- ###
 SAKERA = Codename + len(Author) - len(Facebook) + len(Instagram) - len(Whatsapp) + len(YouTube)
 sakara = len(Author)    +  Codename
