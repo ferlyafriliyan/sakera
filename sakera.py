@@ -65,35 +65,6 @@ ua_chrome  = 'Mozilla/5.0 (Linux; Android 10) AppleWebKit/537.36 (KHTML, like Ge
 ua_fb      = 'Mozilla/5.0 (Linux; Android 11; itel A509W Build/RP1A.201005.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/97.0.4692.98 Mobile Safari/537.36[FBAN/EMA;FBLC/fr_FR;FBAV/324.0.0.8.106;]'
 ua_infinix = 'Mozilla/5.0 (Linux; Android 10; Infinix X682C Build/QP1A.190711.020; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.79 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/395.0.0.27.214;]'
 komentar   = '\n\nhttps://www.facebook.com/' + str(Postingan)
-for xd in range(10000):
-	a=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
-	b=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
-	c=random.randrange(73,100)
-	d=random.randrange(4200,4900)
-	e=random.randrange(40,150)
-	uaku=f'Mozilla/5.0 (Linux; Android {a}; SAMSUNG SM-A305FN) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
-	ugen2.append(uaku)
-
-for t in range(10000):
-	a=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
-	b=random.randrange(111111,210000)
-	c=random.randrange(73,100)
-	d=random.randrange(4200,4900)
-	e=random.randrange(40,150)
-	brayen1=f'Mozilla/5.0 (Linux; Android {a}; CPH2109 Build/RKQ1.{b}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
-	brayen2=f'Mozilla/5.0 (Linux; Android {a}; SM-J610G Build/PPR1.{b}.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36 HeyTapBrowser/40.8.8.9'
-	brayen3=f'Mozilla/5.0 (Linux; Android {a}; SM-A405FN Build/RP1A.{b}.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
-	brayen4=f'Mozilla/5.0 (Linux; Android {a}; SM-M317F Build/SP1A.{b}.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
-	uaku2 = random.choice([brayen1,brayen2,brayen3,brayen4])
-	ugen.append(uaku2)
-	
-for x in range(10):
-	a=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
-	b=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
-	c=random.randrange(73,100)
-	d=random.randrange(4200,4900)
-	e=random.randrange(40,150)
-	uak=f'Mozilla/5.0 (Linux; Android {a}; Pixel {b}) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
 
 ###----------[ TIME ]---------- ###
 id_dev = 345 - 340 + 720 - 723
@@ -139,7 +110,35 @@ web_fb = "https://www.facebook.com/"
 m_fb = "https://m.facebook.com/"
 mbasic = "https://mbasic.facebook.com/"
 header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 10; Mi 9T Pro Build/QKQ1.190825.002; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/88.0.4324.181 Mobile Safari/537.36 [FBAN/EMA;FBLC/id_ID;FBAV/239.0.0.10.109;]"}
+for xd in range(10000):
+	a=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
+	b=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
+	c=random.randrange(73,100)
+	d=random.randrange(4200,4900)
+	e=random.randrange(40,150)
+	uaku=f'Mozilla/5.0 (Linux; Android {a}; SAMSUNG SM-A305FN) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
+	ugen2.append(uaku)
 
+for t in range(10000):
+	a=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
+	b=random.randrange(111111,210000)
+	c=random.randrange(73,100)
+	d=random.randrange(4200,4900)
+	e=random.randrange(40,150)
+	brayen1=f'Mozilla/5.0 (Linux; Android {a}; CPH2109 Build/RKQ1.{b}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
+	brayen2=f'Mozilla/5.0 (Linux; Android {a}; SM-J610G Build/PPR1.{b}.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36 HeyTapBrowser/40.8.8.9'
+	brayen3=f'Mozilla/5.0 (Linux; Android {a}; SM-A405FN Build/RP1A.{b}.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
+	brayen4=f'Mozilla/5.0 (Linux; Android {a}; SM-M317F Build/SP1A.{b}.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
+	uaku2 = random.choice([brayen1,brayen2,brayen3,brayen4])
+	ugen.append(uaku2)
+	
+for x in range(10):
+	a=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
+	b=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
+	c=random.randrange(73,100)
+	d=random.randrange(4200,4900)
+	e=random.randrange(40,150)
+	uak=f'Mozilla/5.0 (Linux; Android {a}; Pixel {b}) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
 ###----------[ PROXY INDONESIA & LUAR ]---------- ###
 def prox_prox():
     open('tool/proxy.json','w').write('')
