@@ -90,13 +90,6 @@ OK = []
 CP = []
 gabung_sandi = []
 tempel_sandi = []
-link_prox = []
-link_proxz = []
-ugen = []
-ugen2 = []
-uaku = []
-uaku2 = []
-
 ###----------[ JANGAN DIHAPUS NANTI ERROR ]---------- ###
 SAKERA = Codename + len(Author) - len(Facebook) + len(Instagram) - len(Whatsapp) + len(YouTube)
 sakara = len(Author)    +  Codename
@@ -114,35 +107,6 @@ web_fb = "https://www.facebook.com/"
 m_fb = "https://m.facebook.com/"
 mbasic = "https://mbasic.facebook.com/"
 header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 4.4.2; Lenovo A536 Build/KOT49H) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/30.0.0.0 Mobile Safari/537.36 [FB_IAB/Orca-Android;FBAV/396.0.0.14.82;]"}
-for xd in range(10000):
-	a=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
-	b=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
-	c=random.randrange(73,100)
-	d=random.randrange(4200,4900)
-	e=random.randrange(40,150)
-	uaku=f'Mozilla/5.0 (Linux; Android {a}; SAMSUNG SM-A305FN) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
-	ugen2.append(uaku)
-
-for t in range(10000):
-	a=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
-	b=random.randrange(111111,210000)
-	c=random.randrange(73,100)
-	d=random.randrange(4200,4900)
-	e=random.randrange(40,150)
-	brayen1=f'Mozilla/5.0 (Linux; Android {a}; CPH2109 Build/RKQ1.{b}.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
-	brayen2=f'Mozilla/5.0 (Linux; Android {a}; SM-J610G Build/PPR1.{b}.011; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36 HeyTapBrowser/40.8.8.9'
-	brayen3=f'Mozilla/5.0 (Linux; Android {a}; SM-A405FN Build/RP1A.{b}.012; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
-	brayen4=f'Mozilla/5.0 (Linux; Android {a}; SM-M317F Build/SP1A.{b}.016; wv) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
-	uaku2 = random.choice([brayen1,brayen2,brayen3,brayen4])
-	ugen.append(uaku2)
-	
-for x in range(10):
-	a=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
-	b=random.choice(['3','4','5','6','7','8','9','10','11','12','13'])
-	c=random.randrange(73,100)
-	d=random.randrange(4200,4900)
-	e=random.randrange(40,150)
-	uak=f'Mozilla/5.0 (Linux; Android {a}; Pixel {b}) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{c}.0.{d}.{e} Mobile Safari/537.36'
 ###----------[ PROXY INDONESIA & LUAR ]---------- ###
 def prox_prox():
     open('tool/proxy.json','w').write('')
@@ -1255,44 +1219,7 @@ class cek_aplikasi:
             except: pass
         if len(self.daftar_dihapus) == 1:self.dft3 = ''
         else:self.dft3 = ''.join(self.daftar_dihapus)
-# - - - - - [ Proxy List ] - - - - - #
-link_prox=[
-			"https://raw.githubusercontent.com/saschazesiger/Free-Proxies/master/proxies/socks4.txt",
-			"https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks4.txt",
-			"https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks4&timeout=10000&country=all",
-			"https://raw.githubusercontent.com/UptimerBot/proxy-list/main/proxies/socks4.txt",
-			"https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS4_RAW.txt",
-			"https://raw.githubusercontent.com/rdavydov/proxy-list/main/proxies/socks4.txt",
-			"https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks4.txt",
-			"https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks4.txt",
-			"https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/socks4.txt",
-			"https://raw.githubusercontent.com/HyperBeats/proxy-list/main/socks4.txt",
-			"https://raw.githubusercontent.com/mmpx12/proxy-list/master/socks4.txt",
-			"https://www.proxy-list.download/api/v1/get?type=socks4",
-			"https://www.proxyscan.io/download?type=socks4",
-			"https://api.openproxylist.xyz/socks4.txt",
-			'https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks5&timeout=100000&country=all&ssl=all&anonymity=all',
-			'https://raw.githubusercontent.com/HyperBeats/proxy-list/main/socks4.txt'
-			]
-link_proxz=[
-			"https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks5&timeout=10000&country=all",
-			"https://raw.githubusercontent.com/roosterkid/openproxylist/main/SOCKS5_RAW.txt",
-			"https://raw.githubusercontent.com/monosans/proxy-list/main/proxies/socks5.txt",
-			"https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks5.txt",
-			"https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt",
-			"https://www.proxy-list.download/api/v1/get?type=socks5",
-			"https://www.proxyscan.io/download?type=socks5",
-			"https://api.openproxylist.xyz/socks5.txt",
-			"https://raw.githubusercontent.com/mmpx12/proxy-list/master/socks5.txt",
-			"https://raw.githubusercontent.com/ShiftyTR/Proxy-List/master/socks5.txt",
-			"https://raw.githubusercontent.com/manuGMG/proxy-365/main/SOCKS5.txt",
-			"https://raw.githubusercontent.com/saschazesiger/Free-Proxies/master/proxies/socks5.txt",
-			"https://raw.githubusercontent.com/HyperBeats/proxy-list/main/socks5.txt",
-			"https://raw.githubusercontent.com/jetkai/proxy-list/main/online-proxies/txt/proxies-socks5.txt"
-			'https://api.proxyscrape.com/?request=displayproxies&protocol=socks5&timeout=10000&country=all&ssl=all&anonymity=all'		
-                        "https://github.com/Denventa/sakera/blob/main/ua.txt"
-                        "https://github.com/Denventa/sakera/blob/main/proxy.txt"
-			]
+
 ###----------[ CRACK ]---------- ###
 class crack:
     def __init__(self):
