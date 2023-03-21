@@ -425,7 +425,7 @@ def useragent(isi):
     try:os.mkdir("tool")
     except:pass
     pilih_menu_user_agent()
-    dc = input('   %s└──> %s'%(A,J))
+    dc = input('   %s└──> %s'%(A,B))
     if dc in ['1','01','a']:scrap_useragent()
     elif dc in ['2','02','b']:pilih_otomatis()
     elif dc in ['3','03','c']:manual_user_agent()
@@ -439,11 +439,11 @@ def pilih_menu_user_agent():
   {B2}[{A2}03{B2}] {P2}Ganti UA Manual     {B2}[{A2}00{B2}] {P2}Kembali'''
     printer(Panel(tampilan_menu_user_agent,title=f'{B2}[ {P2}User Agent {B2}]',subtitle=f'{A2}┌─ {B2}[ {P2}Pilih {B2}]',subtitle_align='left',width=54,padding=1,style='#00C8FF'))
 def pilih_device():
-    tampilan_device = f'''   {B2}[{A2}01{J2}] {P2}Samsung    {B2}[{A2}05{B2}] {P2}Vivo      {B2}[{A2}09{B2}] {P2}Huawei
+    tampilan_device = f'''   {B2}[{A2}01{B2}] {P2}Samsung    {B2}[{A2}05{B2}] {P2}Vivo      {B2}[{A2}09{B2}] {P2}Huawei
    {B2}[{A2}02{B2}] {P2}Nokia      {B2}[{A2}06{B2}] {P2}Iphone    {B2}[{A2}10{B2}] {P2}Windows
    {B2}[{A2}03{B2}] {P2}Xiaomi     {B2}[{A2}07{B2}] {P2}Asus      {B2}[{A2}11{B2}] {P2}Chrome
    {B2}[{A2}04{B2}] {P2}Oppo       {B2}[{A2}08{B2}] {P2}Lenovo    {B2}[{A2}12{B2}] {P2}FB
-   {B2}[A2}04{B2}]  {P2}Infinix '''
+   {B2}[{A2}13{B2}] {P2}Infinix'''
     printer(Panel(tampilan_device,title=f'{B2}[ {P2}Device {B2}]',subtitle=f'{A2}┌─ {B2}[ {P2}Pilih {B2}]',subtitle_align='left',width=54,padding=1,style='#00C8FF'))
 def scrap_useragent():
     data_ua = {}
