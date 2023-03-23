@@ -47,6 +47,8 @@ N2 = "[#FF00FF]" # Pink
 O2 = "[#00FFFF]" # Biru Muda
 P2 = "[#FFFFFF]" # Putih
 J2 = "[#FF8F00]" # Jingga
+D2 = "[#8B0000]" # DarkRed
+V2 = "[#9400D3]" # Darkviolet
 A2 = "[#AAAAAA]" # Abu-Abu
 
 ###----------[ USER AGENT ]---------- ###
@@ -238,7 +240,7 @@ def poster():
     print('%s\n%s\n%s\n%s\n%s\n%s'%(l1,l2,l3,l4,l5,l6))
 def poster2():
     l1 = ('     %s  _________       __                          '%(P))
-    l2 = ('     %s /   %s_____%s/%s____  %s|  | %s__ ________________     '%(B,P,B,P,B,P))
+    l2 = ('     %s /   %s_____%s/%s____  %s|  | %s__ ________________     '%(,P,B,P,B,P))
     l3 = ('     %s \_____  \\\__  \ %s|  |/ // %s__ \_  __ \__  \   '%(P,B,P))
     l4 = ('     %s /        %s\\%s/%s __ \\%s|    <%s\  ___%s/| | %s\\%s// %s___ \   '%(B,P,B,P,B,P,B,P,B,P))
     l5 = ('     %s/%s_________%s(%s______%s/%s__%s|%s__\\_____%s>%s__%s|  (%s_______\\'%(B,P,B,P,B,P,B,P,B,P,B,P))
