@@ -76,7 +76,7 @@ bulan_ttl = {"01": "Januari", "02": "Februari", "03": "Maret", "04": "April", "0
 
 color_table = "#FFFFFF"
 color_rich = "[#00C8FF]"
-sys.stdout.write('\x1b]2; Insta Nazri XD\x07')
+sys.stdout.write('\x1b]2; Insta Denventa XD\x07')
 
 try:os.mkdir('data')
 except:pass
@@ -1281,7 +1281,7 @@ def tlisensi():
      print(f'{M}[!] JANGAN KOSONG{N}');sleep(1)
      tlisensi()
     if lisen in ['buy','Buy']:
-     os.system('xdg-open https://wa.me/+6281221523195?text=Bang+beli+lisensi+IG+nya+dong');exit()
+     os.system('xdg-open https://wa.me/+6285797818026?text=Bang+beli+lisensi+IG+nya+dong');exit()
     loadinglisen()
     open('.lisen.txt','w').write(lisen)
     lisensi()
@@ -1371,12 +1371,12 @@ def cek():
 def key():
 	os.system("clear") 
 	Banner___Gua__Ngab()
-	prints(Panel(f"{P2}silahkan masukan lisensi tools agar bisa masuk ke tools Insta Nazri XD\njika anda belum mempunyai lisensi ketik {H2}beli {P2}untuk melihat harga lisensi"))
+	prints(Panel(f"{P2}silahkan masukan lisensi tools agar bisa masuk ke tools Insta Denventa\njika anda belum mempunyai lisensi ketik {H2}beli {P2}untuk melihat harga lisensi"))
 	key = input(f"{P}[{B}?{P}] masukan lisensi : {H}")
 	if key in ["beli","Beli","BELI"]:beli_bang()
-	try:ses = requests.Session();asu = ses.get("https://app.cryptolens.io/api/key/Activate?token=WyIzMjA4OTAxMyIsInRqSVB5U1dJQkFVdU1yMmFGVGk5eW5ZbnpuOWlmS3FHVjVMdG1Yb1EiXQ==&ProductId=17890&Key=%s&Sign=True"%(key)).json()['licenseKey']['key'];open("data/lisensi.txt","w").write(key);prints(Panel(f"{H2}selamat lisensi yang anda masukan terdaftar ke server Insta Nazri XD",width=80,padding=(0,6),style=f"{color_table}"));time.sleep(3);ggwp17()
+	try:ses = requests.Session();asu = ses.get("https://app.cryptolens.io/api/key/Activate?token=WyIzMjA4OTAxMyIsInRqSVB5U1dJQkFVdU1yMmFGVGk5eW5ZbnpuOWlmS3FHVjVMdG1Yb1EiXQ==&ProductId=17890&Key=%s&Sign=True"%(key)).json()['licenseKey']['key'];open("data/lisensi.txt","w").write(key);prints(Panel(f"{H2}selamat lisensi yang anda masukan terdaftar ke server Insta Denventa",width=80,padding=(0,6),style=f"{color_table}"));time.sleep(3);ggwp17()
 	except KeyError:
-		prints(Panel(f"{P2} lisensi yang anda masukan tidak terdaftar silahkan beli terlebih dahulu",width=80,padding=(0,1),style=f"{color_table}"));os.system("xdg-open https://wa.me/+6281221523195?text=assalamualaikum+bang+mau+beli+lisensi+crack+Instagram");time.sleep(2);exit()
+		prints(Panel(f"{P2} lisensi yang anda masukan tidak terdaftar silahkan beli terlebih dahulu",width=80,padding=(0,1),style=f"{color_table}"));os.system("xdg-open https://wa.me/+6285797818026?text=assalamualaikum+bang+mau+beli+lisensi+crack+Instagram");time.sleep(2);exit()
 
 ###----------[ CEK LISENSI ]---------- ###				
 def cek():
@@ -1384,16 +1384,16 @@ def cek():
 	except FileNotFoundError:key()
 	try:x = requests.get("https://app.cryptolens.io/api/key/Activate?token=WyIzMjA4OTAxMyIsInRqSVB5U1dJQkFVdU1yMmFGVGk5eW5ZbnpuOWlmS3FHVjVMdG1Yb1EiXQ==&ProductId=17890&Key=%s"%(x)).json()['licenseKey']['key'];ggwp17()
 	except KeyError:
-		prints(Panel(f"{P2}lisensi kamu sudah kedaluwarsa silahkan beli lisensi ke admin",width=80,padding=(0,6),style=f"{color_table}"));os.system("rm -rf data/lisensi.txt");os.system("xdg-open https://wa.me/+6281221523195?text=assalamualaikum+bang+mau+beli+lisensi+crack+Instagram");time.sleep(2);exit()
+		prints(Panel(f"{P2}lisensi kamu sudah kedaluwarsa silahkan beli lisensi ke admin",width=80,padding=(0,6),style=f"{color_table}"));os.system("rm -rf data/lisensi.txt");os.system("xdg-open https://wa.me/+6285797818026?text=assalamualaikum+bang+mau+beli+lisensi+crack+Instagram");time.sleep(2);exit()
 
 ###----------[ BUY LISENSI ]---------- ###	
 def beli_bang():
     prints(Panel(f"{P2}[{H2}01{P2}]. 1 minggu {H2}50.000 {P2}max pemakaian 1 device\n{P2}[{H2}02{P2}]. 1 bulan {H2}100.000{P2} max pemakaian 5 device\n{P2}[{H2}03{P2}]. open source full update {H2}450.000",width=80,padding=(0,15),style=f"#FFFFFF"))
     zxc = input(f"{P}[{B}?{P}] pilih lisensi : {H}")
     if zxc in [""]:print(f"{P}[{M}!{P}] pilih yang bener broo jangan kosong");time.sleep(3);cek_lisensi_aktif()
-    elif zxc in ["1","01"]:jalan(f"{P}[{M}!{P}] anda akan di arahkan ke WhatsApp");os.system("xdg-open https://wa.me/+6281221523195?text=assalamualaikum+bang+mau+beli+lisensi+1+minggu");time.sleep(2);exit()
-    elif zxc in ["2","02"]:jalan(f"{P}[{M}!{P}] anda akan di arahkan ke WhatsApp");os.system("xdg-open https://wa.me/+6281221523195?text=assalamualaikum+bang+mau+beli+lisensi+1+bulan");time.sleep(2);exit()
-    elif zxc in ["3","03"]:jalan(f"{P}[{M}!{P}] anda akan di arahkan ke WhatsApp");os.system("xdg-open https://wa.me/+6281221523195?text=assalamualaikum+bang+mau+beli+lisensi+full+source");time.sleep(2);exit()
+    elif zxc in ["1","01"]:jalan(f"{P}[{M}!{P}] anda akan di arahkan ke WhatsApp");os.system("xdg-open https://wa.me/+6285797818026?text=assalamualaikum+bang+mau+beli+lisensi+1+minggu");time.sleep(2);exit()
+    elif zxc in ["2","02"]:jalan(f"{P}[{M}!{P}] anda akan di arahkan ke WhatsApp");os.system("xdg-open https://wa.me/+6285797818026?text=assalamualaikum+bang+mau+beli+lisensi+1+bulan");time.sleep(2);exit()
+    elif zxc in ["3","03"]:jalan(f"{P}[{M}!{P}] anda akan di arahkan ke WhatsApp");os.system("xdg-open https://wa.me/+6285797818026?text=assalamualaikum+bang+mau+beli+lisensi+full+source");time.sleep(2);exit()
     else:print(f"{P}[{M}!{P}] ngetik apaan lu ngab");time.sleep(3);cek_lisensi_aktif()
 
 ###----------[ CEK LISENSI AKTIF ]---------- ###
