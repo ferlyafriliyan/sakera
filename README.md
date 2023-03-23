@@ -17,7 +17,6 @@ Welcome
 ### ⇨  Install Script Di Termux
 
 ```python
-```python
 termux-change-repo
 rm -rf $HOME/sakera
 pkg update && pkg upgrade -y
