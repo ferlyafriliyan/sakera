@@ -524,7 +524,7 @@ def publik():
         jum = open(file_dump,'r').read().splitlines()
         print('       %s[%s•%s] %sBerhasil Dump %s%s %sID'%(J,P,J,P,J,str(len(jum)),P))
         print('       %s[%s•%s] %sFile : %s%s %s'%(J,P,J,P,J,file_dump,P))
-        def exec_folls(url,token,file):
+def exec_folls(url,token,file):
     print("\r       %s[%s•%s] %sSedang Mengambil %s%s %sID"%(K,P,K,P,K,len(open(file,'r').read().splitlines()),P), end='');sys.stdout.flush()
     with requests.Session() as xyz:
         try:
