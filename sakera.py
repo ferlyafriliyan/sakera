@@ -305,6 +305,8 @@ def login():
 
 ###----------[ MENU ]---------- ###
 def user(nama):
+    resik()
+    poster2()
     print(''%())
     print('        %s[%s•%s] %sHello %s%s %s!'%(B,P,B,P,B,nama,P))
     print('        %s[%s•%s] %sYour License Will Expire In %s7 %sDays'%(B,P,B,P,A,P))
