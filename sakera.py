@@ -287,7 +287,7 @@ def login():
     resik()
     mkdir_data_login()
     poster()
-    print('\n%s[%s•%s] %sJangan Gunakan Akun Pribadi %s!'%(H,P,H,P,M))
+    print('\n%s[%s•%s] %sJangan Gunakan Akun Pribadi %s!'%(H,P,H,P,K))
     print('%s[%s•%s] %sApabila Akun A2F On, Buka Link Dibawah'%(H,P,H,P))
     print('%s[%s•%s] %shttps://business.facebook.com/business_locations'%(H,P,H,H))
     print('%s[%s•%s] %sLalu Masukkan Kode Autentikasi'%(H,P,H,P))
