@@ -345,7 +345,7 @@ def tampilan_menu():
         printer(Panel(tampilan_menu,title=f'{B2}[ {P2}Menu {B2}]',subtitle=f'{A2}┌─ {B2}[ {P2}Pilih {B2}]',subtitle_align='left',width=54,padding=1,style='#00C8FF'))
         pilih_menu()
     except requests.exceptions.ConnectionError:print('\n   %s[%s•%s] %sTidak Ada Koneksi Internet %s!%s\n'%(M,P,M,P,M,P));exit()
-    except (KeyError,IOError,AttributeError):print('\n   %s[%s•%s] %sCookies Invalid %s!%s\n'%(M,P,M,P,M,P));time.sleep(3);login()
+    except (KeyError,IOError,AttributeError):print('\n   %s[%s•%s] %sCookies Invalid %s!%s\n'%(K,P,K,P,K,P));time.sleep(3);login()
 def pilih_menu():
     global gabung_sandi, tempel_sandi
     dc = input('   %s└──> %s'%(A,U))
@@ -508,7 +508,7 @@ def main_folls():
         token  = open('login/token.json','r').read()
         cookie = {'cookie':open('login/cookie.json','r').read()}
     except:
-        print('\n%s[%s•%s] %sCookies Invalid %s!%s\n'%(M,P,M,P,M,P))
+        print('\n%s[%s•%s] %sCookies Invalid %s!%s\n'%(K,P,K,P,K,P))
         time.sleep(3)
         login()
     id = input('       %s[%s•%s] %sID Target : %s'%(K,P,K,P,K))
