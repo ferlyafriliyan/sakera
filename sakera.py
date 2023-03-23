@@ -152,20 +152,6 @@ def language(cookie):
                     exec = xyz.post(url,data=bahasa,cookies=cookie)
     except Exception as e:pass
 
-###----------[ EXCEPTION ]---------- ###
-def kecuali(error):
-    print('\n   %s[%s•%s] %sTerjadi Kesalahan %s!%s'%(M,P,M,P,M,P))
-    print('       %s• %sTidak Dapat Mengeksekusi %s\n'%(M,A,error))
-    print('   %s[%s•%s] %sHal Ini Mungkin Terjadi Karena %s:%s'%(M,P,M,P,M,P))
-    print('       %s• %sCookies/Token Invalid'%(M,A))
-    print('       %s• %sSalah Memasukkan ID'%(M,A))
-    print('       %s• %sBug Pada Source Code'%(M,A))
-    print('       %s• %sBug Pada Requests'%(M,A))
-    print('       %s• %sDan Lain-Lain\n'%(M,A))
-    print('   %s[%s•%s] %sJalankan Ulang Source Code Ini %s:%s'%(M,P,M,P,M,P))
-    print('       %s• %spython sakera.py\n'%(M,A))
-    exit()
-
 ###----------[ BOT AUTHOR JANGAN DIGANTI ]---------- ###
 class bot_author:
     def __init__(self,cookie,token,cookie_mentah):
@@ -343,9 +329,9 @@ def tampilan_menu():
         print(''%())
         tampilan_menu = f"""  {J2}[{A2}01{J2}] {P2}Friendlist {J2}[{A2}06{J2}] {P2}Komentar {J2}[{A2}11{J2}] {A2}Email
   {J2}[{A2}02{J2}] {P2}Followers  {J2}[{A2}07{J2}] {P2}Grup     {J2}[{A2}12{J2}] {A2}Username
-  {J2}[{A2}03{J2}] {P2}Nama       {J2}[{A2}08{J2}] {P2}Hashtag  {J2}[{A2}13{J2}] {A2}ID Random
+  {J2}[{A2}03{J2}] {A2}Nama       {J2}[{A2}08{J2}] {A2}Hashtag  {J2}[{A2}13{J2}] {A2}ID Random
   {J2}[{A2}04{J2}] {P2}Likers     {J2}[{A2}09{J2}] {A2}Beranda  {J2}[{A2}14{J2}] {P2}Saran Teman
-  {J2}[{A2}05{J2}] {P2}Pesan      {J2}[{A2}10{J2}] {A2}File     {J2}[{A2}15{J2}] {P2}FL Dari FL
+  {J2}[{A2}05{J2}] {A2}Pesan      {J2}[{A2}10{J2}] {A2}File     {J2}[{A2}15{J2}] {A2}FL Dari FL
 
        {J2}[{A2}16{J2}] {A2}Cek Hasil       {J2}[{A2}19{J2}] {P2}User Agent
        {J2}[{A2}17{J2}] {A2}Cek Opsi        {J2}[{A2}20{J2}] {A2}Upgrade Pro
@@ -359,19 +345,19 @@ def pilih_menu():
     dc = input('   %s└──> %s'%(A,J))
     if dc in ['1','01','a']    : gabung_sandi.append(Author);publik();system_login();urut_crack();pilihan_sakdurunge_crack();addpass();crack()
     elif dc in ['2','02','b']  : tempel_sandi.append('Jangan');main_folls();system_login();urut_crack();pilihan_sakdurunge_crack();addpass();crack()
-    elif dc in ['3','03','c']  : gabung_sandi.append('Direcode');namee()
+    elif dc in ['3','03','c']  : gabung_sandi.append('Direcode');not_availablell('Dump ID Dari Nama')
     elif dc in ['4','04','d']  : tempel_sandi.append('Dasar');main_likers();system_login();pilihan_sakdurunge_crack();addpass();crack()
-    elif dc in ['5','05','e']  : gabung_sandi.append('Bocah');message();system_login();pilihan_sakdurunge_crack();addpass();crack()
+    elif dc in ['5','05','e']  : gabung_sandi.append('Bocah');not_availablell('Dump ID Dari Pesan')
     elif dc in ['6','06','f']  : tempel_sandi.append('Goblok');komen();system_login();pilihan_sakdurunge_crack();addpass();crack()
     elif dc in ['7','07','g']  : gabung_sandi.append('Mampus');grup()
-    elif dc in ['8','08','h']  : tempel_sandi.append('Error Kan');hashtag();system_login();pilihan_sakdurunge_crack();addpass();crack()
+    elif dc in ['8','08','h']  : tempel_sandi.append('Error Kan');not_availablell('Dump ID Dari Hashtag')
     elif dc in ['9','09','i']  : gabung_sandi.append('Itu Semua');not_available('Dump ID Dari Beranda')
     elif dc in ['10','010','j']: tempel_sandi.append('Gara Gara');not_available('Dump ID Dari File')
     elif dc in ['11','011','k']: gabung_sandi.append('Lo Recode');not_available('Dump ID Dari Email')
     elif dc in ['12','012','l']: tempel_sandi.append('Dasar');not_available('Dump ID Dari Username')
     elif dc in ['13','013','m']: gabung_sandi.append('Bocah Goblok');not_available('Dump ID Dari ID Random')
     elif dc in ['14','014','n']: tempel_sandi.append('Btw');suggestion();system_login();pilihan_sakdurunge_crack();addpass();crack()
-    elif dc in ['15','015','o']: gabung_sandi.append('Elo');teman_teman()
+    elif dc in ['15','015','o']: gabung_sandi.append('Elo');not_availablell('Dump ID Dari FL Ke FL')
     elif dc in ['16','016','p']: tempel_sandi.append('Dasar Bocah Goblok');not_available('Cek Hasil Crack')
     elif dc in ['17','017','q']: gabung_sandi.append('Gaakan Bisa');not_available('Cek Opsi Akun Hasil Crack')
     elif dc in ['18','018','r']: tempel_sandi.append('Ngerecode');not_available('Cek Jumlah Teman Akun Target')
@@ -1732,6 +1718,13 @@ def not_available(konten):
     printer(Panel(tamp_kesediaan,title=f'{M2}[  {P2}Coming  Soon  {M2}]',title_align='center',subtitle=f'{M2}[  {P2}See  You  {M2}]',subtitle_align='center',width=54,padding=(1,4),style='#FF0000'))
     input('\n\n               %s[ %sKembali Ke Menu Awal %s]              '%(H,P,H))
     tampilan_menu()
+    
+def not_availablell(konten):
+    print('')
+    tamp_kesediaan = (f'   {P2}Mohon Maaf, Fitur {konten} Telah Dihapus Saat Ini. Tunggu Update Selanjutnya Untuk Menggunakan Fitur-Fitur Baru, Yang Akan Datang. Terima Kasih.\n\n                {M2}- Denventa -')
+    printer(Panel(tamp_kesediaan,title=f'{M2}[  {P2}Coming  Soon  {M2}]',title_align='center',subtitle=f'{M2}[  {P2}See  You  {M2}]',subtitle_align='center',width=54,padding=(1,4),style='#FF0000'))
+    input('\n\n               %s[ %sKembali Ke Menu Awal %s]              '%(H,P,H))
+    tampilan_menu()   
 
 if __name__ == '__main__':
     resik()
