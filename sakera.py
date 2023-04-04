@@ -1,7 +1,7 @@
 ###----------[ Denventa Afriliyan Ferly Khurayra Shishigami X ]---------- ###
 Author_ll =  '-[ Denventa Afriliyan Ferly Khurayra Shishigami X ] -'
-Facebook_Dev = 'Denventa Afriliyan Ferly Shishigami X (Denventa)'
 Version = '0.4'
+Facebook_Dev = 'Denventa Afriliyan Ferly Shishigami X (Denventa)'
 Dnventa = 100013275378835
 Postingan = 1630150370770793
 ###----------[ AUTHOR & CREATOR ]---------- ###
