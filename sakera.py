@@ -658,7 +658,7 @@ class namee:
         self.file_dump = ('dump/%s.json'%(put[0]))
         file_dump = self.file_dump
         open(self.file_dump,'w').write('')
-        common = ['andi','dwi','muhammad','nur','dewi','tri','dian','sri','putri','eka','sari','aditya','basuki','budi','joni','toni','cahya','riski','farhan','aden','joko']
+        common = open("Denventa/nama_indonesia","r").read().splitlines()
         for set1 in put:
             data.append(set1)
             for set2 in common:data.append(set2+' '+set1)
