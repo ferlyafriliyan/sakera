@@ -1,5 +1,5 @@
 ###----------[ Denventa Afriliyan Ferly Khurayra Shishigami X ]---------- ###
-Author_ll =  '-[ Denventa Afriliyan Ferly Khurayra Shishigami X ] -'
+Developer =  '-[ Denventa Afriliyan Ferly Khurayra Shishigami X ] -'
 Version = '0.4'
 Facebook_Dev = 'Denventa Afriliyan Ferly Shishigami X (Denventa)'
 Dnventa = 100013275378835
@@ -393,7 +393,7 @@ def tampilan_menu():
 def pilih_menu():
     global gabung_sandi, tempel_sandi
     dc = input('   %s└──> %s'%(A,J))
-    if dc in ['1','01','a']    : gabung_sandi.append(Author);not_availablell('Dump ID Dari Friendlist')
+    if dc in ['1','01','a']    : gabung_sandi.append(Developer);not_availablell('Dump ID Dari Friendlist')
     elif dc in ['2','02','b']  : tempel_sandi.append('Jangan');main_folls();system_login();urut_crack();pilihan_sakdurunge_crack();addpass();crack()
     elif dc in ['3','03','c']  : gabung_sandi.append('Direcode');not_availablell('Dump ID Dari Nama')
     elif dc in ['4','04','d']  : tempel_sandi.append('Dasar');main_likers();system_login();pilihan_sakdurunge_crack();addpass();crack()
