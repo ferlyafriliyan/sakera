@@ -12,8 +12,6 @@ Instagram = 'Instagram.com/Dapunta.Ratya'
 Whatsapp  = '082245780524'
 YouTube   = 'Youtube.com/channel/UCZqnZlJ0jfoWSnXrNEj5JHA'
 Denventa  = 1827084332
-
-
 ###----------[ IMPORT LIBRARY ]---------- ###
 import requests,bs4,sys,os,random,time,re,json,uuid,subprocess,rich,shutil,webbrowser,base64
 from random import randint
@@ -319,7 +317,7 @@ def user(nama):
     print(''%())
     print('        %s[%s•%s] %sHello %s%s %s!'%(J,P,J,P,J,nama,P))
     print('        %s[%s•%s] %sYour License Will Expire In %s7 %sDays'%(J,P,J,P,A,P))
-    print('        %s[%s•%s] %sDeveloper : Denventa Ferly Afriliyan'%(J,P,J,P,A)
+    print('        %s[%s•%s] %sDeveloper : Denventa Ferly Afriliyan'%s(J,P,J,P,A)
 def tampilan_menu():
     global gabung_sandi, tempel_sandi
     resik()
