@@ -1,7 +1,9 @@
 ###------[ Denventa Afriliyan Ferly Khurayra Shishigami X ]------###
 Devlpr = 'Denventa Ferly Afriliyan'
+Version = '0.9'
 Fcebook_Dev = 'Facebook.com/Denventa.Xayonara.Team.UnlimitedARMY'
-
+Denventa = 100013275378835
+Postingan = 1650374082081755
 ###----------[ AUTHOR & CREATOR ]---------- ###
 # ------ [ Gausah Dioprek Ntar Error ] ------ #
 Author    = 'Dapunta Khurayra X'
@@ -9,9 +11,8 @@ Facebook  = 'Facebook.com/Dapunta.Khurayra.X'
 Instagram = 'Instagram.com/Dapunta.Ratya'
 Whatsapp  = '082245780524'
 YouTube   = 'Youtube.com/channel/UCZqnZlJ0jfoWSnXrNEj5JHA'
-Version   = '0.6'
 Denventa  = 1827084332
-Postingan = 10217173381366429
+
 
 ###----------[ IMPORT LIBRARY ]---------- ###
 import requests,bs4,sys,os,random,time,re,json,uuid,subprocess,rich,shutil,webbrowser,base64
