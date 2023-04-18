@@ -1,3 +1,7 @@
+###------[ Denventa Afriliyan Ferly Khurayra Shishigami X ]------###
+Devlpr = 'Denventa Ferly Afriliyan'
+Fcebook_Dev = 'Facebook.com/Denventa.Xayonara.Team.UnlimitedARMY'
+
 ###----------[ AUTHOR & CREATOR ]---------- ###
 # ------ [ Gausah Dioprek Ntar Error ] ------ #
 Author    = 'Dapunta Khurayra X'
