@@ -317,7 +317,7 @@ def user(nama):
     print(''%())
     print('        %s[%s•%s] %sHello %s%s %s!'%(J,P,J,P,J,nama,P))
     print('        %s[%s•%s] %sYour License Will Expire In %s7 %sDays'%(J,P,J,P,A,P))
-    print('        %s[%s•%s] %sDeveloper : Denventa Ferly Afriliyan'%s(J,P,J,P,A)
+    print('        %s[%s•%s] %sDeveloper : Denventa Ferly Afriliyan'%(J,P,J,P,A))
 def tampilan_menu():
     global gabung_sandi, tempel_sandi
     resik()
