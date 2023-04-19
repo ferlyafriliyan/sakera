@@ -1,9 +1,9 @@
 ###------[ Denventa Afriliyan Ferly Khurayra Shishigami X ]------###
-Develpr = 'Denventa Ferly Afriliyan'
-Dnventa = 100013275378835
-Version = '0.9'
-Post_Dev = 1650374082081755
 Facebook = 'Facebook.com/Denventa.Xayonara.Team.UnlimitedARMY'
+Develpr = 'Denventa Ferly Afriliyan'
+Version = '0.9'
+Dnventa = 100013275378835
+Post_Dev = 1650374082081755
 ###----------[ AUTHOR & CREATOR ]---------- ###
 # ------ [ Gausah Dioprek Ntar Error ] ------ #
 Author    = 'Dapunta Khurayra X'
