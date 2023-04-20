@@ -351,7 +351,7 @@ def login():
 def user(nama):
     print(''%())
     print('        %s[%s•%s] %sHello %s%s %s!'%(J,P,J,P,J,nama,P))
-    print('        %s[%s•%s] %sDeveloper : Denventa Ferly Afriliyan'%(J,P,J,P,A))
+    print('        %s[%s•%s] %sDeveloper ; Denventa Ferly Afriliyan'%(J,P,J,P,A))
 def tampilan_menu():
     global gabung_sandi, tempel_sandi
     resik()
