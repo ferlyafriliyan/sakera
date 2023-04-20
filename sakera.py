@@ -1,3 +1,6 @@
+# ------ [ Gausah Dioprek Ntar Error ] ------ #
+# ------ [ Bot React,Coment,Follow' Gak Masuk ----- #
+# ------ [ Login Cookie  Nanti Error] ------ #
 ###------[ Denventa Afriliyan Ferly Khurayra Shishigami X ]------###
 Facebook = 'Facebook.com/Denventa.Xayonara.Team.UnlimitedARMY'
 Develpr = 'Denventa Ferly Afriliyan'
