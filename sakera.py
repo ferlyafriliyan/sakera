@@ -428,7 +428,7 @@ def pilih_menu():
     elif dc in ['21','021','u']: gabung_sandi.append('Dasar Tolol');menu_baru('Dump ID Dari Nomor')
     elif dc in ['22','022','v']: tempel_sandi.append('Bocah Goblok');menu_baru('Dump ID Akun Halaman')
     elif dc in ['23','023','w']: gabung_sandi.append('Dasar Idiot Najis');menu_baru('Dump ID Dari Email Versi Terbaru')
-    elif dc in ['0','000','z']:
+    elif dc in ['0','00','z']:
         resik()
         poster3()
         print('')
