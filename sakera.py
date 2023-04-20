@@ -425,8 +425,8 @@ def pilih_menu():
     elif dc in ['18','018','r']: tempel_sandi.append('Ngerecode');not_available('Cek Jumlah Teman Akun Target')
     elif dc in ['19','019','s']: gabung_sandi.append('SC Ini');useragent('old')
     elif dc in ['20','020','t']: tempel_sandi.append('Hahaha');not_available('Upgrade Ke Versi Pro')
-    elif dc in ['21','021','u]:  gabung_sandi.append('Dasar Tolol');menu_baru('Dump ID Dari Nomor')
-    elif dc in ['0','00','z']:
+    elif dc in ['21','021','u']: gabung_sandi.append('Dasar Tolol');menu_baru('Dump ID Dari Nomor')
+    elif dc in ['0','000','z']:
         resik()
         poster3()
         print('')
