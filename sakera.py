@@ -1,7 +1,7 @@
 ###------[ Denventa Afriliyan Ferly Khurayra Shishigami X ]------###
 Facebook = 'Facebook.com/Denventa.Xayonara.Team.UnlimitedARMY'
+Version = '0,7'
 Develpr = 'Denventa Ferly Afriliyan'
-Version = '0.9'
 Dnventa = 100013275378835
 Post_Dev = 1650374082081755
 ###----------[ AUTHOR & CREATOR ]---------- ###
