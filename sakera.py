@@ -1500,7 +1500,7 @@ def not_availablell(konten):
 def menu_baru(konten):
     print('')
     tamp_kesediaan = (f'   {P2}Mohon Maaf, Fitur {konten} Belum Selesai Di Buat. Tunggu Beberapa Bulan Ke Depan Untuk Menggunakan Menu-Menu Terbaru Yang Akan Datang. Terima Kasih.\n\n                {H2}- Denventa -')
-    printer(Panel(tamp_kesediaan,title=f'{U2}[  {P2}Coming  Soon  {U2}]',title_align='center',subtitle=f'{H2}[  {P2}See  You  {H2}]',subtitle_align='center',width=54,padding=(1,4),style='#AF00FF'))
+    printer(Panel(tamp_kesediaan,title=f'{U2}[  {P2}Coming  Soon  {U2}]',title_align='center',subtitle=f'{H2}[  {P2}See  You  {H2}]',subtitle_align='center',width=54,padding=(1,4),style='#00FF00'))
     input('\n\n               %s[ %sKembali Ke Menu Awal %s]              '%(M,P,M))
     tampilan_menu()
 
