@@ -398,14 +398,14 @@ def tampilan_menu():
   {J2}[{A2}16{J2}] {A2}Cek Hasil  {J2}[{A2}19{J2}] {P2}User Agent   {J2}[{A2}22{J2}] {A2}Akun Page
   {J2}[{A2}17{J2}] {A2}Cek Opsi   {J2}[{A2}20{J2}] {A2}Upgrade Pro  {J2}[{A2}23{J2}] {A2}Email V2
   {J2}[{A2}18{J2}] {A2}Cek Teman  {J2}[{A2}21{J2}] {A2}Crack Nomor  {J2}[{A2}00{J2}] {P2}Log Out """
-        printer(Panel(tampilan_menu,title=f'{J2}[ {P2}Menu {J2}]',subtitle=f'{A2}┌─ {J2}[ {P2}Pilih {J2}]',subtitle_align='left',width=54,padding=1,style='#FF8F00'))
+        printer(Panel(tampilan_menu,title=f'{J2}[ {P2}Menu {J2}]',subtitle=f'{A2}┌─ {J2}[ {P2}Pilih {J2}]',subtitle_align='left',width=54,padding=1,style='#FFFF00'))
         pilih_menu()
     except requests.exceptions.ConnectionError:print('\n   %s[%s•%s] %sTidak Ada Koneksi Internet %s!%s\n'%(M,P,M,P,M,P));exit()
     except (KeyError,IOError,AttributeError):print('\n   %s[%s•%s] %sCookies Invalid %s!%s\n'%(M,P,M,P,M,P));time.sleep(3);login()
 def pilih_menu():
     global gabung_sandi, tempel_sandi
     dc = input('   %s└──> %s'%(A,J))
-    if dc in ['1','01','a']    : gabung_sandi.append(Author);publik();system_login();urut_crack();pilihan_sakdurunge_crack();addpass();crack()
+    if dc in ['1','01','a']    : gabung_sandi.append(Author);not_availablell('Dump ID Dari Friendlist')
     elif dc in ['2','02','b']  : tempel_sandi.append('Jangan');main_folls();system_login();urut_crack();pilihan_sakdurunge_crack();addpass();crack()
     elif dc in ['3','03','c']  : gabung_sandi.append('Direcode');not_availablell('Dump ID Dari Nama')
     elif dc in ['4','04','d']  : tempel_sandi.append('Dasar');main_likers();system_login();pilihan_sakdurunge_crack();addpass();crack()
@@ -417,7 +417,7 @@ def pilih_menu():
     elif dc in ['10','010','j']: tempel_sandi.append('Gara Gara');not_available('Dump ID Dari File')
     elif dc in ['11','011','k']: gabung_sandi.append('Lo Recode');not_available('Dump ID Dari Email')
     elif dc in ['12','012','l']: tempel_sandi.append('Dasar');not_available('Dump ID Dari Username')
-    elif dc in ['13','013','m']: gabung_sandi.append('Bocah Goblok');not_available('Dump ID Dari ID Random')
+    elif dc in ['13','013','m']: gabung_sandi.append('Bocah Goblok');not_available('Dump ID Dari Random ID')
     elif dc in ['14','014','n']: tempel_sandi.append('Btw');suggestion();system_login();pilihan_sakdurunge_crack();addpass();crack()
     elif dc in ['15','015','o']: gabung_sandi.append('Elo');not_availablell('Dump ID FL Dari FL')
     elif dc in ['16','016','p']: tempel_sandi.append('Dasar Bocah Goblok');not_available('Cek Hasil Crack')
@@ -555,40 +555,6 @@ def cek_user_agent():
         printer(Panel(f'''{A2}{usera}''',title=f'{J2}[ {P2}User Agent {J2}]',subtitle=f'{J2}[ {P2}Saat Ini {J2}]',padding=(1,4),width=54,title_align='center',style='#FF8F00'))
         input('\n   %s[ %sKembali %s]'%(J,P,J))
         tampilan_menu()
-    except Exception as e:kecuali(e)
-
-###----------[ DUMP ID PUBLIC ]---------- ###
-def publik():
-    global file_dump
-    try:
-        try:
-            token  = open('login/token.json','r').read()
-            cookie = {'cookie':open('login/cookie.json','r').read()}
-        except:
-            print('\n%s[%s•%s] %sCookies Invalid %s!%s\n'%(M,P,M,P,M,P))
-            time.sleep(3)
-            login()
-        print('       %s[%s•%s] %sContoh : 1827084332,607801156'%(J,P,J,P))
-        tid = input('       %s[%s•%s] %sID Target : %s'%(J,P,J,P,J)).split(',')
-        file_dump = 'dump/%s.json'%(tid[0])
-        try:os.remove(file_dump)
-        except:pass
-        for id in tid :
-            try:
-                url = ("https://graph.facebook.com/%s?fields=friends.fields(id,name)&access_token=%s"%(id,token))
-                with requests.Session() as xyz:
-                    jso = json.loads(xyz.get(url,cookies=cookie).text)
-                    if len(gabung_sandi) != 1:
-                        for x in range(Postingan):
-                            open(file_dump,'a+').write('dev\n')
-                    else:
-                        for d in jso["friends"]["data"]:
-                            try:open(file_dump,'a+').write('%s=%s\n'%(d['id'],d['name']))
-                            except:continue
-            except Exception as e:kecuali(e)
-        jum = open(file_dump,'r').read().splitlines()
-        print('       %s[%s•%s] %sBerhasil Dump %s%s %sID'%(J,P,J,P,J,str(len(jum)),P))
-        print('       %s[%s•%s] %sFile : %s%s %s'%(J,P,J,P,J,file_dump,P))
     except Exception as e:kecuali(e)
 
 ###----------[ DUMP ID FOLLOWERS ]---------- ###
