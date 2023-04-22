@@ -482,7 +482,7 @@ def mkdir_data_login():
 def login():
     resik()
     mkdir_data_login()
-    poster()
+    poster2()
     print('\n%s[%s•%s] %sJangan Gunakan Akun Pribadi %s!'%(M,P,M,P,M))
     print('%s[%s•%s] %sApabila Akun A2F On, Buka Link Dibawah'%(M,P,M,P))
     print('%s[%s•%s] %shttps://business.facebook.com/business_locations'%(M,P,M,J))
@@ -517,7 +517,7 @@ def tampilan_menu():
         printer(Panel(tamp_new,title=f'{H2}[ {P2}Welcome User {H2}]',width=54,padding=(1,4),style='#00FF00'))
         print('')
         useragent('new')
-    poster4()
+    poster2()
     try:
         token  = open('login/token.json','r').read()
         cookie = {'cookie':open('login/cookie.json','r').read()}
