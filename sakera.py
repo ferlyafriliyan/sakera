@@ -95,6 +95,49 @@ uaku2 = []
 ugen = []
 uakuh = []
 usragent = []
+#--> User Agent Samsung
+def random_ua_samsung():
+    os_ver = random.randrange(6,13)                                                                         #--> OS Version
+    dv_typ = random.choice(['SM-X11O','SM-S367VL','SM-J610G','SM-G900P','SM-G988B','SM-G531H','SM-A405FN']) #--> Device Type
+    bl_typ = random.choice(['PPR1','LRX21T','TP1A','RKQ1','SP1A','RP1A'])                                   #--> Build Type
+    dv_ver = random.randrange(100000,250000)                                                                #--> Device Version
+    sd_ver = random.randrange(1,10)                                                                         #--> Update Version
+    ch_ver = random.choice(['112.0.5615.50','111.0.5563.116','111.0.5563.58','80.0.3987.162'])              #--> Chrome Version
+    ua = f'Mozilla/5.0 (Linux; Android {os_ver}; {dv_typ} Build/{bl_typ}.{dv_ver}.00{sd_ver}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{ch_ver} Mobile Safari/537.36'
+    return(ua)
+
+#--> User Agent Xiaomi
+def random_ua_xiaomi():
+    os_ver = random.randrange(6,13)                                                                               #--> OS Version
+    dv_typ = random.choice(['22081212UG','M2102K1AC','M2101K6G','2210132C','M2007J3SG','21091116UI','M2004J19C']) #--> Device Type
+    bl_typ = random.choice(['TKQ1','SKQ1','TP1A','RKQ1','SP1A','RP1A'])                                           #--> Build Type
+    dv_ver = random.randrange(100000,250000)                                                                      #--> Device Version
+    sd_ver = random.randrange(1,10)                                                                               #--> Update Version
+    ch_ver = random.choice(['112.0.5615.50','111.0.5563.116','111.0.5563.58','80.0.3987.162'])                    #--> Chrome Version
+    ua = f'Mozilla/5.0 (Linux; Android {os_ver}; {dv_typ} Build/{bl_typ}.{dv_ver}.00{sd_ver}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{ch_ver} Mobile Safari/537.36'
+    return(ua)
+
+#--> User Agent Realme
+def random_ua_realme():
+    os_ver = random.randrange(6,13)                                                                 #--> OS Version
+    dv_typ = random.choice(['RMX3663','RMX3392','RMX3081','RMX2170','RMX2061','RMX1971','RMX2020']) #--> Device Type
+    bl_typ = random.choice(['QP1A','SKQ1','TP1A','RKQ1','SP1A','RP1A'])                             #--> Build Type
+    dv_ver = random.randrange(100000,250000)                                                        #--> Device Version
+    sd_ver = random.randrange(1,10)                                                                 #--> Update Version
+    ch_ver = random.choice(['112.0.5615.50','111.0.5563.116','111.0.5563.58','80.0.3987.162'])      #--> Chrome Version
+    ua = f'Mozilla/5.0 (Linux; Android {os_ver}; {dv_typ} Build/{bl_typ}.{dv_ver}.00{sd_ver}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{ch_ver} Mobile Safari/537.36'
+    return(ua)
+
+#--> User Agent Nokia
+def random_ua_nokia():
+    os_ver = random.randrange(6,13)                                                                              #--> OS Version
+    dv_typ = random.choice(['Nokia C1','Nokia C2','Nokia C3','Nokia XR20','Nokia X20','Nokia X30','Nokia X100']) #--> Device Type
+    bl_typ = random.choice(['QP1A','PPR1','TP1A','RKQ1','SP1A','RP1A'])                                          #--> Build Type
+    dv_ver = random.randrange(100000,250000)                                                                     #--> Device Version
+    sd_ver = random.randrange(1,10)                                                                              #--> Update Version
+    ch_ver = random.choice(['112.0.5615.50','111.0.5563.116','111.0.5563.58','80.0.3987.162'])                   #--> Chrome Version
+    ua = f'Mozilla/5.0 (Linux; Android {os_ver}; {dv_typ} Build/{bl_typ}.{dv_ver}.00{sd_ver}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{ch_ver} Mobile Safari/537.36'
+    return(ua)
 ###----------[ USER AGENT ]----------###
 for agenku in range(10000):
 	a='Mozilla/5.0 (Linux; U; Android'
