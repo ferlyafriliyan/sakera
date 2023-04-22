@@ -605,13 +605,13 @@ def pilih_menu_user_agent():
     tampilan_menu_user_agent = f'''  {J2}[{A2}01{J2}] {P2}Scrap UA Browser    {J2}[{A2}04{J2}] {P2}Cari UA HP Ini
   {J2}[{A2}02{J2}] {P2}Ganti UA Otomatis   {J2}[{A2}05{J2}] {P2}Cek UA Digunakan
   {J2}[{A2}03{J2}] {P2}Ganti UA Manual     {J2}[{A2}00{J2}] {P2}Kembali'''
-    printer(Panel(tampilan_menu_user_agent,title=f'{J2}[ {P2}User Agent {J2}]',subtitle=f'{A2}┌─ {J2}[ {P2}Pilih {J2}]',subtitle_align='left',width=54,padding=1,style='#FF8F00'))
+    printer(Panel(tampilan_menu_user_agent,title=f'{J2}[ {P2}User Agent {J2}]',subtitle=f'{A2}┌─ {J2}[ {P2}Pilih {J2}]',subtitle_align='left',width=54,padding=1,style='#FFFF00'))
 def pilih_device():
     tampilan_device = f'''   {J2}[{A2}01{J2}] {P2}Samsung    {J2}[{A2}05{J2}] {P2}Vivo      {J2}[{A2}09{J2}] {P2}Huawei
    {J2}[{A2}02{J2}] {P2}Nokia      {J2}[{A2}06{J2}] {P2}Iphone    {J2}[{A2}10{J2}] {P2}Windows
    {J2}[{A2}03{J2}] {P2}Xiaomi     {J2}[{A2}07{J2}] {P2}Asus      {J2}[{A2}11{J2}] {P2}Chrome
    {J2}[{A2}04{J2}] {P2}Oppo       {J2}[{A2}08{J2}] {P2}Lenovo    {J2}[{A2}12{J2}] {P2}FB'''
-    printer(Panel(tampilan_device,title=f'{J2}[ {P2}Device {J2}]',subtitle=f'{A2}┌─ {J2}[ {P2}Pilih {J2}]',subtitle_align='left',width=54,padding=1,style='#FF8F00'))
+    printer(Panel(tampilan_device,title=f'{J2}[ {P2}Device {J2}]',subtitle=f'{A2}┌─ {J2}[ {P2}Pilih {J2}]',subtitle_align='left',width=54,padding=1,style='#FFFF00'))
 def scrap_useragent():
     data_ua = {}
     pt = 0
@@ -749,7 +749,7 @@ def main_likers():
     except Exception as e:kecuali(e)
     tampilan_likers = f'''    {J2}[{A2}1{J2}] {P2}Like   {J2}[{A2}3{J2}] {P2}Wow    {J2}[{A2}5{J2}] {P2}Sad     {J2}[{A2}7{J2}] {P2}Care
     {J2}[{A2}2{J2}] {P2}Love   {J2}[{A2}4{J2}] {P2}Haha   {J2}[{A2}6{J2}] {P2}Angry   {J2}[{A2}8{J2}] {P2}All'''
-    printer(Panel(tampilan_likers,title=f'{J2}[ {P2}Tipe React {J2}]',subtitle=f'{A2}┌─ {J2}[ {P2}Pilih {J2}]',subtitle_align='left',width=54,padding=1,style='#FF8F00'))
+    printer(Panel(tampilan_likers,title=f'{J2}[ {P2}Tipe React {J2}]',subtitle=f'{A2}┌─ {J2}[ {P2}Pilih {J2}]',subtitle_align='left',width=54,padding=1,style='#FFFF00'))
     rt = input('   %s└──> %s'%(A,J))
     if rt in ['1','01','a']:_react_type_='1'
     elif rt in ['2','02','b']:_react_type_='2'
@@ -852,7 +852,7 @@ class grup:
     def main_grup(self,cookie):
         print('')
         tamp_grup1 = f"""            {J2}[{A2}1{J2}] {P2}Bergabung   {J2}[{A2}2{J2}] {P2}Nama   {J2}[{A2}3{J2}] {P2}ID"""
-        printer(Panel(tamp_grup1,title=f'{J2}[ {P2}Grup {J2}]',width=54,title_align='left',style='#FF8F00'))
+        printer(Panel(tamp_grup1,title=f'{J2}[ {P2}Grup {J2}]',width=54,title_align='left',style='#FFFF00'))
         ty = input('   %s└──> %s'%(A,J))
         if ty in ['1','01','a']:
             print('')
@@ -1040,7 +1040,7 @@ class suggestion:
         except Exception as e:print(e);exit()
         print('')
         tamp_saran = f"""            {J2}[{A2}1{J2}] {P2}Saran     {J2}[{A2}2{J2}] {P2}Masuk    {J2}[{A2}3{J2}] {P2}Keluar"""
-        printer(Panel(tamp_saran,title=f'{J2}[ {P2}Dump {J2}]',width=54,title_align='left',style='#FF8F00'))
+        printer(Panel(tamp_saran,title=f'{J2}[ {P2}Dump {J2}]',width=54,title_align='left',style='#FFFF00'))
         pl = input('   %s└──> %s'%(A,J))
         if pl in ['1','01','a']:
             url = 'https://mbasic.facebook.com/friends/center/suggestions'
@@ -1096,7 +1096,7 @@ def system_login():
     global sistem_login
     print('')
     tamp_metode = f"""            {J2}[{A2}1{J2}] {P2}Validate  {J2}[{A2}2{J2}] {P2}Regular  {J2}[{A2}3{J2}] {P2}Api FB"""
-    printer(Panel(tamp_metode,title=f'{J2}[ {P2}Metode {J2}]',width=54,title_align='left',style='#FF8F00'))
+    printer(Panel(tamp_metode,title=f'{J2}[ {P2}Metode {J2}]',width=54,title_align='left',style='#FFFF00'))
     ch = input('   %s└──> %s'%(A,J))
     if ch in ['0','00','z']:print('\n   %s[%s•%s] %sIsi Yang Benar %s!%s\n'%(M,P,M,P,M,P));exit()
     elif ch in ['1','01','a']:sistem_login = "satu";metode_scrap_login()
@@ -1107,7 +1107,7 @@ def system_login():
 ###----------[ URL LOGIN ]---------- ###
 def metode_scrap_login():
     tamp_sistem = f"""            {J2}[{A2}1{J2}] {P2}Free FB   {J2}[{A2}2{J2}] {P2}Mbasic   {J2}[{A2}3{J2}] {P2}Mobile"""
-    printer(Panel(tamp_sistem,title=f'{J2}[ {P2}Login {J2}]',width=54,title_align='left',style='#FF8F00'))
+    printer(Panel(tamp_sistem,title=f'{J2}[ {P2}Login {J2}]',width=54,title_align='left',style='#FFFF00'))
     ch = input('   %s└──> %s'%(A,J))
     if ch in ['1','01','a']:open('tool/url_login.json','w').write("free.facebook.com")
     elif ch in ['2','02','b']:open('tool/url_login.json','w').write("mbasic.facebook.com")
@@ -1116,18 +1116,18 @@ def metode_scrap_login():
 def metode_scrap_api():
     global sistem_login
     tamp_sistem = f"""            {J2}[{A2}1{J2}] {P2}Api 1     {J2}[{A2}2{J2}] {P2}Api 2    {J2}[{A2}3{J2}] {P2}Graph"""
-    printer(Panel(tamp_sistem,title=f'{J2}[ {P2}Login {J2}]',width=54,title_align='left',style='#FF8F00'))
+    printer(Panel(tamp_sistem,title=f'{J2}[ {P2}Login {J2}]',width=54,title_align='left',style='#FFFF00'))
     ch = input('   %s└──> %s'%(A,J))
-    if ch in ['1','01','a']:sistem_login = "tiga";open('tool/url_login.json','w').write("mbasic.facebook.com")
-    elif ch in ['2','02','b']:sistem_login = "empat";open('tool/url_login.json','w').write("mbasic.facebook.com")
-    elif ch in ['3','03','c']:sistem_login = "lima";open('tool/url_login.json','w').write("mbasic.facebook.com")
+    if ch in ['1','01','a']:sistem_login = "tiga";open('tool/url_login.json','w').write("m.facebook.com")
+    elif ch in ['2','02','b']:sistem_login = "empat";open('tool/url_login.json','w').write("free.facebook.com")
+    elif ch in ['3','03','c']:sistem_login = "lima";open('tool/url_login.json','w').write("www.facebook.com")
     else:print('\n   %s[%s•%s] %sIsi Yang Benar %s!%s\n'%(M,P,M,P,M,P));exit()
 
 ###----------[ URUTAN CRACK ]---------- ###
 def urut_crack():
     global urutan_crack
     tamp_urutan = f"""            {J2}[{A2}1{J2}] {P2}ID Tua    {J2}[{A2}2{J2}] {P2}ID Muda  {J2}[{A2}3{J2}] {P2}ID Acak"""
-    printer(Panel(tamp_urutan,title=f'{J2}[ {P2}Urutan {J2}]',width=54,title_align='left',style='#FF8F00'))
+    printer(Panel(tamp_urutan,title=f'{J2}[ {P2}Urutan {J2}]',width=54,title_align='left',style='#FFFF00'))
     ch = input('   %s└──> %s'%(A,J))
     if ch in ['1','01','a']:urutan_crack = '0'
     elif ch in ['2','02','b']:urutan_crack = '1'
