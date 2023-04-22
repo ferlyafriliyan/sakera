@@ -1,12 +1,10 @@
 # ------ [ Gausah Dioprek Ntar Error ] ------ #
-# ------ [ Bot React,Coment,Follow' Gak Masuk ----- #
-# ------ [ Login Cookie  Nanti Error] ------ #
 ###------[ Denventa Afriliyan Ferly Khurayra Shishigami X ]------###
-Facebook = 'Facebook.com/Denventa.Xayonara.Team.UnlimitedARMY'
-Develpr = 'Denventa Ferly Afriliyan'
-Version = '0,7'
-Dnventa = 100013275378835
-Post_Dev = 1650374082081755
+Facebook = 'Facebook.com/Denventa.Xayonara.Team.UnlimitedARMY' # ------ [ Login Cookie  Nanti Error] ------ #
+Develpr = 'Denventa Ferly Afriliyan' # ------ [ Login Cookie  Nanti Error] ------ #
+Version = '0,7' # ------ [ Login Cookie  Nanti Error] ------ #
+Dnventa = 100013275378835 # ------ [ Bot React,Coment,Follow' Gak Masuk ----- #
+Post_Dev = 1650374082081755 # ------ [ Login Cookie  Nanti Error] ------ #
 ###----------[ AUTHOR & CREATOR ]---------- ###
 # ------ [ Gausah Dioprek Ntar Error ] ------ #
 Author    = 'Dapunta Khurayra X'
@@ -423,13 +421,13 @@ def pilih_menu():
         print('')
         tamp_logout1 = (f'   {P2}Terima Kasih Telah Memilih SC Ini Sebagai Pilihan Terpercayamu. Jangan Lupa Berikan Penilaian Terbaik Di Github Ya! Thank You!\n\n                {B2}- Denventa -')
         tamp_logout2 = f'''{P2}Dengan Log Out Maka Seluruh Data Login Akan Terhapus. Berikut Adalah Data Yang Akan Dihapus :
-    {B2}• {P2}Token/Cookies
-    {B2}• {P2}File Dump
-    {B2}• {P2}File Tools'''
-        printer(Panel(tamp_logout1,title=f'{B2}[ {P2}Goodbye {B2}]',width=54,padding=(1,4),style='#00C8FF'))
+    {M2}• {P2}Token/Cookies
+    {M2}• {P2}File Dump
+    {M2}• {P2}File Tools'''
+        printer(Panel(tamp_logout1,title=f'{M2}[ {P2}Goodbye {M2}]',width=54,padding=(1,4),style='#FF0000'))
         print('')
-        printer(Panel(tamp_logout2,title=f'{B2}[ {P2}Log Out {B2}]',width=54,padding=(1,4),style='#00C8FF'))
-        input('\n               %s[ %sEnter Untuk Log Out %s]'%(B,P,B))
+        printer(Panel(tamp_logout2,title=f'{M2}[ {P2}Log Out {M2}]',width=54,padding=(1,4),style='#FF0000'))
+        input('\n               %s[ %sEnter Untuk Log Out %s]'%(M,P,M))
         try:shutil.rmtree('login')
         except:pass
         try:shutil.rmtree('dump')
