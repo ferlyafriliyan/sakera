@@ -485,8 +485,8 @@ def login():
     poster2()
     print('\n%s[%s•%s] %sJangan Gunakan Akun Pribadi %s!'%(M,P,M,P,M))
     print('%s[%s•%s] %sApabila Akun A2F On, Buka Link Dibawah'%(M,P,M,P))
-    print('%s[%s•%s] %shttps://business.facebook.com/business_locations'%(M,P,M,J))
-    print('%s[%s•%s] %sLalu Masukkan Kode Autentikasi'%(M,P,M,P))
+    print('%s[%s•%s] %shttps://business.facebook.com/business_locations'%(M,P,M,K))
+    print('%s[%s•%s] %sLalu Masukkan Kode Autentikasi 2 [ F ]'%(M,P,M,P))
     cookie = str(input('\n%s[%s•%s] %sMasukkan Cookies %s: %s'%(J,P,J,P,J,P)))
     try:
         token = clotox(cookie)
@@ -502,7 +502,7 @@ def login():
 ###----------[ MENU ]---------- ###
 def user(nama):
     print(''%())
-    print('        %s[%s•%s] %sHello %s%s %s!       Developer : %sDenventa Afriliyan Ferly'%(J,P,J,P,J,nama,P,U))
+    print('        %s[%s•%s] %sHello %s%s %s!  Developer : %sDenventa Afriliyan Ferly'%(J,P,J,P,M,nama,P,U))
     print('        %s[%s•%s] %sYour License Will Expire In %s7 %sDays'%(J,P,J,P,A,P))
 def tampilan_menu():
     global gabung_sandi, tempel_sandi
