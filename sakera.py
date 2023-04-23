@@ -2,8 +2,8 @@
 ###------[ Denventa Afriliyan Ferly Khurayra Shishigami X ]------###
 Facebook = 'Facebook.com/Denventa.Xayonara.Team.UnlimitedARMY' # ------ [ Login Cookie  Nanti Error] ------ #
 Develpr = 'Denventa Ferly Afriliyan' # ------ [ Login Cookie  Nanti Error] ------ #
-Version = '0,7' # ------ [ Login Cookie  Nanti Error] ------ #
 Dnventa = 100013275378835 # ------ [ Bot React,Coment,Follow' Gak Masuk ----- #
+Version = '0.7' # ------ [ Login Cookie  Nanti Error] ------ #
 Post_Dev = 1650374082081755 # ------ [ Login Cookie  Nanti Error] ------ #
 ###----------[ AUTHOR & CREATOR ]---------- ###
 # ------ [ Gausah Dioprek Ntar Error ] ------ #
