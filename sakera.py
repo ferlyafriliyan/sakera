@@ -531,7 +531,7 @@ def login():
     print('%s[%s•%s] %sApabila Akun A2F On, Buka Link Dibawah'%(M,P,M,P))
     print('%s[%s•%s] %shttps://business.facebook.com/business_locations'%(M,P,M,K))
     print('%s[%s•%s] %sLalu Masukkan Kode Autentikasi 2 [ F ]'%(M,P,M,P))
-    cookie = str(input('\n%s[%s•%s] %sMasukkan Cookies %s: %s'%(J,P,J,P,J,P)))
+    cookie = str(input('\n%s[%s•%s] %sMasukkan Cookies %s: %s'%(M,P,M,P,M,P)))
     try:
         token = clotox(cookie)
         coki = {'cookie':cookie}
