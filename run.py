@@ -1,4 +1,4 @@
-###------[  Denventa Afriliyan Ferly   ]------###
+###------[  Denventa Afriliyan Ferly Xhurayra Shishigami X   ]------###
 # ------  [ Gausah Dioprek Ntar Error ] ------ #
 Facebook = 'Facebook.com/Denventa.Xayonara.Team.UnlimitedARMY'
 Develpr = 'Denventa Ferly Afriliyan' 
