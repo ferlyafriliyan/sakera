@@ -97,6 +97,11 @@ ugen = []
 uakuh = []
 usragent = []
 sys.stdout.write('\x1b]2; DMBF - Facebook | Denventa Multi Brute Force - Facebook\x07')
+try:
+	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text
+	open('.prox.txt','w').write(prox)
+except Exception as e:
+prox=open('.prox.txt','r').read().splitlines()
 for agenku in range(10000):
 	a='Mozilla/5.0 (Linux; U; Android'
 	b=random.choice(['5.0','6.0','7.0','8.1.0','9','10','11','12'])
