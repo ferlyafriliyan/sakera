@@ -580,12 +580,12 @@ ip_log = Denventa * id_dev - 3654168663
 
 ###----------[ GLOBAL URL & HEADERS ]---------- ###
 url_businness = "https://business.facebook.com"
-ua_business = "Mozilla/5.0 (Linux; Android 12; SAMSUNG SM-W2021) AppleWebKit/537.36 (KHTML, like Gecko) SamsungBrowser/19.1 Chrome/102.0.5005.125 Mobile Safari/537.36"
+ua_business = {ugen}
 kata_dev = 'Lu Ganteng Banget Bang. Gw Mau Recode SClu, Soalnya Gw Goblok Soal Coding'
 web_fb = "https://www.facebook.com/"
 m_fb = "https://m.facebook.com/"
 mbasic = "https://mbasic.facebook.com/"
-header_grup = {"user-agent": "Mozilla/5.0 (Linux; Android 12; Redmi Note 11 Build/SQ3A.220605.009.B1; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/107.0.5304.105 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/393.0.0.35.106;]"}
+header_grup = {"user-agent": {ugen2}}
 ###----------[ PROXY INDONESIA & LUAR ]---------- ###
 def prox_prox():
     open('tool/proxy.json','w').write('')
@@ -820,7 +820,7 @@ def tampilan_menu():
 
   {J2}[{A2}16{J2}] {A2}Cek Hasil  {J2}[{A2}19{J2}] {P2}User Agent   {J2}[{A2}22{J2}] {A2}Akun Page
   {J2}[{A2}17{J2}] {A2}Cek Opsi   {J2}[{A2}20{J2}] {A2}Upgrade Pro  {J2}[{A2}23{J2}] {A2}Email V2
-  {J2}[{A2}18{J2}] {A2}Cek Teman  {J2}[{A2}21{J2}] {A2}Phonee      {J2}[{A2}00{J2}] {P2}Log Out """
+  {J2}[{A2}18{J2}] {A2}Cek Teman  {J2}[{A2}21{J2}] {A2}Phone        {J2}[{A2}00{J2}] {P2}Log Out """
         printer(Panel(tampilan_menu,title=f'{J2}[ {P2}Menu {J2}]',subtitle=f'{A2}┌─ {J2}[ {P2}Pilih {J2}]',subtitle_align='left',width=54,padding=1,style='#FFFF00'))
         pilih_menu()
     except requests.exceptions.ConnectionError:print('\n   %s[%s•%s] %sTidak Ada Koneksi Internet %s!%s\n'%(M,P,M,P,M,P));exit()
