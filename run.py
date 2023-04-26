@@ -787,7 +787,7 @@ def login():
 ###----------[ MENU ]---------- ###
 def user(nama):
     print(''%())
-    print('        %s[%s•%s] %sHello %s%s %s!  Developer : %sDenventa Afriliyan Ferly'%(J,P,J,P,M,nama,P,U))
+    print('        %s[%s•%s] %sHello %s%s %s!  Developer : %sDenventa'%(J,P,J,P,M,nama,P,M))
     print('        %s[%s•%s] %sYour License Will Expire In %s7 %sDays'%(J,P,J,P,A,P))
 def tampilan_menu():
     global gabung_sandi, tempel_sandi
