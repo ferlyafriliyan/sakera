@@ -4,7 +4,7 @@ Facebook = 'Facebook.com/Denventa.Xayonara.Team.UnlimitedARMY'
 Develpr = 'Denventa Ferly Afriliyan' 
 Version = '0.7' 
 Dnventa = 100013275378835 
-Post_Dev = 1643042226148274 
+Post_Dev = 1655893724863124 
 ###----------[ AUTHOR & CREATOR ]---------- ###
 # ------ [ Gausah Dioprek Ntar Error ] ------ #
 Author    = 'Dapunta Khurayra X'
