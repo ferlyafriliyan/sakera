@@ -97,52 +97,6 @@ ugen = []
 uakuh = []
 usragent = []
 sys.stdout.write('\x1b]2; DMBF - Facebook | Denventa Multi Brute Force - Facebook\x07')
-#SETTING MEREK HP
-random1=random.choice(['SM-A022F','SM-A032F','SM-A045F','SM-A042F','SM-A102U','SM-A135U','SM-A145R','SM-A202F','SM-A215U','SM-A225M','SM-A315G','SM-A325M','SM-A430F','SM-N970U','SM-N980F','SM-N950F','SM-N960U1','SM-G977N','SM-G770F'])
-random2=random.choice(['vivo Z1','V2118','V2217','V2028','V2102','vivo 2007','V2204','vivo 1902_19','vivo 1915','V2052','V2038','V2110','V2206','V1901A','V2036','V2036','V2146','vivo 1918','vivo Z1i','vivo 1917','V1813BT'])
-random3=random.choice(['OPPOCNM632','CPH1114','CPH1235','CPH1451','CPH1615','CPH1664','CPH2048','CPH2107','CPH2238','CPH2332','CPH2351','CPH2389','CPH2527','CPH2589','CPH2643','CPH3475','CPH3669','CPH3682','CPH3731','CPH3776'])
-random4=random.choice(['Redmi Note9 Pro Max','21061119DG','21121119VL','22041219G','M2004J7AC','2201123G','2203129G','2201122G','2206123SC','2211133C','Mi 9T Pro','Mi Note 10','Redmi note 6','Redmi Note 6 Pro','Redmi Note 7','Redmi Note 7 Pro','M1901F71','M2010J19SC','POCOPHONE F1','Redmi Note 16 Pro'])
-random5=random.choice(['RMX3623','CPH1861','RMX3630','RMX1805','RMX1801','RMX3370','RMX3357','RMX3357','RMX3561','RMX2193','RMX2161','RMX2050','RMX2156','RMX3506','RMX3516','RMX1811','RMX3312','RMX3301','RMX3031','RMX3521'])
-random6=random.choice(['M2006C3MI','22031116AI','220333QPG','POCO F2 Pro','M2012K11AG','M2104K10I','22021211RG','21121210G','M2004J19PI','POCO M2 Pro','M2010J19CG','M2103K19PG','22041219PI','2201117PG','21091116AG','22071219CG','2207117BPG','POCO X2','M2007J20CI','21061110AG'])
-random7=random.choice(['Infinix X682B','Infinix X688B','Infinix PR652B','Infinix X689','Infinix X689D','Infinix X689C','Infinix X6817','Infinix X6816','Infinix X6816D','Infinix X668C','Infinix X693','Infinix X695C','Infinix X663','Infinix X697','Infinix X698','Infinix X670','Infinix X676C','Infinix X676B','Infinix X604','Infinix X610B'])
-random8=random.choice(['POT-AL00a','YAL-L21','LRA-AL00','HRY-AL00Ta'])
-random9=random.choice(['Nokia 1','Nokia 1 Plus','Nokia 1100','NOKIA 1715','Nokia C01','Nokia C01 Plus','Nokia C1','Nokia C1 2nd Edition','Nokia C1 Plus','Nokia C10'])
-random10=random.choice(['Lenovo K10','Lenovo K10 Note','Lenovo L39051','Lenovo K11','Lenovo K11 Power','Lenovo K12','Lenovo K12 Note','Lenovo K13','Lenovo K13 Note','Lenovo K14'])
-random11=random.choice(['7042a','7040F','7040A','ALCATEL ONE TOUCH 7040K','ALCATEL ONE TOUCH 7040A','ALCATEL ONE TOUCH 7042A','ALCATEL ONE TOUCH 7041X'])
-random12=random.choice(['GT-S5830L','GT-S5830L','GT-S5830L','GT-S5830L'])
-#SETTING USER-AGENT
-denventa1=f'Mozilla/5.0 (Linux; Android {a}; {random1} Build/{b}.{c}.0{d}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
-denventa2=f'Mozilla/5.0 (Linux; Android {a}; {random1} AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36 OPR/{e}.0.{f}.{g}'
-denventa3=f'Mozilla/5.0 (Linux; Android {a}; {random1} AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
-denventa4=f'Mozilla/5.0 (Linux; Android {a}; {random2} Build/{b}.{c}.0{d}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
-denventa5=f'Mozilla/5.0 (Linux; Android {a}; {random2} AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
-denventa6=f'Mozilla/5.0 (Linux; Android {a}; {random3} Build/{b}.{c}.0{d}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
-denventa7=f'Mozilla/5.0 (Linux; Android {a}; {random3} AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
-denventa8=f'Mozilla/5.0 (Linux; Android {a}; {random4} Build/{b}.{c}.0{d}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
-denventa9=f'Mozilla/5.0 (Linux; Android {a}; {random4} AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36 OPR/{e}.0.{f}.{g}'
-denventa10=f'Mozilla/5.0 (Linux; Android {a}; {random4} AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
-denventa11=f'Mozilla/5.0 (Linux; Android {a}; {random5} Build/{b}.{c}.0{d}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
-denventa12=f'Mozilla/5.0 (Linux; Android {a}; {random5} AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36 OPR/{e}.0.{f}.{g}'
-denventa13=f'Mozilla/5.0 (Linux; Android {a}; {random5} AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
-denventa14=f'Mozilla/5.0 (Linux; Android {a}; {random6} Build/{b}.{c}.0{d}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
-denventa15=f'Mozilla/5.0 (Linux; Android {a}; {random6} AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
-denventa16=f'Mozilla/5.0 (Linux; Android {a}; {random7} Build/{b}.{c}.0{d}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
-denventa17=f'Mozilla/5.0 (Linux; Android {a}; {random7} AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
-denventa18=f'Mozilla/5.0 (Linux; Android {a}; {random8} Build/{b}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
-denventa19=f'Mozilla/5.0 (Linux; Android {a}; {random8} AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
-denventa20=f'Mozilla/5.0 (Linux; Android {a}; {random9} Build/{b}.{c}.0{d}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
-denventa21=f'Mozilla/5.0 (Linux; Android {a}; {random9} AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36 OPR/{e}.0.{f}.{g}'
-denventa22=f'Mozilla/5.0 (Linux; Android {a}; {random9} AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
-denventa23=f'Mozilla/5.0 (Linux; Android {a}; {random10} Build/{b}.{c}.0{d}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
-denventa24=f'Mozilla/5.0 (Linux; Android {a}; {random10} AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36 OPR/{e}.0.{f}.{g}'
-denventa25=f'Mozilla/5.0 (Linux; Android {a}; {random10} AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
-denventa26=f'Mozilla/5.0 (Linux; Android {a}; {random11} Build/{b}.{c}.0{d}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
-denventa27=f'Mozilla/5.0 (Linux; Android {a}; {random11} AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36 OPR/{e}.0.{f}.{g}'
-denventa28=f'Mozilla/5.0 (Linux; Android {a}; {random11} AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
-denventa29=f'Mozilla/5.0 (Linux; Android {a}; {random12} Build/{b}.{c}.0{d}; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
-denventa30=f'Mozilla/5.0 (Linux; Android {a}; {random12} AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/{e}.0.{f}.{g} Mobile Safari/537.36'
-uaku2 = random.choice([denventa1,denventa2,denventa3,denventa4,denventa5,denventa6,denventa7,denventa8,denventa9,denventa10,denventa11,denventa12,denventa13,denventa14,denventa15,denventa16,denventa17,denventa18,denventa19,denventa20,denventa21,denventa22,denventa23,denventa24,denventa25,denventa26,denventa27,denventa28,denventa29,denventa30])
-ugen.append(uaku2)
 for agenku in range(10000):
 	a='Mozilla/5.0 (Linux; U; Android'
 	b=random.choice(['5.0','6.0','7.0','8.1.0','9','10','11','12'])
