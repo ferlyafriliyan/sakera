@@ -63,8 +63,9 @@ ua_huawei  = 'Mozilla/5.0 (Linux; Android 10; VOG-L29 Build/HUAWEIVOG-L29; wv) A
 ua_windows = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/108.0.0.0 Safari/537.36'
 ua_chrome  = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 13_3_1) AppleWebKit/537.36 (KHTML, seperti Gecko) Chrome/112.0.0.0 Safari/537.36'
 ua_fb      = 'Mozilla/5.0 (Linux; Android 8.0.0; RNE-L21 Build/HUAWEIRNE-L21; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/100.0.4896.58 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/360.0.0.30.113;]'
+ua_redmi   = 'Mozilla/5.0 (Linux; Android 10; Redmi 8A Build/QKQ1.191014.001; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/103.0.5060.71 Mobile Safari/537.36 [FB_IAB/FB4A;FBAV/376.0.0.12.108;]'
 ua_sony    = 'Mozilla/5.0 (Linux; Android 11; J9110 Build/55.2.A.4.332; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.22 Mobile Safari/537.36 open_news open_news_u_s/4509'
-ua_random = random.choice([ua_default,ua_samsung,ua_nokia,ua_xiaomi,ua_oppo,ua_vivo,ua_iphone,ua_asus,ua_lenovo,ua_huawei,ua_windows,ua_chrome,ua_fb,ua_sony])
+ua_random = random.choice([ua_default,ua_samsung,ua_nokia,ua_xiaomi,ua_oppo,ua_vivo,ua_iphone,ua_asus,ua_lenovo,ua_huawei,ua_windows,ua_chrome,ua_fb,ua_redmi,ua_sony])
 komentar   = '\n\nhttps://www.facebook.com/' + str(Post_Dev)
 
 ###----------[ TIME ]---------- ###
@@ -726,7 +727,7 @@ def pilih_device():
    {J2}[{A2}02{J2}] {P2}Nokia      {J2}[{A2}06{J2}] {P2}Iphone    {J2}[{A2}10{J2}] {P2}Windows
    {J2}[{A2}03{J2}] {P2}Xiaomi     {J2}[{A2}07{J2}] {P2}Asus      {J2}[{A2}11{J2}] {P2}Chrome
    {J2}[{A2}04{J2}] {P2}Oppo       {J2}[{A2}08{J2}] {P2}Lenovo    {J2}[{A2}12{J2}] {P2}FB
-   {J2}[{A2}13{J2}] {P2}Sonny Experia 1'''
+   {J2}[{A2}13{J2}] {P2}Sonny      {J2}[{A2}13{J2}] {P2}Readmi '''
     printer(Panel(tampilan_device,title=f'{J2}[ {P2}Device {J2}]',subtitle=f'{A2}┌─ {J2}[ {P2}Pilih {J2}]',subtitle_align='left',width=54,padding=1,style='#FFFF00'))
 def scrap_useragent():
     data_ua = {}
@@ -746,6 +747,7 @@ def scrap_useragent():
     elif dc in ['11','011','k']: type = 'operating_system_name/chrome-os'
     elif dc in ['12','012','l']: type = 'software_name/facebook-app'
     elif dc in ['13','013','m']: type = 'operating_platform_string/sony-experia'
+    elif dc in ['14','014','n']: type = 'operating_platform_string/readmi_device'
     else:print('\n   %s[%s•%s] %sIsi Yang Benar %s!%s\n'%(M,P,M,P,M,P));exit()
     url = 'https://developers.whatismybrowser.com/useragents/explore/' + type
     with requests.Session() as xyz:
@@ -785,7 +787,8 @@ def pilih_otomatis():
     elif dc in ['10','010','j']: open('tool/useragent.json','w').write(ua_windows)
     elif dc in ['11','011','k']: open('tool/useragent.json','w').write(ua_chrome)
     elif dc in ['12','012','l']: open('tool/useragent.json','w').write(ua_fb)
-    elif dc in ['13','013','m']: open('tool/useragent.json','w').write(ua_sony)	
+    elif dc in ['13','013','m']: open('tool/useragent.json','w').write(ua_sony)
+    elif dc in ['14','014','n']: open('tool/useragent.json','w').write(ua_redmi)
     else:print('\n   %s[%s•%s] %sIsi Yang Benar %s!%s\n'%(M,P,M,P,M,P));exit()
     try:
         pilihan = open('tool/useragent.json','r').read()
