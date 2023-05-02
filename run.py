@@ -24,6 +24,7 @@ from rich import print as printer
 from rich.panel import Panel
 from urllib.parse import quote
 
+
 ###----------[ ANSII COLOR STYLE ]---------- ###
 Z = "\x1b[0;90m"     # Hitam
 M = "\x1b[38;5;196m" # Merah
@@ -99,10 +100,10 @@ usam = []
 ugen = []
 uakuh = []
 usragent = []
-sys.stdout.write('\x1b]2; DMBF - Facebook | Denventa Multi Brute Force - Facebook\x07')
 try:
 	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text	
 	open('.prox.txt','w').write(prox)
+sys.stdout.write('\x1b]2; DMBF - Facebook | Denventa Multi Brute Force - Facebook\x07')
 ###----------[ GENERATE USERAGENT ]---------- ###
 for xd in range(10000) :
 	a =random.choice(['Mozilla/5.0 (Linux; Android', 'Mozilla/5.0 (Linux; U; Android']) 
