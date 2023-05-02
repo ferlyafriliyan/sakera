@@ -23,9 +23,6 @@ from datetime import datetime
 from rich import print as printer
 from rich.panel import Panel
 from urllib.parse import quote
-try:
-	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text	
-	open('.prox.txt','w').write(prox)
 
 ###----------[ ANSII COLOR STYLE ]---------- ###
 Z = "\x1b[0;90m"     # Hitam
@@ -70,6 +67,9 @@ ua_redmi   = 'Mozilla/5.0 (Linux; Android 10; Redmi 8A Build/QKQ1.191014.001; wv
 ua_sony    = 'Mozilla/5.0 (Linux; Android 11; J9110 Build/55.2.A.4.332; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/108.0.5359.22 Mobile Safari/537.36 open_news open_news_u_s/4509'
 ua_random = random.choice([ua_default,ua_samsung,ua_nokia,ua_xiaomi,ua_oppo,ua_vivo,ua_iphone,ua_asus,ua_lenovo,ua_huawei,ua_windows,ua_chrome,ua_fb,ua_redmi,ua_sony])
 komentar   = '\n\nhttps://www.facebook.com/' + str(Post_Dev)
+try:
+	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text	
+	open('.prox.txt','w').write(prox)
 
 ###----------[ TIME ]---------- ###
 id_dev = 345 - 340 + 720 - 723
