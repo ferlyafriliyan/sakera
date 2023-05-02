@@ -100,9 +100,11 @@ usam = []
 ugen = []
 uakuh = []
 usragent = []
-try:
-	prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text	
-	open('.prox.txt','w').write(prox)
+
+	try:
+		
+		prox= requests.get('https://api.proxyscrape.com/v2/?request=displayproxies&protocol=socks4&timeout=80000&country=all&ssl=all&anonymity=all').text	
+		open('.prox.txt','w').write(prox)
 sys.stdout.write('\x1b]2; DMBF - Facebook | Denventa Multi Brute Force - Facebook\x07')
 ###----------[ GENERATE USERAGENT ]---------- ###
 for xd in range(10000) :
