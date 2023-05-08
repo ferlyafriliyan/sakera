@@ -22,7 +22,7 @@ rm -rf $HOME/sakera
 pkg update && pkg upgrade -y
 pkg install python git -y
 pkg install python-pip
-git clone https://github.com/Denventa/sakera
+git clone https://github.com/Dvanmeploph/sakera
 cd sakera
 git pull
 pip3 install -r requirements.txt
