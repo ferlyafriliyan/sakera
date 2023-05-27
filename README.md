@@ -22,13 +22,13 @@ rm -rf $HOME/sakera
 pkg update && pkg upgrade -y
 pkg install python git -y
 pkg install python-pip
-git clone https://github.com/ferlyafrliyn/sakera
+git clone https://github.com/Itsmeafriliyan/sakera
 cd sakera
 git pull
 pip3 install -r requirements.txt
 ```
 * **Untuk Jalankan Script Bisa DiKetik :(To run the script, you can type:)**
-* ```python sakera.cpp```
+* ```python sakera.py```
 
 * **Untuk Stop Script Tekan : (To Stop Script Press :)**
 * ```CTRL + Z```
