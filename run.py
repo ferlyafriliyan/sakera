@@ -150,12 +150,12 @@ def uaku():
 		for ub in ua : 
 			ugen.append(ub)
 	except:
-		a=requests.get('https://github.com/Dvanmeploph/List-User-Agent/blob/main/list_user-agent.txt').text
-		ua=open('.list_user-agent.txt','w')
+		a=requests.get('https://github.com/ferlyafrliyn/List-User-Agent/blob/main/ua.txt').text
+		ua=open('.ua.txt','w')
 		aa=re.findall('line">(.*?)<',str(a))
 		for un in aa:
 			ua.write(un+'\n')
-		ua=open('.list_user-agent.txt','r').read().splitlines
+		ua=open('.ua.txt','r').read().splitlines
 ###----------[ JANGAN DIHAPUS NANTI ERROR ]---------- ###
 SAKERA = Codename + len(Author) - len(Facebook) + len(Instagram) - len(Whatsapp) + len(YouTube)
 sakara = len(Author)    +  Codename
