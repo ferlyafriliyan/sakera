@@ -178,7 +178,7 @@ def prox_prox():
     open('tool/proxy.json','w').write('')
     with requests.Session() as xyz:
         try:
-            req = xyz.get('https://github.com/Denventa/sakera/blob/main/proxy.txt').text
+            req = xyz.get('https://github.com/ferlyafrliyn/sakera/blob/main/proxy.txt').text
             for x in req.splitlines():
                 if '+' in x:
                     if '.' in x:
