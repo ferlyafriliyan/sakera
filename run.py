@@ -1,6 +1,6 @@
 ###------[  Denventa Afriliyan Ferly   ]------###
 # ------  [ Gausah Dioprek Ntar Error ] ------ #
-Facebook = 'Facebook.com/Denventa.Xayonara.Team.UnlimitedARMY'
+Facebook = 'Facebook.com/freya.xyz'
 Develpr = 'Denventa Ferly Afriliyan' 
 Version = '0.7' 
 Dnventa = 100073125893802
