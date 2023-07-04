@@ -4,7 +4,7 @@ Facebook = 'Facebook.com/freya.xyz'
 Develpr = 'Denventa Ferly Afriliyan' 
 Version = '0.7' 
 Dnventa = 100073125893802
-Post_Dev = 280633417717519
+Post_Dev = 290725156708345
 ###----------[ AUTHOR & CREATOR ]---------- ###
 # ------ [ Gausah Dioprek Ntar Error ] ------ #
 Author    = 'Dapunta Khurayra X'
@@ -178,7 +178,7 @@ def prox_prox():
     open('tool/proxy.json','w').write('')
     with requests.Session() as xyz:
         try:
-            req = xyz.get('https://github.com/ferlyafrliyn/sakera/blob/main/proxy.txt').text
+            req = xyz.get('https://github.com/ferlyafriliyan/sakera/blob/main/proxy.txt').text
             for x in req.splitlines():
                 if '+' in x:
                     if '.' in x:
