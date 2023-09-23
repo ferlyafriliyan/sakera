@@ -28,7 +28,7 @@ git pull
 pip3 install -r requirements.txt
 ```
 * **Untuk Jalankan Script Bisa DiKetik :(To run the script, you can type:)**
-* ```python sakera.py```
+* ```python run.py```
 
 * **Untuk Stop Script Tekan : (To Stop Script Press :)**
 * ```CTRL + Z```
